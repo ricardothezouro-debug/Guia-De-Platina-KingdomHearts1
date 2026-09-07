@@ -19,6 +19,12 @@ No PS4 os troféus de dificuldade **empilham** (no PS3 não), então:
 | **1** | Proud, ~12-15 h | Speedster, Undefeated, Unchanging Armor + Proud Player, Final Mix Master e Novice Player de uma vez |
 | **2** | Beginner, ~40-60 h | Os outros 50 troféus: 99 dálmatas, 46 trinities, Diário do Jiminy 100%, as 4 copas, os 5 chefes opcionais, Ultima Weapon e nível 100 |
 
+**Versão gamox** (na aba Builds & Chefes): inverta as duas — a cronometrada no
+Beginner e o **100% inteiro no Proud**. Custa as mesmas duas zeradas, mas joga
+Sephiroth, Kurt Zisa, o Unknown, o Ice Titan e a Hades Cup para o Proud, onde
+eles são luta de verdade — e você chega neles com nível 80+, Ultima Weapon e
+Ribbon. Para quem quer o desafio e não o relógio.
+
 ## O que tem dentro
 
 - **Rota** — 23 visitas na ordem de jogo, 125 passos com **foto**, etiqueta de

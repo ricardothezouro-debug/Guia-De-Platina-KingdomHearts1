@@ -139,7 +139,18 @@ SECTIONS = [
         "eyebrow": "Como sobreviver",
         "title": "O plano das duas runs, as builds e os superchefes",
         "lead": "A escolha do Despertar, os hábitos que decidem a run, as builds por luta e os cinco chefes opcionais.",
-        "notices": [],
+        "notices": [
+            {
+                "tone": "info",
+                "text": (
+                    "No resto do guia, \"Run 1\" sempre quer dizer a run "
+                    "CRONOMETRADA e \"Run 2\" a run do 100% — o papel de cada "
+                    "uma, não a dificuldade. Se você for de Versão gamox, a Run "
+                    "1 é a do Beginner e a Run 2 é a do Proud; tudo o mais no "
+                    "guia continua valendo igual."
+                ),
+            },
+        ],
     },
     {
         "key": "sources",
@@ -180,16 +191,30 @@ PLAN = [
         "gets": "Todos os outros 50 troféus",
     },
     {
-        "name": "Se você prefere aprender antes de correr",
-        "when": "alternativa",
+        "name": "Versão gamox — o 100% inteiro no Proud",
+        "when": "alternativa · mesmas 2 zeradas",
         "why": (
-            "Inverta: faça a Run 1 no Beginner (Speedster + Undefeated + "
-            "Unchanging Armor + Novice Player + Final Mix Master) e a Run 2 no "
-            "Proud, que aí carrega o Proud Player junto com o 100%. Custa a mesma "
-            "quantidade de zeradas; o preço é enfrentar Sephiroth, Kurt Zisa e o "
-            "Unknown no Proud."
+            "Inverta as duas runs. A cronometrada vai no BEGINNER: menos de 15 "
+            "horas, sem Continue e sem trocar equipamento fica bem mais fácil de "
+            "segurar, e ela já entrega Novice Player e Final Mix Master. E a run "
+            "do 100% — a longa, a que tem tudo que interessa — vai no PROUD, "
+            "carregando o Proud Player junto.\n\n"
+            "Custa exatamente as mesmas duas zeradas. O que muda é ONDE cai o "
+            "peso: Sephiroth, Kurt Zisa, o Unknown, o Ice Titan e as 50 chaves da "
+            "Hades Cup passam a ser enfrentados no Proud, e aí eles são luta de "
+            "verdade — o Unknown vira o teto de dificuldade do jogo. Em troca, "
+            "você chega neles com nível 80+, Ultima Weapon, Ribbon e as seis "
+            "invocações, que é justamente o kit que a run do 100% constrói.\n\n"
+            "É a escolha para quem quer a briga e não o relógio: a parte difícil "
+            "acontece na run em que você tem tempo, ferramenta e nível para "
+            "responder à altura — em vez de cair no Beginner, onde os "
+            "superchefes entregam o ponto."
         ),
-        "gets": "Mesmos troféus, ordem trocada",
+        "gets": (
+            "Os mesmos 56 troféus. Beginner (curta): Speedster, Undefeated, "
+            "Unchanging Armor, Novice Player, Final Mix Master. Proud (longa): "
+            "Proud Player e todo o resto."
+        ),
     },
 ]
 

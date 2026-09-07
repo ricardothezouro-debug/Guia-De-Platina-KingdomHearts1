@@ -45,13 +45,26 @@ em um clique.
 
 ```bash
 pip install -r requirements.txt
+```
+
+Windows:
+
+```bash
 set PYTHONPATH=src && python -m platina_kh1
+```
+
+macOS / Linux:
+
+```bash
+PYTHONPATH=src python -m platina_kh1
 ```
 
 ## Onde fica o progresso
 
-`%APPDATA%/StreamerSidekick/platinas/kh1-final-mix/` — fora da pasta do plugin,
-então sobrevive a atualizações.
+Na pasta de dados do Streamer Sidekick, `platinas/kh1-final-mix/` — que é
+`%APPDATA%` no Windows, `~/Library/Application Support` no macOS e
+`$XDG_CONFIG_HOME` (ou `~/.config`) no Linux. Fica fora da pasta do plugin, então
+sobrevive a atualizações. O rodapé do guia mostra o caminho real do seu sistema.
 
 ---
 

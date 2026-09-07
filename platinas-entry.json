@@ -8,6 +8,6 @@
   "src_subdir": "src",
   "module": "platina_kh1.module",
   "accent": "#3E6BE8",
-  "min_sidekick_version": "0.6.0",
+  "min_sidekick_version": "0.7.1",
   "changelog": "Primeira versão: o plano das duas zeradas (Proud cronometrada + Beginner do 100%), as 23 visitas com passo a passo ilustrado, os coletáveis com foto e as builds dos cinco chefes opcionais."
 }

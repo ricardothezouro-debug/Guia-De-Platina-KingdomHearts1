@@ -38,6 +38,8 @@ def module_info():
 
 
 def help_text() -> str:
+    from .paths import guide_dir_label
+
     return (
         "Guia de platina de KINGDOM HEARTS FINAL MIX (PS4) em PT-BR.\n\n"
         "A regra que organiza tudo: KH1 NÃO tem pós-jogo. Quando os créditos "
@@ -54,8 +56,8 @@ def help_text() -> str:
         "mostra os passos daquela ida com foto, os troféus que saem ali e o "
         "aviso do que fecha depois. As abas seguintes trazem os 56 troféus, os "
         "coletáveis com foto e as builds de cada chefe opcional.\n\n"
-        "O progresso é salvo em %APPDATA%/StreamerSidekick/platinas/"
-        "kh1-final-mix/ e sobrevive a atualizações."
+        f"O progresso é salvo em {guide_dir_label()} — fora da pasta do "
+        "plugin, então sobrevive a atualizações."
     )
 
 

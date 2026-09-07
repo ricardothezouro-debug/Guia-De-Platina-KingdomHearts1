@@ -18,6 +18,7 @@ from PySide6.QtWidgets import (
 from . import guide_data
 from . import progress as keys
 from .image_loader import ImageLoader
+from .paths import guide_dir_label
 from .storage import load_progress, save_progress
 
 _PHOTO_W = 560
@@ -25,8 +26,9 @@ _PHOTO_H = 316
 _IMG_TIMEOUT_MS = 26000
 _SEARCH_LIMIT = 18
 
+# Cores de tier da convenção da aba Platinas (GUIA_DE_PLATINA.md, seção 2).
 _TIER_COLORS = {
-    "bronze": "#C77B3B", "prata": "#B8C0CC", "ouro": "#E7C64A", "platina": "#7FE7FF",
+    "bronze": "#CD7F32", "prata": "#C0C0C0", "ouro": "#FFD700", "platina": "#E5E4E2",
 }
 # o tipo da visita: história é obrigatória, limpeza é a fase de 100% da Run 2
 _KIND_COLORS = {
@@ -202,7 +204,10 @@ class GuidePage(QWidget):
             self.stack.addWidget(placeholder)
         self.stack.currentChanged.connect(self._ensure_built)
         outer.addWidget(self.stack, 1)
-        outer.addWidget(_label(guide_data.FOOTER, "Muted"))
+        # O caminho é montado na hora: cada sistema guarda numa pasta diferente,
+        # e escrever "%APPDATA%" mentiria para quem está no Mac.
+        outer.addWidget(_label(
+            f"{guide_data.FOOTER} • progresso salvo em {guide_dir_label()}", "Muted"))
 
         self._update_progress()
         # Constrói a primeira aba só depois que o event loop girar, para que

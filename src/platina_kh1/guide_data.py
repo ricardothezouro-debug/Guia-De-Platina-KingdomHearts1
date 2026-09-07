@@ -9,8 +9,8 @@ daquela ida, com foto, os troféus que saem ali e o aviso do que fecha depois.
 Este é o ÚNICO arquivo específico do jogo — os demais módulos são genéricos.
 """
 
-# Identificador único do guia (kebab-case): vira o id do plugin e a pasta
-# de progresso em %APPDATA%/StreamerSidekick/platinas/<id>/.
+# Identificador único do guia (kebab-case): vira o id do plugin e o nome da
+# pasta de progresso dentro da pasta de dados do Sidekick (ver paths.py).
 GUIDE_ID = "kh1-final-mix"
 
 GAME_NAME = "Kingdom Hearts Final Mix — Platina"
@@ -2708,8 +2708,6 @@ SOURCES = [
     },
 ]
 
-# Rodapé do guia.
-FOOTER = (
-    "Kingdom Hearts Final Mix (PS4) — Platina PT-BR • guia não oficial • "
-    "progresso salvo em %APPDATA%/StreamerSidekick/platinas/kh1-final-mix/"
-)
+# Rodapé do guia. O caminho real do progresso é acrescentado pela página,
+# porque ele muda de sistema para sistema (ver paths.guide_dir_label).
+FOOTER = "Kingdom Hearts Final Mix (PS4) — Platina PT-BR • guia não oficial"

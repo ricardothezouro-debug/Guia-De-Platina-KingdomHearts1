@@ -40,7 +40,7 @@ _TAG_COLORS = {
     "missable": "#F87171", "chefe": "#FF9E64", "baú": "#E7C64A",
     "coletável": "#E7C64A", "troféu": "#7FE7FF", "build": "#B9FF43",
     "minijogo": "#C4A7FF", "puzzle": "#C4A7FF", "farm": "#B9FF43",
-    "Run 2": "#7FE7FF", "gummi": "#7FE7FF",
+    "100%": "#7FE7FF", "gummi": "#7FE7FF",
 }
 _TRINITY_COLORS = {
     "Azul": "#7FE7FF", "Vermelha": "#F87171", "Verde": "#B9FF43",
@@ -831,7 +831,7 @@ class GuidePage(QWidget):
 
     # ═══════════════════════════════════════════════════════ 04 Builds & Chefes
     def _build_systems(self, layout: QVBoxLayout) -> None:
-        layout.addWidget(_label("O plano das duas zeradas", "CardTitle"))
+        layout.addWidget(_label("Como a platina se divide", "CardTitle"))
         for item in guide_data.PLAN:
             frame, card = _card()
             head = QHBoxLayout()
@@ -843,7 +843,23 @@ class GuidePage(QWidget):
             _detail(card, "Entrega", item["gets"])
             layout.addWidget(frame)
 
-        layout.addWidget(_label("Hábitos que decidem a run", "CardTitle"))
+        layout.addWidget(_label("Sobreviver no Proud desde a primeira run", "CardTitle"))
+        layout.addWidget(_notice(
+            "A Versão gamox começa no Proud sem você conhecer o jogo. Estes sete "
+            "pontos são o que separa uma run dura de uma run travada — marque "
+            "conforme cada um vira hábito.", "red"))
+        for i, item in enumerate(guide_data.PROUD):
+            frame, card = _card()
+            head = QHBoxLayout()
+            head.setSpacing(8)
+            head.addWidget(self._checkbox(keys.proud_key(i)), 0, Qt.AlignmentFlag.AlignTop)
+            head.addWidget(_label(item["name"], "SectionTitle"), 1)
+            head.addWidget(_pill(item["when"]), 0, Qt.AlignmentFlag.AlignTop)
+            card.addLayout(head)
+            _detail(card, "Por quê", item["why"])
+            layout.addWidget(frame)
+
+        layout.addWidget(_label("Hábitos que decidem cada run", "CardTitle"))
         for i, item in enumerate(guide_data.PREP):
             frame, card = _card()
             head = QHBoxLayout()

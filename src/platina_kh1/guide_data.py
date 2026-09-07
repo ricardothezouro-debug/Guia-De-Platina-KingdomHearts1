@@ -44,11 +44,17 @@ INTRO = (
     "regra só deste jogo: Kingdom Hearts 1 não tem pós-jogo. Depois que os "
     "créditos sobem você não volta para mundo nenhum, então tudo que é coleção "
     "precisa estar fechado ANTES de abrir a porta do Final Rest. Como existe um "
-    "troféu de terminar em menos de 15 horas, é impossível juntar o 100% e a "
-    "corrida contra o relógio no mesmo save. A boa notícia é que no PS4 os "
-    "troféus de dificuldade empilham: uma zerada no Proud já entrega Beginner e "
-    "Final Mix juntos. Este guia divide a platina nessas duas runs e depois te "
-    "leva mundo por mundo, visita por visita, com foto de cada passo."
+    "troféu de terminar em menos de 15 horas, o 100% e a corrida contra o "
+    "relógio não cabem no mesmo save.\n\n"
+    "A PRIMEIRA run é a do 100% — é ela que você joga de verdade. A segunda é a "
+    "cronometrada, e ela só é rápida porque a primeira já te ensinou o mapa "
+    "inteiro. O guia chama as duas pelo nome, nunca por número, então nenhum "
+    "passo muda de sentido no meio do caminho.\n\n"
+    "A versão recomendada aqui é a gamox: o 100% inteiro no PROUD e a "
+    "cronometrada no Beginner. Como a dificuldade empilha no PS4, terminar a "
+    "primeira run no Proud já entrega Proud Player, Final Mix Master e Novice "
+    "Player de uma vez — e joga os chefes opcionais para a run em que você tem "
+    "nível, Ultima Weapon e invocação para encará-los."
 )
 
 # Números de destaque exibidos no topo.
@@ -87,11 +93,11 @@ SECTIONS = [
             {
                 "tone": "info",
                 "text": (
-                    "Na Run 1 (a cronometrada) você só precisa selar os "
+                    "Na CRONOMETRADA você só precisa selar os "
                     "keyholes de Cidade do Trânsito, País das Maravilhas, Selva "
                     "Profunda, Agrabah, Terra do Nunca e Hollow Bastion, mais "
                     "DOIS entre Monstro, Atlantica e Cidade do Halloween. O "
-                    "terceiro fica para a Run 2."
+                    "terceiro fica para a run do 100%."
                 ),
             },
         ],
@@ -125,7 +131,7 @@ SECTIONS = [
             {
                 "tone": "info",
                 "text": (
-                    "Deixe a maior parte disto para a Run 2, depois de ter High "
+                    "Deixe quase tudo isto para a run do 100%, depois de ter High "
                     "Jump, Glide, Gravity e as trinities Amarela e Branca — boa "
                     "parte dos baús só existe com essas ferramentas na mão."
                 ),
@@ -138,16 +144,16 @@ SECTIONS = [
         "nav": "Builds & Chefes",
         "eyebrow": "Como sobreviver",
         "title": "O plano das duas runs, as builds e os superchefes",
-        "lead": "A escolha do Despertar, os hábitos que decidem a run, as builds por luta e os cinco chefes opcionais.",
+        "lead": "Como as duas runs se dividem, o que o Proud cobra desde o começo, os hábitos que decidem cada run e os cinco chefes opcionais.",
         "notices": [
             {
                 "tone": "info",
                 "text": (
-                    "No resto do guia, \"Run 1\" sempre quer dizer a run "
-                    "CRONOMETRADA e \"Run 2\" a run do 100% — o papel de cada "
-                    "uma, não a dificuldade. Se você for de Versão gamox, a Run "
-                    "1 é a do Beginner e a Run 2 é a do Proud; tudo o mais no "
-                    "guia continua valendo igual."
+                    "O guia não numera as runs: chama cada uma pelo nome — a "
+                    "\"run do 100%\" (a primeira, a longa) e a \"cronometrada\" "
+                    "(a segunda, a das três travas). Assim nenhum passo muda de "
+                    "sentido quando você troca de versão; o que muda entre a "
+                    "Versão gamox e a tranquila é só a dificuldade de cada uma."
                 ),
             },
         ],
@@ -163,66 +169,159 @@ SECTIONS = [
     },
 ]
 
-# ── O plano das duas zeradas ───────────────────────────────────────────────
+# ── Como a platina se divide ───────────────────────────────────────────────
+# A primeira run é a do 100%. Parece contraintuitivo pôr a run longa na frente,
+# mas é o que acontece de verdade: ninguém que nunca jogou KH1 faz (nem quer
+# fazer) uma corrida de 15 h às cegas. Você joga o jogo, fecha o Diário, e só
+# então a segunda run vira o que ela é de fato — uma revisita rápida de um mapa
+# que você já sabe de cor.
 PLAN = [
     {
-        "name": "Run 1 — Proud, cronometrada e sem trocar nada",
-        "when": "~12 a 15 h",
-        "why": (
-            "É a run das três travas: menos de 15 horas de relógio, nenhum "
-            "Continue e nenhum equipamento trocado do começo ao fim. Faça no "
-            "PROUD: como a dificuldade empilha no PS4, esta única zerada já "
-            "entrega Proud Player, Final Mix Master e Novice Player, e deixa a "
-            "Run 2 livre para ser no Beginner — onde os superchefes viram outra "
-            "conversa. Corra a história e ignore TUDO que for coleção."
-        ),
-        "gets": "Proud Player, Final Mix Master, Novice Player, Speedster, Undefeated, Unchanging Armor",
-    },
-    {
-        "name": "Run 2 — Beginner, a run do 100%",
+        "name": "1ª run — a do 100%, a que você joga de verdade",
         "when": "~40 a 60 h",
         "why": (
-            "Save novo no Beginner, sem pressa e sem regra nenhuma: troque "
-            "equipamento à vontade, use Continue à vontade. É aqui que entram os "
-            "99 dálmatas, as 46 trinities, o Diário do Jiminy inteiro, as quatro "
-            "copas, os cinco chefes opcionais, a Ultima Weapon e o nível 100. Só "
-            "encoste no chefe final quando o Diário estiver 100%."
+            "É a run inteira: história, os 99 dálmatas, as 46 trinities, o Diário "
+            "do Jiminy fechado, as quatro copas, os cinco chefes opcionais, a "
+            "Ultima Weapon e o nível 100. Sem regra nenhuma — troque equipamento "
+            "à vontade, use Continue à vontade.\n\n"
+            "Ela vem primeiro por um motivo prático: KH1 não tem pós-jogo, então "
+            "TUDO precisa estar fechado antes de você abrir a porta do Final Rest "
+            "neste save. E porque a segunda run só é rápida depois que você "
+            "aprendeu o mapa aqui."
         ),
-        "gets": "Todos os outros 50 troféus",
+        "gets": "50 dos 56 troféus — tudo menos os três de restrição e a dificuldade que sobrar",
     },
     {
-        "name": "Versão gamox — o 100% inteiro no Proud",
-        "when": "alternativa · mesmas 2 zeradas",
+        "name": "2ª run — a cronometrada, com o jogo já na cabeça",
+        "when": "~12 a 15 h",
         "why": (
-            "Inverta as duas runs. A cronometrada vai no BEGINNER: menos de 15 "
-            "horas, sem Continue e sem trocar equipamento fica bem mais fácil de "
-            "segurar, e ela já entrega Novice Player e Final Mix Master. E a run "
-            "do 100% — a longa, a que tem tudo que interessa — vai no PROUD, "
-            "carregando o Proud Player junto.\n\n"
-            "Custa exatamente as mesmas duas zeradas. O que muda é ONDE cai o "
-            "peso: Sephiroth, Kurt Zisa, o Unknown, o Ice Titan e as 50 chaves da "
-            "Hades Cup passam a ser enfrentados no Proud, e aí eles são luta de "
-            "verdade — o Unknown vira o teto de dificuldade do jogo. Em troca, "
-            "você chega neles com nível 80+, Ultima Weapon, Ribbon e as seis "
-            "invocações, que é justamente o kit que a run do 100% constrói.\n\n"
-            "É a escolha para quem quer a briga e não o relógio: a parte difícil "
-            "acontece na run em que você tem tempo, ferramenta e nível para "
-            "responder à altura — em vez de cair no Beginner, onde os "
-            "superchefes entregam o ponto."
+            "Save novo com três travas ao mesmo tempo: terminar em menos de 15 "
+            "horas de relógio, nunca apertar Continue e nunca trocar um "
+            "equipamento sequer. Parece muito; é a parte mais fácil da platina, "
+            "porque você já sabe onde fica cada coisa.\n\n"
+            "Corra a história e ignore toda coleção. Sele só os keyholes "
+            "obrigatórios: Cidade do Trânsito, País das Maravilhas, Selva "
+            "Profunda, Agrabah, Terra do Nunca e Hollow Bastion, mais DOIS entre "
+            "Monstro, Atlantica e Cidade do Halloween."
         ),
-        "gets": (
-            "Os mesmos 56 troféus. Beginner (curta): Speedster, Undefeated, "
-            "Unchanging Armor, Novice Player, Final Mix Master. Proud (longa): "
-            "Proud Player e todo o resto."
+        "gets": "Speedster, Undefeated, Unchanging Armor e a dificuldade que faltar",
+    },
+    {
+        "name": "▶ Versão gamox — Proud desde o primeiro minuto",
+        "when": "recomendada",
+        "why": (
+            "1ª run (100%) no PROUD · 2ª run (cronometrada) no BEGINNER.\n\n"
+            "É a versão que este guia assume. Você começa no Proud e é nele que "
+            "acontece tudo que vale a pena: Sephiroth, Kurt Zisa, o Unknown, o "
+            "Ice Titan e as 50 chaves da Hades Cup viram luta de verdade — e você "
+            "chega neles com nível 80+, Ultima Weapon, Ribbon e as seis "
+            "invocações, que é exatamente o kit que a run do 100% constrói. No "
+            "Beginner esses mesmos chefes entregam o ponto.\n\n"
+            "E tem um ganho que não é óbvio: esta divisão também é a MENOS "
+            "arriscada das duas. A run das três travas (sem Continue, sem trocar "
+            "equipamento) cai no Beginner, que é onde um erro custa menos. Você "
+            "escolhe a briga onde está forte e evita a briga onde estaria "
+            "amarrado.\n\n"
+            "O que o Proud cobra de você desde o primeiro mundo está no bloco "
+            "\"Sobreviver no Proud\", logo abaixo."
+        ),
+        "gets": "Proud Player, Final Mix Master e Novice Player empilham no fim da 1ª run",
+    },
+    {
+        "name": "Versão tranquila — Proud só no fim",
+        "when": "alternativa",
+        "why": (
+            "1ª run (100%) no BEGINNER · 2ª run (cronometrada) no PROUD.\n\n"
+            "Serve se a ideia é conhecer o jogo sem pressão e deixar a "
+            "dificuldade para quando você já souber tudo. O preço é que a run das "
+            "três travas passa a ser no Proud: menos de 15 horas, sem Continue e "
+            "sem trocar equipamento, com os inimigos batendo forte. É a "
+            "combinação mais perigosa da platina — um chefe mal jogado às 14 "
+            "horas de relógio custa a run inteira."
+        ),
+        "gets": "Os mesmos 56 troféus; a dificuldade empilha no fim da 2ª run",
+    },
+]
+
+# ── Sobreviver no Proud desde a primeira run (a Versão gamox) ──────────────
+PROUD = [
+    {
+        "name": "Escudo — e sacrifique a ESPADA",
+        "when": "Despertar",
+        "why": (
+            "Escudo escolhido + espada sacrificada dá STR 3 / DEF 4 / MP 2 / "
+            "AP 3 e 8 slots de item. Sacrificando o cajado no lugar seria STR 4 / "
+            "DEF 4 / MP 2 / AP 1. Você troca 1 de força por DOIS de AP — e AP no "
+            "começo do Proud é o recurso mais escasso do jogo: é o que decide se "
+            "você entra no Guard Armor com Dodge Roll equipado ou sem esquiva "
+            "nenhuma."
+        ),
+    },
+    {
+        "name": "Aero antes de TODO chefe",
+        "when": "a partir do Opposite Armor",
+        "why": (
+            "Aero corta o dano recebido pela metade. No Proud isso não é conforto, "
+            "é a diferença entre morrer em três golpes e morrer em seis. Deixe "
+            "Aero e Cure no menu de atalhos e recast a cada luta."
+        ),
+    },
+    {
+        "name": "Second Chance no nível 36 é o divisor de águas",
+        "when": "nível 36",
+        "why": (
+            "Com a ordem do escudo você aprende Guard no 15, Lucky Strike no 24, "
+            "Leaf Bracer no 27 e SECOND CHANCE no 36. Até o 36 o Proud é cruel; "
+            "depois dele você sobrevive a quase tudo com 1 de HP e cura. Se uma "
+            "luta parece impossível, quase sempre a resposta é subir até o 36 "
+            "antes de insistir."
+        ),
+    },
+    {
+        "name": "O melhor XP do começo está na Selva Profunda",
+        "when": "Selva Profunda",
+        "why": (
+            "Nas Árvores de Escalada, enquanto a fruta roxa grande estiver "
+            "intacta, Powerwilds nascem sem parar. É o farm mais barato do início "
+            "do jogo — e você já está lá pela história, para soltar a Jane."
+        ),
+    },
+    {
+        "name": "Cura infinita no Anti-Sora da Terra do Nunca",
+        "when": "Terra do Nunca",
+        "why": (
+            "O Sora-sombra dos corredores do navio derruba uma Mega-Potion (e às "
+            "vezes um Elixir) toda vez que você zera o HP dele, e ele reaparece. É "
+            "daqui que sai o estoque para a Hades Cup e para os chefes opcionais "
+            "no Proud."
+        ),
+    },
+    {
+        "name": "Tinker Bell é a melhor peça de build do jogo",
+        "when": "depois da Terra do Nunca",
+        "why": (
+            "Regen constante na party e um auto-life de graça. Invoque no começo "
+            "de toda luta difícil — Maleficent Dragão, Behemoth, Unknown. No Proud "
+            "ela vale mais que qualquer acessório."
+        ),
+    },
+    {
+        "name": "Salve antes de tudo, mesmo com Continue liberado",
+        "when": "sempre",
+        "why": (
+            "Na run do 100% o Continue é permitido (a trava do Undefeated é só na "
+            "cronometrada), mas no Proud morrer custa caro em tempo. Salve em todo "
+            "save point antes de chefe — o hábito ainda te treina para a segunda "
+            "run, onde apertar Continue uma única vez derruba o troféu."
         ),
     },
 ]
 
-# ── Hábitos e regras que decidem a run ─────────────────────────────────────
+# ── Hábitos e regras que decidem cada run ─────────────────────────────────
 PREP = [
     {
-        "name": "Não troque NENHUM equipamento na Run 1",
-        "when": "Run 1, o tempo todo",
+        "name": "Não troque NENHUM equipamento",
+        "when": "cronometrada, o tempo todo",
         "why": (
             "Unchanging Armor conta chaveiro (keychain), cajado, escudo e "
             "acessórios de QUALQUER personagem — Sora, Donald e Goofy. O que já "
@@ -232,7 +331,7 @@ PREP = [
     },
     {
         "name": "Nunca aperte Continue — carregue o save",
-        "when": "Run 1, o tempo todo",
+        "when": "cronometrada, o tempo todo",
         "why": (
             "Undefeated cai se você escolher Continue uma única vez. Morrer não é "
             "problema: no Game Over, saia e carregue o arquivo. Por isso, salve em "
@@ -240,8 +339,8 @@ PREP = [
         ),
     },
     {
-        "name": "Na Run 1, sele só os keyholes obrigatórios",
-        "when": "Run 1",
+        "name": "Sele só os keyholes obrigatórios",
+        "when": "cronometrada",
         "why": (
             "Cidade do Trânsito, País das Maravilhas, Selva Profunda, Agrabah, "
             "Terra do Nunca e Hollow Bastion são fixos; o Coliseu vem junto da "
@@ -251,18 +350,18 @@ PREP = [
         ),
     },
     {
-        "name": "Equipe Lucky Strike em todo mundo na Run 2",
-        "when": "Run 2",
+        "name": "Equipe Lucky Strike em todo mundo",
+        "when": "run do 100%",
         "why": (
             "Todos os materiais raros de síntese (Mystery Goo, Serenity Power, "
             "Stormy Stone, as gemas) são drop. Lucky Strike em Sora, Donald e "
             "Goofy é a diferença entre uma tarde e uma semana de farm para a "
-            "Ultima Weapon."
+            "Ultima Weapon. Com a ordem do escudo ele chega cedo, no nível 24."
         ),
     },
     {
         "name": "Não avance o Hollow Bastion antes de fechar o Coliseu",
-        "when": "Run 2, Hollow Bastion Visita 1",
+        "when": "run do 100%, Hollow Bastion Visita 1",
         "why": (
             "Vencer o Ansem-Riku (o chefe logo depois da Maleficent Dragão) muda "
             "os encontros e sobe os status dos inimigos em TODOS os mundos, "
@@ -272,7 +371,7 @@ PREP = [
     },
     {
         "name": "Volte à Casa da Árvore e brigue com a Sabor de novo",
-        "when": "Run 2, Selva Profunda",
+        "when": "run do 100%, Selva Profunda",
         "why": (
             "Antes de avançar a história da Selva, encontre a Sabor mais uma vez "
             "na Casa da Árvore: ela abre um buraco no piso, e é esse buraco que "
@@ -282,16 +381,16 @@ PREP = [
     },
     {
         "name": "Confira o relógio da Terra do Nunca a cada hora",
-        "when": "Run 2, depois da Terra do Nunca",
+        "when": "run do 100%, depois da Terra do Nunca",
         "why": (
-            "A torre do relógio dá 12 prêmios, um por hora do mostrador (que "
-            "segue o seu tempo de jogo). Se perder uma hora, a chance só volta 11 "
-            "horas depois. Tem Orichalcum, Mythril e Megalixir na lista."
+            "A torre do relógio dá 12 prêmios, um por hora do mostrador (que segue "
+            "o seu tempo de jogo). Se perder uma hora, a chance só volta 11 horas "
+            "depois. Tem Orichalcum, Mythril e Megalixir na lista."
         ),
     },
     {
         "name": "Só abra a porta do Final Rest com o Diário 100%",
-        "when": "Run 2, Fim do Mundo",
+        "when": "run do 100%, Fim do Mundo",
         "why": (
             "É o ponto sem volta do jogo inteiro. Confirme no menu: Chronicles, "
             "Ansem's Report, Characters 1 e 2, Heartless, 101 Dálmatas, Trinity "
@@ -305,31 +404,40 @@ _DI = "https://www.khguides.com/kh/destiny-islands/images/"
 
 # ── 01 — As visitas, na ordem de jogo ──────────────────────────────────────
 # kind: "história" (obrigatória), "opcional" (só se você quiser), "limpeza"
-# (fase de 100% da Run 2) e "final" (ponto sem volta).
+# (fase de fechamento do 100%) e "final" (ponto sem volta).
 VISITS = [
     {
         "world": "Despertar",
         "name": "Despertar — a escolha que define a run",
         "kind": "história",
         "level": "Battle LV 1",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": [],
         "note": (
-            "A arma que você ESCOLHE e a que você ABRE MÃO decidem seus status "
-            "iniciais e, principalmente, a ORDEM em que você aprende as "
-            "habilidades até o nível 100. Para quem nunca jogou: escolha o "
-            "ESCUDO e abra mão do CAJADO. O escudo entrega Guard cedo e Second "
-            "Chance no nível 36 — é o que segura a run no Proud."
+            "A arma que você ESCOLHE define a ordem em que aprende as "
+            "habilidades até o nível 100; a que você ABRE MÃO define seus status "
+            "iniciais e qual atributo cresce mais devagar. Escolha o ESCUDO e "
+            "sacrifique a ESPADA — o porquê, com os números, está no passo 1."
         ),
         "steps": [
             {
-                "title": "Escolha o Escudo, abra mão do Cajado",
+                "title": "Escolha o ESCUDO e sacrifique a ESPADA",
                 "do": (
-                    "Espada = força e combos cedo; Cajado = magia; Escudo = "
-                    "defesa, Guard, Leaf Bracer e Second Chance cedo. Abrir mão "
-                    "do cajado te dá 8 slots de item (o máximo) e mantém a força "
-                    "decente. É a build mais perdoável para uma primeira run e a "
-                    "melhor para a Run 1 cronometrada."
+                    "Escolher define as habilidades: o escudo entrega Guard no 15, "
+                    "Lucky Strike no 24, Leaf Bracer no 27 e SECOND CHANCE no 36 — "
+                    "é o kit que segura o Proud.\n\n"
+                    "Sacrificar define os status. Comparando as duas opções de "
+                    "escudo: sacrificando a ESPADA você começa com STR 3 / DEF 4 / "
+                    "MP 2 / AP 3 e 8 slots de item; sacrificando o cajado seria "
+                    "STR 4 / DEF 4 / MP 2 / AP 1. Ou seja, você troca 1 ponto de "
+                    "força por DOIS de AP.\n\n"
+                    "Esse é o melhor negócio do começo do jogo: AP é o que permite "
+                    "equipar habilidade, e com 1 de AP você entra no Guard Armor "
+                    "praticamente sem nada. Com 3, o Dodge Roll já está equipado. "
+                    "O preço é a força crescer mais devagar — o que combina com o "
+                    "resto do guia, já que as builds de Kurt Zisa, Phantom, "
+                    "Sephiroth e Unknown são todas de magia e esquiva, não de "
+                    "porrada."
                 ),
                 "image": _AW + "t1.webp",
                 "tag": "build",
@@ -340,10 +448,11 @@ VISITS = [
                     "As respostas dos três garotos definem sua curva de "
                     "experiência: primeira opção = amanhecer (sobe rápido cedo, "
                     "lento depois), do meio = meio-dia (equilibrado), última = "
-                    "noite (lento cedo, muito rápido depois do nível 60). Run 1: "
-                    "escolha SEMPRE a primeira opção — você quer nível cedo e vai "
-                    "parar por volta do 40. Run 2: escolha SEMPRE a última, "
-                    "porque o nível 100 é troféu."
+                    "noite (lento cedo, muito rápido depois do nível 60).\n\n"
+                    "Na run do 100%: escolha SEMPRE a última — o nível 100 é "
+                    "troféu, e é no fim que a curva da noite dispara. Na "
+                    "cronometrada: SEMPRE a primeira, porque você quer nível cedo "
+                    "e vai parar por volta do 40."
                 ),
                 "image": _AW + "t10.webp",
                 "tag": "escolha",
@@ -367,7 +476,7 @@ VISITS = [
         "name": "Ilhas do Destino — o tutorial",
         "kind": "história",
         "level": "Battle LV 1",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": [],
         "note": (
             "É o único mundo do jogo ao qual você NUNCA volta. Mesmo assim não "
@@ -390,9 +499,9 @@ VISITS = [
             {
                 "title": "Treine com Tidus, Selphie, Wakka e Riku",
                 "do": (
-                    "Na Run 2 vale muito: são os primeiros pontos de XP e o "
+                    "No 100% vale muito: são os primeiros pontos de XP e o "
                     "melhor lugar do jogo para aprender a defletir (bata na bola "
-                    "do Wakka no tempo certo). Na Run 1 cronometrada, pule — não "
+                    "do Wakka no tempo certo). Na cronometrada, pule — não "
                     "vale o relógio."
                 ),
                 "image": _DI + "t23.webp",
@@ -415,7 +524,7 @@ VISITS = [
                     "Na Enseada (Cove), empurre o caixote de madeira que fica "
                     "perto da tirolesa até a parede de pedra, suba nele e alcance "
                     "a saliência acima; o baú dentro da gruta tem o Protect Chain. "
-                    "Na Run 1 você pode até pegar, mas NÃO equipe — equipar quebra "
+                    "Na cronometrada você pode até pegar, mas NÃO equipe — equipar quebra "
                     "o Unchanging Armor."
                 ),
                 "image": _DI + "t42.webp",
@@ -440,7 +549,7 @@ VISITS = [
         "name": "Cidade do Trânsito — Visita 1",
         "kind": "história",
         "level": "Battle LV 1",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": [],
         "note": (
             "É aqui que o Diário do Jiminy começa a contar. A partir de agora, "
@@ -506,7 +615,7 @@ VISITS = [
                 "tag": "atalho",
             },
             {
-                "title": "Run 2: as primeiras Blue Trinities e os postais",
+                "title": "100%: as primeiras Blue Trinities e os postais",
                 "do": (
                     "Só as trinities AZUIS funcionam por enquanto. Faça a do 1º "
                     "Distrito (perto da saída), a do café (te leva à sacada com um "
@@ -514,7 +623,7 @@ VISITS = [
                     "os postais 1 a 4 — a lista completa está na aba Coletáveis."
                 ),
                 "image": _TN + "t2.webp",
-                "tag": "Run 2",
+                "tag": "100%",
             },
         ],
     },
@@ -523,12 +632,12 @@ VISITS = [
         "name": "País das Maravilhas — Visita única",
         "kind": "história",
         "level": "Battle LV 3",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": ["The Rabbit Hole"],
         "note": (
-            "Mundo obrigatório também na Run 1. As três caixas de dálmatas "
+            "Mundo obrigatório nas duas runs. As três caixas de dálmatas "
             "(13-15, 16-18, 19-21) e a quarta (58-60) precisam de Glide e da "
-            "trinity Branca — ou seja, é volta na Run 2."
+            "trinity Branca — ou seja, é volta na run do 100%."
         ),
         "steps": [
             {
@@ -542,7 +651,7 @@ VISITS = [
                 "tag": "passo",
             },
             {
-                "title": "Run 1: pegue só UMA prova e volte",
+                "title": "Cronometrada: pegue só UMA prova e volte",
                 "do": (
                     "O tribunal pede provas, mas basta UMA para prosseguir. Na "
                     "corrida, pegue a mais próxima (Pegadas, na alcova atrás da "
@@ -553,7 +662,7 @@ VISITS = [
                 "tag": "atalho",
             },
             {
-                "title": "Run 2: as quatro provas na ordem certa",
+                "title": "100%: as quatro provas na ordem certa",
                 "do": (
                     "1) Dê uma Potion ao bulbo amarelo perto do lago para virar "
                     "gigante. 2) Como gigante, pule no toco de madeira do canto "
@@ -603,7 +712,7 @@ VISITS = [
                 "tag": "chefe",
             },
             {
-                "title": "Run 2 depois: as flores e o Jardim do Chá",
+                "title": "100%, na volta: as flores e o Jardim do Chá",
                 "do": (
                     "Volte com Glide e trinity Branca. As flores da Floresta de "
                     "Lótus trocam item por item (Ether → Camping Set, Hi-Potion → "
@@ -613,7 +722,7 @@ VISITS = [
                     "Jardim do Chá também rende prêmios e fecha entradas do Diário."
                 ),
                 "image": _WL + "t36.webp",
-                "tag": "Run 2",
+                "tag": "100%",
             },
         ],
     },
@@ -622,7 +731,7 @@ VISITS = [
         "name": "Coliseu do Olimpo — Visita 1 (história)",
         "kind": "história",
         "level": "Battle LV 3",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": ["Junior Hero"],
         "note": (
             "O keyhole do Coliseu não é selado por você: ele sai da história "
@@ -683,10 +792,10 @@ VISITS = [
         "name": "Selva Profunda — Visita única",
         "kind": "história",
         "level": "Battle LV 5",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": ["Member of the Tribe"],
         "note": (
-            "ATENÇÃO na Run 2: antes de avançar a história depois da cena da "
+            "ATENÇÃO no 100%: antes de avançar a história depois da cena da "
             "tenda, VOLTE à Casa da Árvore e lute com a Sabor de novo. Ela abre "
             "um buraco no chão que é o que torna o Pink Agaricus (material "
             "Serenity Power, da Ultima Weapon) viável mais tarde."
@@ -746,7 +855,7 @@ VISITS = [
                     "lock-on também funciona bem. Depois, nas Árvores de Escalada, "
                     "bata na fruta roxa grande para libertar a Jane — enquanto ela "
                     "estiver inteira, Powerwilds nascem infinitamente (ótimo XP na "
-                    "Run 2; ignore na Run 1)."
+                    "100%; ignore na cronometrada)."
                 ),
                 "image": _DJ + "t25.webp",
                 "tag": "chefe",
@@ -776,7 +885,7 @@ VISITS = [
                 "tag": "troféu",
             },
             {
-                "title": "Run 2: cozinha, Jungle Slider e cipós",
+                "title": "100%: cozinha, Jungle Slider e cipós",
                 "do": (
                     "Volte depois para as entradas de minijogo do Diário: Jungle "
                     "Slider (pegue as 10 frutas de cada percurso) e Vine Swing. Na "
@@ -786,7 +895,7 @@ VISITS = [
                     "a terceira e repita, para maximizar os Ethers."
                 ),
                 "image": _DJ + "t39.webp",
-                "tag": "Run 2",
+                "tag": "100%",
             },
         ],
     },
@@ -795,7 +904,7 @@ VISITS = [
         "name": "Cidade do Trânsito — Visita 2 (o keyhole)",
         "kind": "história",
         "level": "Battle LV 5",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": ["Where the Bells Toll"],
         "note": "",
         "steps": [
@@ -828,7 +937,7 @@ VISITS = [
                     "Entregue o livro. A Fada Madrinha transforma o Earthshine na "
                     "invocação SIMBA. Antes de sair, faça a Blue Trinity do quarto. "
                     "O Livro Velho abre o Bosque dos Cem Acres — opcional agora, "
-                    "obrigatório na Run 2 (troféu Pooh's Friend)."
+                    "obrigatório no 100% (troféu Pooh's Friend)."
                 ),
                 "image": _TT + "t37.webp",
                 "tag": "passo",
@@ -840,7 +949,7 @@ VISITS = [
                     "passagem para o 2º) e fale com o Cid. Ele instala o gummi de "
                     "navegação e te dá o Warp-G: a partir daqui você viaja "
                     "instantaneamente para mundos já visitados. Isso sozinho salva "
-                    "muito relógio na Run 1."
+                    "muito relógio na cronometrada."
                 ),
                 "image": _TT + "t40.webp",
                 "tag": "atalho",
@@ -876,10 +985,10 @@ VISITS = [
         "name": "Agrabah — Visita única",
         "kind": "história",
         "level": "Battle LV 8",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": ["Magic Lamp"],
         "note": (
-            "37 baús: é o mundo com mais baú do jogo. Na Run 2 volte com High "
+            "37 baús: é o mundo com mais baú do jogo. No 100% volte com High "
             "Jump e Glide — quatro caixas de dálmatas (37-39, 46-48, 49-51, "
             "52-54) e a Torn Page #1 estão aqui."
         ),
@@ -956,7 +1065,7 @@ VISITS = [
                 "tag": "passo",
             },
             {
-                "title": "Torn Page #1 (leve na Run 2)",
+                "title": "Torn Page #1 (só interessa no 100%)",
                 "do": (
                     "Na Dark Chamber, a página fica numa plataforma no centro da "
                     "área — chega-se subindo a cachoeira a partir da Relic "
@@ -1000,10 +1109,10 @@ VISITS += [
         "name": "Cidade do Trânsito — Visita 3 (síntese)",
         "kind": "opcional",
         "level": "—",
-        "run": "Run 2",
+        "run": "Só na run do 100%",
         "trophies": [],
         "note": (
-            "Parada opcional na história e PULÁVEL na Run 1. Na Run 2 é onde a "
+            "Parada opcional na história e PULÁVEL na cronometrada. No 100% é onde a "
             "síntese começa — e a síntese é 5 troféus."
         ),
         "steps": [
@@ -1035,7 +1144,7 @@ VISITS += [
                 "do": (
                     "O postal 10 está no panfleto da própria Sala de Síntese "
                     "(examine). A loja dos sobrinhos do Donald recebe armas novas a "
-                    "cada visita — na Run 2 vale comprar sempre."
+                    "cada visita — no 100% vale comprar sempre."
                 ),
                 "image": _TR + "t10.webp",
                 "tag": "coletável",
@@ -1047,11 +1156,11 @@ VISITS += [
         "name": "Monstro — Visita única",
         "kind": "história",
         "level": "Battle LV 12",
-        "run": "Run 1 (opcional) e Run 2",
+        "run": "100% · opcional na cronometrada",
         "trophies": ["Honest Soul"],
         "note": (
             "Aqui você ganha o HIGH JUMP, que é a chave de meia dúzia de baús "
-            "pelo jogo inteiro. Na Run 1 este é um dos três mundos \"escolha "
+            "pelo jogo inteiro. Na cronometrada este é um dos três mundos \"escolha "
             "dois\" — e é o mais rápido dos três, então costuma entrar."
         ),
         "steps": [
@@ -1118,9 +1227,9 @@ VISITS += [
         "name": "Cidade do Trânsito — Visita 4 (Geppetto)",
         "kind": "opcional",
         "level": "—",
-        "run": "Run 2",
+        "run": "Só na run do 100%",
         "trophies": [],
-        "note": "Pulável na Run 1. Na Run 2 é a visita dos gummis e do Spellbinder.",
+        "note": "Pulável na cronometrada. No 100% é a visita dos gummis e do Spellbinder.",
         "steps": [
             {
                 "title": "Oficina do Geppetto e o Wishing Star",
@@ -1163,11 +1272,11 @@ VISITS += [
         "name": "Atlantica — Visita única",
         "kind": "história",
         "level": "Battle LV 15",
-        "run": "Run 1 (opcional) e Run 2",
+        "run": "100% · opcional na cronometrada",
         "trophies": ["Master of the Seas"],
         "note": (
             "Mundo lento: nadar em 3D atrapalha o combate físico e o troféu não "
-            "vale o relógio. Na Run 1, se for cortar um dos três \"escolha "
+            "vale o relógio. Na cronometrada, se for cortar um dos três \"escolha "
             "dois\", corte este. Sem nenhum dálmata aqui."
         ),
         "steps": [
@@ -1240,11 +1349,11 @@ VISITS += [
         "name": "Cidade do Halloween — Visita única",
         "kind": "história",
         "level": "Battle LV 17",
-        "run": "Run 1 (opcional) e Run 2",
+        "run": "100% · opcional na cronometrada",
         "trophies": ["Pumpkin Prince"],
         "note": (
             "Quatro caixas de dálmatas (40-42, 64-66, 67-69, 70-72), a Torn Page "
-            "#4 e a magia Gravira. Na Run 2 é visita obrigatória e longa."
+            "#4 e a magia Gravira. No 100% é visita obrigatória e longa."
         ),
         "steps": [
             {
@@ -1338,12 +1447,12 @@ VISITS += [
         "name": "Terra do Nunca — Visita única",
         "kind": "história",
         "level": "Battle LV 19",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": ["Pixie Dust"],
         "note": (
             "Mundo obrigatório. Você sai daqui com o GLIDE — a última ferramenta "
             "de movimento — e com o relógio de Londres, que dá 12 prêmios ao "
-            "longo da Run 2."
+            "longo da run do 100%."
         ),
         "steps": [
             {
@@ -1351,7 +1460,7 @@ VISITS += [
                 "do": (
                     "Em cada área aparece um Sora-sombra que voa e chuta. Toda vez "
                     "que você zera o HP dele, ele derruba uma Mega-Potion e às "
-                    "vezes um Elixir. Na Run 2 é o melhor estoque grátis do jogo "
+                    "vezes um Elixir. No 100% é o melhor estoque grátis do jogo "
                     "para as copas."
                 ),
                 "image": _NL + "t4.webp",
@@ -1405,7 +1514,7 @@ VISITS += [
                 "tag": "troféu",
             },
             {
-                "title": "Run 2: os 12 prêmios da torre",
+                "title": "100%: os 12 prêmios da torre",
                 "do": (
                     "O mostrador marca o seu tempo de jogo (26:30 = 2:30). Examine "
                     "a porta com a luz acesa para receber o item daquela hora: "
@@ -1416,7 +1525,7 @@ VISITS += [
                     "precisa vencer o Phantom para reabrir a torre."
                 ),
                 "image": _NL + "t20.webp",
-                "tag": "Run 2",
+                "tag": "100%",
             },
         ],
     },
@@ -1425,9 +1534,9 @@ VISITS += [
         "name": "Cidade do Trânsito — Visita 5 (Navi-G)",
         "kind": "opcional",
         "level": "—",
-        "run": "Run 2",
+        "run": "Só na run do 100%",
         "trophies": [],
-        "note": "Pulável na Run 1 (o Navi-G da história é instalado de qualquer forma quando você precisa).",
+        "note": "Pulável na cronometrada (o Navi-G da história é instalado de qualquer forma quando você precisa).",
         "steps": [
             {
                 "title": "Instale o Navi-G e ganhe o Transform-G",
@@ -1459,12 +1568,12 @@ VISITS += [
         "name": "Hollow Bastion — Visita 1",
         "kind": "história",
         "level": "Battle LV 28",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": [],
         "note": (
             "PONTO DE VIRADA DO JOGO. Vencer o Ansem-Riku (o chefe depois da "
             "Maleficent Dragão) sobe permanentemente o status dos inimigos em "
-            "todos os mundos e muda os encontros. Na Run 2, faça ANTES tudo que "
+            "todos os mundos e muda os encontros. No 100%, faça ANTES tudo que "
             "você quiser farmar barato e as copas que der."
         ),
         "steps": [
@@ -1552,7 +1661,7 @@ VISITS += [
                 "title": "PARE AQUI se ainda tem farm a fazer",
                 "do": (
                     "O próximo chefe é o Ansem-Riku e é ele que endurece o jogo "
-                    "inteiro para sempre. Na Run 2, este é o momento de: fechar "
+                    "inteiro para sempre. No 100%, este é o momento de: fechar "
                     "Phil, Pegasus e Hercules Cup, farmar materiais baratos e subir "
                     "nível. Depois dele, tudo custa mais caro."
                 ),
@@ -1579,7 +1688,7 @@ VISITS += [
         "name": "Cidade do Trânsito — Visita 6 (Oathkeeper)",
         "kind": "história",
         "level": "—",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": ["Oathkeeper"],
         "note": (
             "Obrigatória: é a visita que instala o gummi de navegação para "
@@ -1636,7 +1745,7 @@ VISITS += [
         "name": "Hollow Bastion — Visita 2 (o keyhole final)",
         "kind": "história",
         "level": "Battle LV 33",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": ["End of the World"],
         "note": (
             "Depois de selar aqui, os Heartless somem do Hollow Bastion — é a "
@@ -1688,7 +1797,7 @@ VISITS += [
                 "tag": "missable",
             },
             {
-                "title": "Run 2: agora abrem os três superchefes",
+                "title": "100%: agora abrem os três superchefes",
                 "do": (
                     "Com o Hollow Bastion Ep.1 concluído, ficam disponíveis Kurt "
                     "Zisa (Agrabah, falando com o Tapete na casa do Aladdin), "
@@ -1697,7 +1806,7 @@ VISITS += [
                     "depois que você entra no Fim do Mundo e vê a primeira cena."
                 ),
                 "image": _HB + "t60.webp",
-                "tag": "Run 2",
+                "tag": "100%",
             },
         ],
     },
@@ -1706,7 +1815,7 @@ VISITS += [
         "name": "Bosque dos Cem Acres — os 5 episódios",
         "kind": "limpeza",
         "level": "—",
-        "run": "Run 2",
+        "run": "Só na run do 100%",
         "trophies": ["Pooh's Friend", "Mini-Game Maniac"],
         "note": (
             "Cada episódio exige ter uma Torn Page no inventário. Os cinco "
@@ -1792,7 +1901,7 @@ VISITS += [
         "name": "Coliseu — as 4 copas + Gold e Platinum",
         "kind": "limpeza",
         "level": "—",
-        "run": "Run 2",
+        "run": "Só na run do 100%",
         "trophies": [
             "Novice Hero",
             "Artisan Hero",
@@ -1894,7 +2003,7 @@ VISITS += [
         "name": "Os 3 chefes fora do Coliseu",
         "kind": "limpeza",
         "level": "nível 65 a 80",
-        "run": "Run 2",
+        "run": "Só na run do 100%",
         "trophies": ["The Sandy Blade", "The Cloaked Shadow", "He Who Doesn't Exist"],
         "note": (
             "Cada um dá um Ansem's Report (11, 13) ou uma magia, e todos os três "
@@ -1943,7 +2052,7 @@ VISITS += [
         "name": "Limpeza final — antes de abrir a porta",
         "kind": "limpeza",
         "level": "—",
-        "run": "Run 2",
+        "run": "Só na run do 100%",
         "trophies": [
             "Record Keeper",
             "Top Dog",
@@ -2064,7 +2173,7 @@ VISITS += [
         "name": "Fim do Mundo — o ponto sem volta",
         "kind": "final",
         "level": "Battle LV 40+",
-        "run": "Run 1 e Run 2",
+        "run": "As duas runs",
         "trophies": ["Speedster", "Undefeated", "Unchanging Armor", "Proud Player", "Final Mix Master", "Novice Player"],
         "note": (
             "Os Heartless daqui (Invisible, Angel Star, Arch Behemoth, Neoshadow) "
@@ -2592,7 +2701,7 @@ TROPHIES = [
      "shortcut": "Basta UM: o da Phil Cup, 3 minutos.", "image": ""},
     {"id": "t20", "name": "Treasure Hunter", "tier": "bronze",
      "requirement": "Abra 100 baús.",
-     "shortcut": "Sai sozinho na Run 2 — só Agrabah tem 37.", "image": ""},
+     "shortcut": "Sai sozinho na run do 100% — só Agrabah tem 37.", "image": ""},
     {"id": "t21", "name": "From Rags to Riches", "tier": "bronze",
      "requirement": "Acumule mais de 10.000 munny.",
      "shortcut": "É o total acumulado, não o que você tem na mão.", "image": ""},
@@ -2619,7 +2728,7 @@ TROPHIES = [
      "shortcut": "Vença o Parasite Cage II no Estômago.", "image": ""},
     {"id": "t29", "name": "Master of the Seas", "tier": "bronze",
      "requirement": "Sele o keyhole de Atlantica.",
-     "shortcut": "Depois da Ursula Gigante. É o mundo mais lento — pule na Run 1.", "image": ""},
+     "shortcut": "Depois da Ursula Gigante. É o mundo mais lento — pule na cronometrada.", "image": ""},
     {"id": "t30", "name": "Pumpkin Prince", "tier": "bronze",
      "requirement": "Sele o keyhole da Cidade do Halloween.",
      "shortcut": "Depois das 7 bolhas escuras da mansão do Oogie.", "image": ""},

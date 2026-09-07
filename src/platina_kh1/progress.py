@@ -53,6 +53,10 @@ def prep_key(index: int) -> str:
     return f"prep_{index}"
 
 
+def proud_key(index: int) -> str:
+    return f"proud_{index}"
+
+
 def trophy_key(trophy_id: str) -> str:
     return f"trophy_{trophy_id}"
 
@@ -89,6 +93,7 @@ def all_keys() -> list[str]:
     keys += trophy_keys()
     keys += collectible_keys()
     keys += [boss_key(i) for i in range(len(guide_data.BOSSES))]
+    keys += [proud_key(i) for i in range(len(guide_data.PROUD))]
     keys += [prep_key(i) for i in range(len(guide_data.PREP))]
     return keys
 

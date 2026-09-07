@@ -12,18 +12,30 @@ volta para o mapa. Então todo coletável precisa estar fechado antes de abrir a
 porta do Final Rest. Como um dos troféus pede **menos de 15 horas de jogo**, é
 impossível juntar o 100% com a corrida contra o relógio no mesmo save.
 
-No PS4 os troféus de dificuldade **empilham** (no PS3 não), então:
+A **primeira** run é a do 100% — é ela que você joga de verdade. A segunda é a
+cronometrada, e ela só é rápida porque a primeira já te ensinou o mapa inteiro.
+O guia chama as duas pelo nome, nunca por número.
 
-| Run | Dificuldade | O que ela entrega |
+| Ordem | O que é | O que entrega |
 | --- | --- | --- |
-| **1** | Proud, ~12-15 h | Speedster, Undefeated, Unchanging Armor + Proud Player, Final Mix Master e Novice Player de uma vez |
-| **2** | Beginner, ~40-60 h | Os outros 50 troféus: 99 dálmatas, 46 trinities, Diário do Jiminy 100%, as 4 copas, os 5 chefes opcionais, Ultima Weapon e nível 100 |
+| **1ª** | A run do 100%, ~40-60 h, sem regra nenhuma | 50 dos 56 troféus: 99 dálmatas, 46 trinities, Diário do Jiminy 100%, as 4 copas, os 5 chefes opcionais, Ultima Weapon e nível 100 |
+| **2ª** | A cronometrada, ~12-15 h: menos de 15 h, sem Continue, sem trocar equipamento | Speedster, Undefeated, Unchanging Armor |
 
-**Versão gamox** (na aba Builds & Chefes): inverta as duas — a cronometrada no
-Beginner e o **100% inteiro no Proud**. Custa as mesmas duas zeradas, mas joga
-Sephiroth, Kurt Zisa, o Unknown, o Ice Titan e a Hades Cup para o Proud, onde
-eles são luta de verdade — e você chega neles com nível 80+, Ultima Weapon e
-Ribbon. Para quem quer o desafio e não o relógio.
+### Versão gamox (a recomendada)
+
+**1ª run no PROUD · 2ª no Beginner.** Como a dificuldade empilha no PS4,
+terminar a run do 100% no Proud entrega Proud Player, Final Mix Master e Novice
+Player de uma vez. E joga Sephiroth, Kurt Zisa, o Unknown, o Ice Titan e a Hades
+Cup para a run em que você tem nível 80+, Ultima Weapon, Ribbon e as seis
+invocações — no Beginner esses chefes entregam o ponto.
+
+Tem um ganho que não é óbvio: essa divisão também é a **menos arriscada**. A run
+das três travas cai no Beginner, que é onde um erro custa menos. A aba **Builds
+& Chefes** traz o bloco *Sobreviver no Proud* para quem começa direto nele.
+
+A alternativa (*Versão tranquila*) inverte: 100% no Beginner e a cronometrada no
+Proud — o que significa correr contra o relógio, sem Continue e sem trocar
+equipamento, com os inimigos batendo forte.
 
 ## O que tem dentro
 

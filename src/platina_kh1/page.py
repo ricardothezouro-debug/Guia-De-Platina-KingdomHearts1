@@ -60,11 +60,6 @@ _NAV_QSS = (
     "QPushButton#NavButton:checked{background:#101922;border-color:%s;color:#F3F6FF;"
     "font-weight:600}" % guide_data.ACCENT
 )
-_PHASE_QSS = (
-    "QPushButton#PhaseHead{background:#101922;border:1px solid #273140;border-radius:9px;"
-    "padding:10px 12px;color:#F3F6FF;text-align:left;font-weight:600}"
-    "QPushButton#PhaseHead:hover{border-color:%s}" % guide_data.ACCENT
-)
 # o bloco de um passo dentro do card da visita
 _ITEM_QSS = (
     "QFrame#ItemBlock{background:#0B111A;border:1px solid #1E2733;border-radius:8px}"
@@ -176,9 +171,7 @@ class GuidePage(QWidget):
         self._image_loader = ImageLoader(self)
         self._boxes: dict[str, list[QCheckBox]] = {}
         self._built: set[int] = set()
-        self._world_pills: list[tuple[QLabel, list[str]]] = []
         self._visit_rows: list[tuple[QWidget, str, str, int]] = []
-        self._world_groups: list[tuple[QWidget, QWidget, list[int]]] = []
         self._trophy_rows: list[tuple[QWidget, str, str]] = []
         self._collect_rows: list[tuple[QWidget, str, str]] = []
         self._section_index = {s["key"]: i for i, s in enumerate(guide_data.SECTIONS)}
@@ -349,9 +342,6 @@ class GuidePage(QWidget):
         trinities = keys.trinity_keys()
         self.trinity_label.setText(
             f"{sum(1 for k in trinities if k in self._done)}/{len(trinities)} trinities")
-        for pill, group_keys in self._world_pills:
-            group_done = sum(1 for key in group_keys if key in self._done)
-            pill.setText(f"{group_done}/{len(group_keys)}")
 
     def _refresh_boxes(self) -> None:
         for key, boxes in self._boxes.items():
@@ -535,7 +525,8 @@ class GuidePage(QWidget):
         filters = QHBoxLayout()
         filters.setSpacing(8)
         self.visit_search = QLineEdit()
-        self.visit_search.setPlaceholderText("Buscar visita ou passo dela...")
+        self.visit_search.setPlaceholderText(
+            "Buscar parada, passo ou coletável dela... Ex.: Oogie, dálmatas 58, Lady Luck")
         self.visit_search.textChanged.connect(self._filter_visits)
         self.visit_world = QComboBox()
         self.visit_world.addItem("Todos os mundos", "")
@@ -549,50 +540,28 @@ class GuidePage(QWidget):
         filters.addWidget(self.visit_pending, 0)
         layout.addLayout(filters)
 
-        self.visit_empty = _label("Nenhuma visita corresponde ao filtro.", "Muted")
+        self.visit_empty = _label("Nenhuma parada corresponde ao filtro.", "Muted")
         self.visit_empty.hide()
         layout.addWidget(self.visit_empty)
 
-        worlds: dict[str, list[tuple[int, dict]]] = {}
+        # Uma lista só, numerada, na ordem de jogo. Sem agrupar por mundo: a
+        # ordem É a informação — Traverse Town aparece seis vezes porque você
+        # volta lá seis vezes, e cada volta libera coisas diferentes.
         for i, visit in enumerate(guide_data.VISITS):
-            worlds.setdefault(visit["world"], []).append((i, visit))
-
-        for world, entries in worlds.items():
-            world_keys = [keys.visit_key(i) for i, _ in entries]
-            head_holder = QWidget()
-            head_holder.setStyleSheet(_PHASE_QSS)
-            head_row = QHBoxLayout(head_holder)
-            head_row.setContentsMargins(0, 0, 0, 0)
-            head_row.setSpacing(8)
-            plural = "visita" if len(entries) == 1 else "visitas"
-            toggle = QPushButton(f"{world}   ({len(entries)} {plural})")
-            toggle.setObjectName("PhaseHead")
-            pill = _pill("")
-            head_row.addWidget(toggle, 1)
-            head_row.addWidget(pill, 0)
-            layout.addWidget(head_holder)
-            self._world_pills.append((pill, world_keys))
-
-            body = QWidget()
-            body_layout = QVBoxLayout(body)
-            body_layout.setContentsMargins(0, 0, 0, 0)
-            body_layout.setSpacing(8)
-            for i, visit in entries:
-                card = self._visit_card(i, visit)
-                body_layout.addWidget(card)
-                self._visit_rows.append((card, _norm(_flat(visit)), visit["world"], i))
-            layout.addWidget(body)
-            self._world_groups.append((head_holder, body, [i for i, _ in entries]))
-            toggle.clicked.connect(
-                lambda _=False, target=body: (
-                    target.setProperty("collapsed", target.isVisible()),
-                    target.setVisible(not target.isVisible())))
+            card = self._visit_card(i, visit)
+            layout.addWidget(card)
+            haystack = _norm(" ".join([
+                _flat(visit),
+                " ".join(_flat(item) for _, _, _, item in keys.items_of(visit)),
+            ]))
+            self._visit_rows.append((card, haystack, visit["world"], i))
 
     def _visit_card(self, index: int, visit: dict) -> QFrame:
         frame, card = _card()
         head = QHBoxLayout()
         head.setSpacing(8)
         head.addWidget(self._checkbox(keys.visit_key(index)), 0, Qt.AlignmentFlag.AlignTop)
+        head.addWidget(_label(f"{index + 1:02d}", "Kicker", wrap=False), 0)
         head.addWidget(_tag(visit["kind"], _KIND_COLORS.get(visit["kind"], "#A8B0BC")), 0,
                        Qt.AlignmentFlag.AlignTop)
         principal = visit["kind"] in ("história", "final")
@@ -613,7 +582,34 @@ class GuidePage(QWidget):
         card.addWidget(_label(f"<b>Passo a passo ({len(steps)}):</b>", "Muted"))
         for j, step in enumerate(steps):
             card.addWidget(self._step_block(index, j, step))
+
+        # Os coletáveis que dá para pegar NESTA ida, com a mesma chave da aba
+        # Coletáveis — marcar aqui marca lá.
+        items = keys.items_of(visit)
+        if items:
+            card.addWidget(_label(
+                f"<b>Coletáveis desta parada ({len(items)}):</b>", "Muted"))
+            for kind, key, _i, item in items:
+                card.addWidget(self._route_item_block(kind, key, item))
         return frame
+
+    def _route_item_block(self, kind: str, key: str, item: dict) -> QFrame:
+        if kind == "puppy":
+            return self._collect_block(
+                key, f"Dálmatas {item['group']}", item["area"], item["where"],
+                item["image"], "#E7C64A", "dálmatas")
+        if kind == "trinity":
+            return self._collect_block(
+                key, f"Trinity {item['color']} #{item['num']}", "",
+                f"{item['where']}  →  {item['reward']}", item["image"],
+                _TRINITY_COLORS.get(item["color"], "#A8B0BC"), item["color"])
+        if kind == "postcard":
+            return self._collect_block(
+                key, item["num"], item["prize"], item["where"], item["image"],
+                "#7FE7FF", "postal")
+        return self._collect_block(
+            key, f"Torn {item['num']}", item["world"], item["where"], item["image"],
+            "#C4A7FF", "página")
 
     def _step_block(self, visit_index: int, step_index: int, step: dict) -> QFrame:
         frame = QFrame()
@@ -642,19 +638,12 @@ class GuidePage(QWidget):
         world = self.visit_world.currentData() or ""
         pending = self.visit_pending.isChecked()
         visible = 0
-        shown: dict[int, bool] = {}
         for frame, haystack, row_world, index in self._visit_rows:
             done = keys.visit_key(index) in self._done
             show = (query in haystack and (not world or row_world == world)
                     and (not pending or not done))
             frame.setVisible(show)
-            shown[index] = show
             visible += int(show)
-        # esconde o mundo inteiro quando nenhuma visita dele sobrou no filtro
-        for head, body, indices in self._world_groups:
-            any_visible = any(shown.get(i) for i in indices)
-            head.setVisible(any_visible)
-            body.setVisible(any_visible and not body.property("collapsed"))
         self.visit_empty.setVisible(visible == 0)
 
     # ═══════════════════════════════════════════════════════ 02 Troféus

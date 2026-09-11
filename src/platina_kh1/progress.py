@@ -65,6 +65,38 @@ def trophy_keys() -> list[str]:
     return [trophy_key(t["id"]) for t in guide_data.TROPHIES]
 
 
+# ── Coletáveis de cada visita ───────────────────────────────────────────────
+# A visita referencia os coletáveis por um identificador legível (o grupo dos
+# filhotes, "cor número" da trinity, o número do postal/página). Aqui isso vira
+# o índice da lista — e portanto a MESMA chave de progresso da aba Coletáveis,
+# para que marcar na rota marque lá também.
+def _index_by(items: list[dict], label) -> dict[str, int]:
+    return {label(item): i for i, item in enumerate(items)}
+
+
+def items_of(visit: dict) -> list[tuple[str, str, int, dict]]:
+    """[(tipo, chave, índice, item)] dos coletáveis desta visita, na ordem
+    em que a visita os lista."""
+    puppies = _index_by(guide_data.PUPPIES, lambda p: p["group"])
+    trinities = _index_by(guide_data.TRINITIES, lambda t: f"{t['color']} {t['num']}")
+    postcards = _index_by(guide_data.POSTCARDS, lambda c: c["num"])
+    pages = _index_by(guide_data.PAGES, lambda g: g["num"])
+    out: list[tuple[str, str, int, dict]] = []
+    for ref in visit.get("puppies", []):
+        i = puppies[ref]
+        out.append(("puppy", puppy_key(i), i, guide_data.PUPPIES[i]))
+    for ref in visit.get("trinities", []):
+        i = trinities[ref]
+        out.append(("trinity", trinity_key(i), i, guide_data.TRINITIES[i]))
+    for ref in visit.get("postcards", []):
+        i = postcards[ref]
+        out.append(("postcard", postcard_key(i), i, guide_data.POSTCARDS[i]))
+    for ref in visit.get("pages", []):
+        i = pages[ref]
+        out.append(("page", page_key(i), i, guide_data.PAGES[i]))
+    return out
+
+
 def puppy_keys() -> list[str]:
     return [puppy_key(i) for i in range(len(guide_data.PUPPIES))]
 

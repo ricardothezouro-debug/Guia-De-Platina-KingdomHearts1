@@ -61,7 +61,7 @@ INTRO = (
 HERO_STATS = [
     {"value": "56", "label": "troféus"},
     {"value": "2", "label": "zeradas"},
-    {"value": "23", "label": "visitas na ordem"},
+    {"value": "31", "label": "paradas na ordem"},
     {"value": "99", "label": "dálmatas com foto"},
     {"value": "46", "label": "trinities com foto"},
 ]
@@ -73,11 +73,14 @@ SECTIONS = [
         "num": "01",
         "nav": "Rota",
         "eyebrow": "O guia",
-        "title": "As visitas, na ordem",
+        "title": "O walkthrough: 31 paradas na ordem de jogo",
         "lead": (
-            "Abra a visita que você vai jogar: ela traz os passos daquela ida "
-            "com foto, os troféus que saem ali e o aviso do que fecha depois. É "
-            "a única aba que você precisa com o jogo aberto."
+            "Uma lista só, na ordem em que você joga — Traverse Town aparece "
+            "seis vezes porque você volta lá seis vezes. Cada parada traz os "
+            "passos com foto, os troféus que saem ali e, no fim do card, os "
+            "dálmatas, trinities, postais e páginas que dá para pegar NAQUELA "
+            "ida, com foto e caixa de marcação. Os nomes de mundo e de área são "
+            "os que aparecem na tela do jogo."
         ),
         "notices": [
             {
@@ -94,9 +97,9 @@ SECTIONS = [
                 "tone": "info",
                 "text": (
                     "Na CRONOMETRADA você só precisa selar os "
-                    "keyholes de Cidade do Trânsito, País das Maravilhas, Selva "
-                    "Profunda, Agrabah, Terra do Nunca e Hollow Bastion, mais "
-                    "DOIS entre Monstro, Atlantica e Cidade do Halloween. O "
+                    "keyholes de Traverse Town, Wonderland, Selva "
+                    "Profunda, Agrabah, Neverland e Hollow Bastion, mais "
+                    "DOIS entre Monstro, Atlantica e Halloween Town. O "
                     "terceiro fica para a run do 100%."
                 ),
             },
@@ -200,9 +203,9 @@ PLAN = [
             "equipamento sequer. Parece muito; é a parte mais fácil da platina, "
             "porque você já sabe onde fica cada coisa.\n\n"
             "Corra a história e ignore toda coleção. Sele só os keyholes "
-            "obrigatórios: Cidade do Trânsito, País das Maravilhas, Selva "
-            "Profunda, Agrabah, Terra do Nunca e Hollow Bastion, mais DOIS entre "
-            "Monstro, Atlantica e Cidade do Halloween."
+            "obrigatórios: Traverse Town, Wonderland, Selva "
+            "Profunda, Agrabah, Neverland e Hollow Bastion, mais DOIS entre "
+            "Monstro, Atlantica e Halloween Town."
         ),
         "gets": "Speedster, Undefeated, Unchanging Armor e a dificuldade que faltar",
     },
@@ -278,8 +281,8 @@ PROUD = [
         ),
     },
     {
-        "name": "O melhor XP do começo está na Selva Profunda",
-        "when": "Selva Profunda",
+        "name": "O melhor XP do começo está na Deep Jungle",
+        "when": "Deep Jungle",
         "why": (
             "Nas Árvores de Escalada, enquanto a fruta roxa grande estiver "
             "intacta, Powerwilds nascem sem parar. É o farm mais barato do início "
@@ -287,8 +290,8 @@ PROUD = [
         ),
     },
     {
-        "name": "Cura infinita no Anti-Sora da Terra do Nunca",
-        "when": "Terra do Nunca",
+        "name": "Cura infinita no Anti-Sora da Neverland",
+        "when": "Neverland",
         "why": (
             "O Sora-sombra dos corredores do navio derruba uma Mega-Potion (e às "
             "vezes um Elixir) toda vez que você zera o HP dele, e ele reaparece. É "
@@ -298,7 +301,7 @@ PROUD = [
     },
     {
         "name": "Tinker Bell é a melhor peça de build do jogo",
-        "when": "depois da Terra do Nunca",
+        "when": "depois da Neverland",
         "why": (
             "Regen constante na party e um auto-life de graça. Invoque no começo "
             "de toda luta difícil — Maleficent Dragão, Behemoth, Unknown. No Proud "
@@ -342,8 +345,8 @@ PREP = [
         "name": "Sele só os keyholes obrigatórios",
         "when": "cronometrada",
         "why": (
-            "Cidade do Trânsito, País das Maravilhas, Selva Profunda, Agrabah, "
-            "Terra do Nunca e Hollow Bastion são fixos; o Coliseu vem junto da "
+            "Traverse Town, Wonderland, Deep Jungle, Agrabah, "
+            "Neverland e Hollow Bastion são fixos; o Coliseu vem junto da "
             "história. Dos três restantes (Monstro, Atlantica, Cidade do "
             "Halloween) bastam DOIS. Atlantica é o mais lento — costuma ser o "
             "cortado."
@@ -371,7 +374,7 @@ PREP = [
     },
     {
         "name": "Volte à Casa da Árvore e brigue com a Sabor de novo",
-        "when": "run do 100%, Selva Profunda",
+        "when": "run do 100%, Deep Jungle",
         "why": (
             "Antes de avançar a história da Selva, encontre a Sabor mais uma vez "
             "na Casa da Árvore: ela abre um buraco no piso, e é esse buraco que "
@@ -380,8 +383,8 @@ PREP = [
         ),
     },
     {
-        "name": "Confira o relógio da Terra do Nunca a cada hora",
-        "when": "run do 100%, depois da Terra do Nunca",
+        "name": "Confira o relógio da Neverland a cada hora",
+        "when": "run do 100%, depois da Neverland",
         "why": (
             "A torre do relógio dá 12 prêmios, um por hora do mostrador (que segue "
             "o seu tempo de jogo). Se perder uma hora, a chance só volta 11 horas "
@@ -402,13 +405,27 @@ PREP = [
 _AW = "https://www.khguides.com/kh/awakening/images/"
 _DI = "https://www.khguides.com/kh/destiny-islands/images/"
 
-# ── 01 — As visitas, na ordem de jogo ──────────────────────────────────────
-# kind: "história" (obrigatória), "opcional" (só se você quiser), "limpeza"
-# (fase de fechamento do 100%) e "final" (ponto sem volta).
+# ── 01 — O walkthrough: as visitas na ORDEM DE JOGO ────────────────────────
+# Uma lista só, linear. Nada de agrupar por mundo: Traverse Town aparece seis
+# vezes porque você volta lá seis vezes, e cada volta é uma parada diferente.
+#
+# Os nomes de mundo e de área são os que aparecem NA TELA (o jogo não tem
+# português): "Wonderland", "Second District", "Lotus Forest". A explicação em
+# português vem ao lado, no texto.
+#
+# kind: "história" (obrigatória), "opcional" (só no 100%), "varredura" (a volta
+# ao mundo no fim, com Glide + trinity Branca) e "final" (ponto sem volta).
+#
+# Cada visita carrega os coletáveis que dá para pegar NAQUELA ida — a caixa de
+# marcação é a mesma da aba Coletáveis, então marcar aqui marca lá:
+#   puppies   → grupos de PUPPIES ("13 · 14 · 15")
+#   trinities → cor + número de TRINITIES ("Azul 5")
+#   postcards → POSTCARDS ("Postal 1")
+#   pages     → PAGES ("Página 1")
 VISITS = [
     {
-        "world": "Despertar",
-        "name": "Despertar — a escolha que define a run",
+        "world": "Dive to the Heart",
+        "name": "Dive to the Heart — o Despertar, a escolha que define a run",
         "kind": "história",
         "level": "Battle LV 1",
         "run": "As duas runs",
@@ -421,23 +438,22 @@ VISITS = [
         ),
         "steps": [
             {
-                "title": "Escolha o ESCUDO e sacrifique a ESPADA",
+                "title": "Escolha o ESCUDO (Dream Shield) e sacrifique a ESPADA (Dream Sword)",
                 "do": (
-                    "Escolher define as habilidades: o escudo entrega Guard no 15, "
-                    "Lucky Strike no 24, Leaf Bracer no 27 e SECOND CHANCE no 36 — "
-                    "é o kit que segura o Proud.\n\n"
+                    "Escolher define as habilidades: o escudo entrega Guard no "
+                    "nível 15, Lucky Strike no 24, Leaf Bracer no 27 e SECOND "
+                    "CHANCE no 36 — é o kit que segura o Proud.\n\n"
                     "Sacrificar define os status. Comparando as duas opções de "
                     "escudo: sacrificando a ESPADA você começa com STR 3 / DEF 4 / "
                     "MP 2 / AP 3 e 8 slots de item; sacrificando o cajado seria "
-                    "STR 4 / DEF 4 / MP 2 / AP 1. Ou seja, você troca 1 ponto de "
-                    "força por DOIS de AP.\n\n"
-                    "Esse é o melhor negócio do começo do jogo: AP é o que permite "
+                    "STR 4 / DEF 4 / MP 2 / AP 1. Você troca 1 ponto de força por "
+                    "DOIS de AP.\n\n"
+                    "É o melhor negócio do começo do jogo: AP é o que permite "
                     "equipar habilidade, e com 1 de AP você entra no Guard Armor "
                     "praticamente sem nada. Com 3, o Dodge Roll já está equipado. "
-                    "O preço é a força crescer mais devagar — o que combina com o "
-                    "resto do guia, já que as builds de Kurt Zisa, Phantom, "
-                    "Sephiroth e Unknown são todas de magia e esquiva, não de "
-                    "porrada."
+                    "A força crescer mais devagar combina com o resto do guia: as "
+                    "builds de Kurt Zisa, Phantom, Sephiroth e Unknown são de "
+                    "magia e esquiva, não de porrada."
                 ),
                 "image": _AW + "t1.webp",
                 "tag": "build",
@@ -458,13 +474,13 @@ VISITS = [
                 "tag": "escolha",
             },
             {
-                "title": "Aprenda a travar a mira e o Darkside",
+                "title": "Aprenda a travar a mira e derrote o Darkside",
                 "do": (
-                    "O jogo ensina lock-on aqui — use sempre. No fim da área vem "
-                    "o Darkside: bata na mão quando ele socar o chão e suba pelo "
-                    "braço para acertar a cabeça. Se você morrer aqui, o jogo "
-                    "continua normalmente e isso NÃO quebra o Undefeated (não "
-                    "existe tela de Continue nesta luta)."
+                    "O jogo ensina o lock-on aqui — use sempre. No fim da área "
+                    "vem o Darkside: bata na mão quando ele socar o chão e suba "
+                    "pelo braço para acertar a cabeça. Morrer aqui não quebra "
+                    "nada: o jogo continua e não existe tela de Continue nesta "
+                    "luta."
                 ),
                 "image": _AW + "tb1.webp",
                 "tag": "chefe",
@@ -472,26 +488,26 @@ VISITS = [
         ],
     },
     {
-        "world": "Ilhas do Destino",
-        "name": "Ilhas do Destino — o tutorial",
+        "world": "Destiny Islands",
+        "name": "Destiny Islands — a ilha do Sora, o tutorial",
         "kind": "história",
         "level": "Battle LV 1",
         "run": "As duas runs",
         "trophies": [],
         "note": (
             "É o único mundo do jogo ao qual você NUNCA volta. Mesmo assim não "
-            "há nada perdível para a platina aqui: sem dálmatas, sem trinity, "
-            "só um baú com o acessório Protect Chain."
+            "há nada da platina aqui: sem dálmata, sem trinity, só um baú com o "
+            "acessório Protect Chain."
         ),
         "steps": [
             {
                 "title": "Junte os 4 primeiros itens da jangada",
                 "do": (
-                    "Dois Toras (um na beira da praia depois da ponte de madeira, "
-                    "outro na ilhota do outro lado), uma Corda (canto da "
-                    "plataforma alta de madeira, suba a escada) e um Pano (dentro "
-                    "da casa da árvore). Se juntar tudo SEM pedir dica à Kairi, "
-                    "ela te dá uma Hi-Potion."
+                    "Dois Logs (um na beira da praia depois da ponte de madeira, "
+                    "outro na ilhota do outro lado), uma Rope (canto da plataforma "
+                    "alta de madeira, suba a escada) e um Cloth (dentro da casa da "
+                    "árvore). Se juntar tudo SEM pedir dica à Kairi, ela te dá "
+                    "uma Hi-Potion."
                 ),
                 "image": _DI + "t1.webp",
                 "tag": "coleta",
@@ -499,16 +515,16 @@ VISITS = [
             {
                 "title": "Treine com Tidus, Selphie, Wakka e Riku",
                 "do": (
-                    "No 100% vale muito: são os primeiros pontos de XP e o "
-                    "melhor lugar do jogo para aprender a defletir (bata na bola "
-                    "do Wakka no tempo certo). Na cronometrada, pule — não "
-                    "vale o relógio."
+                    "No 100% vale muito: são os primeiros pontos de XP e o melhor "
+                    "lugar do jogo para aprender a defletir (bata na bola do "
+                    "Wakka no tempo certo). Na cronometrada, pule — não vale o "
+                    "relógio."
                 ),
                 "image": _DI + "t23.webp",
                 "tag": "opcional",
             },
             {
-                "title": "Corrida contra o Riku (nome da nave)",
+                "title": "Corrida contra o Riku (dá nome à nave)",
                 "do": (
                     "Vencer batiza sua Gummi Ship com o nome que você escolher; "
                     "perder batiza como \"Highwind\". Rota segura: desça na hora, "
@@ -519,13 +535,13 @@ VISITS = [
                 "tag": "minijogo",
             },
             {
-                "title": "Baú do Protect Chain (o único da ilha)",
+                "title": "Baú do Protect Chain, na Cove",
                 "do": (
-                    "Na Enseada (Cove), empurre o caixote de madeira que fica "
-                    "perto da tirolesa até a parede de pedra, suba nele e alcance "
-                    "a saliência acima; o baú dentro da gruta tem o Protect Chain. "
-                    "Na cronometrada você pode até pegar, mas NÃO equipe — equipar quebra "
-                    "o Unchanging Armor."
+                    "Na Cove (a enseada da jangada), empurre o caixote de madeira "
+                    "que fica perto da tirolesa até a parede de pedra, suba nele e "
+                    "alcance a saliência acima; o baú dentro da gruta tem o "
+                    "Protect Chain. Na cronometrada você pode pegar, mas NÃO "
+                    "equipe — equipar quebra o Unchanging Armor."
                 ),
                 "image": _DI + "t42.webp",
                 "tag": "baú",
@@ -545,8 +561,8 @@ VISITS = [
         ],
     },
     {
-        "world": "Cidade do Trânsito",
-        "name": "Cidade do Trânsito — Visita 1",
+        "world": "Traverse Town",
+        "name": "Traverse Town — 1ª visita: a cidade-refúgio, Leon e o Guard Armor",
         "kind": "história",
         "level": "Battle LV 1",
         "run": "As duas runs",
@@ -554,11 +570,17 @@ VISITS = [
         "note": (
             "É aqui que o Diário do Jiminy começa a contar. A partir de agora, "
             "todo Heartless novo que você derrota vira uma entrada — e o troféu "
-            "Professor exige a lista inteira."
+            "Professor exige a lista inteira. No 100%, saia daqui com as três "
+            "trinities Azuis feitas e os postais 1 a 6 no bolso: estão todos "
+            "listados no fim deste card, com foto."
         ),
+        "puppies": [],
+        "trinities": ["Azul 1", "Azul 2", "Azul 3"],
+        "postcards": ["Postal 1", "Postal 2", "Postal 3", "Postal 4", "Postal 5", "Postal 6"],
+        "pages": [],
         "steps": [
             {
-                "title": "Primeiro baú: Mythril Shard na Loja de Acessórios",
+                "title": "Primeiro baú: Mythril Shard na Accessory Shop",
                 "do": (
                     "Siga o Pluto, entre na loja pelo portão grande e fale com o "
                     "Cid. O baú fica em cima do armário verde, perto da porta."
@@ -567,7 +589,7 @@ VISITS = [
                 "tag": "baú",
             },
             {
-                "title": "Segundo Distrito e a luta contra o Leon",
+                "title": "Second District e a luta contra o Leon",
                 "do": (
                     "Saia da loja, suba a escada à esquerda e atravesse o portão "
                     "grande do canto direito. Depois da cena, derrote pelo menos "
@@ -581,7 +603,7 @@ VISITS = [
                 "tag": "chefe",
             },
             {
-                "title": "O relógio secreto do quarto do Leon",
+                "title": "O relógio secreto do quarto do hotel",
                 "do": (
                     "Depois da cena, fale com a Yuffie, abra o baú da mesa "
                     "(Elixir) e bata DEZ vezes no canto do relógio grande acima do "
@@ -592,35 +614,36 @@ VISITS = [
                 "tag": "baú",
             },
             {
-                "title": "Terceiro Distrito e o Guard Armor",
+                "title": "Third District e o Guard Armor",
                 "do": (
-                    "Vá ao Terceiro Distrito passando por trás das lojas do "
-                    "Segundo. Depois da emboscada vem o Guard Armor: mire nas MÃOS "
-                    "primeiro (são as partes mais rápidas), depois pés, torso por "
-                    "último. Se as peças subirem girando, pule para o lado."
+                    "Vá ao Third District passando por trás das lojas do Second. "
+                    "Depois da emboscada vem o Guard Armor: mire nas MÃOS primeiro "
+                    "(são as partes mais rápidas), depois pés, torso por último. "
+                    "Se as peças subirem girando, pule para o lado."
                 ),
                 "image": _TT + "t19.webp",
                 "tag": "chefe",
             },
             {
-                "title": "Equipe Dodge Roll e destranque a porta do 3º Distrito",
+                "title": "Equipe Dodge Roll e destranque a porta do Third District",
                 "do": (
                     "Donald ensina Fire e Goofy ensina Dodge Roll — equipe o Dodge "
                     "Roll imediatamente (habilidade não conta para o Unchanging "
                     "Armor). Antes de sair, examine o keyhole grande perto das "
-                    "portas duplas do Terceiro Distrito: isso abre o atalho "
-                    "1º↔3º Distrito para o resto do jogo."
+                    "portas duplas do Third District: isso abre o atalho "
+                    "First↔Third District para o resto do jogo."
                 ),
                 "image": _TT + "t25.webp",
                 "tag": "atalho",
             },
             {
-                "title": "100%: as primeiras Blue Trinities e os postais",
+                "title": "100%: as trinities Azuis e os postais desta visita",
                 "do": (
-                    "Só as trinities AZUIS funcionam por enquanto. Faça a do 1º "
-                    "Distrito (perto da saída), a do café (te leva à sacada com um "
-                    "postal) e a do 3º Distrito atrás da fonte. Aproveite e pegue "
-                    "os postais 1 a 4 — a lista completa está na aba Coletáveis."
+                    "Só as trinities AZUIS funcionam por enquanto (Donald e Goofy "
+                    "precisam estar na equipe). Faça as três listadas abaixo — a "
+                    "do café te teleporta para a sacada com o Postal 1. Depois "
+                    "recolha os postais 2 a 6 e jogue todos na caixa de correio do "
+                    "First District: cada um vira um item."
                 ),
                 "image": _TN + "t2.webp",
                 "tag": "100%",
@@ -628,24 +651,30 @@ VISITS = [
         ],
     },
     {
-        "world": "País das Maravilhas",
-        "name": "País das Maravilhas — Visita única",
+        "world": "Wonderland",
+        "name": "Wonderland — o mundo da Alice",
         "kind": "história",
         "level": "Battle LV 3",
         "run": "As duas runs",
         "trophies": ["The Rabbit Hole"],
         "note": (
-            "Mundo obrigatório nas duas runs. As três caixas de dálmatas "
-            "(13-15, 16-18, 19-21) e a quarta (58-60) precisam de Glide e da "
-            "trinity Branca — ou seja, é volta na run do 100%."
+            "Obrigatório nas duas runs. No 100%, duas caixas de dálmatas e duas "
+            "trinities Azuis saem já nesta ida; as outras duas caixas (19-21 e "
+            "58-60) e as trinities Verde e Branca ficam para a varredura, porque "
+            "pedem Glide, Thunder e cores que você ainda não tem."
         ),
+        "puppies": ["13 · 14 · 15", "16 · 17 · 18"],
+        "trinities": ["Azul 5", "Azul 6"],
+        "postcards": [],
+        "pages": [],
         "steps": [
             {
-                "title": "Empurre a cama antes de encolher",
+                "title": "Bizarre Room: empurre a cama antes de encolher",
                 "do": (
-                    "No Quarto Bizarro, ANTES de beber da garrafa, empurre a cama "
-                    "do canto: ela desliza e abre a passagem que você vai usar. Só "
-                    "então beba e siga pelo corredor."
+                    "No Bizarre Room (o quarto da mesa com a garrafa), ANTES de "
+                    "beber, empurre a cama do canto: ela desliza e abre a passagem "
+                    "que você vai usar. Só então beba e siga pelo corredor até o "
+                    "Queen's Castle, o tribunal."
                 ),
                 "image": _WL + "t1.webp",
                 "tag": "passo",
@@ -654,31 +683,34 @@ VISITS = [
                 "title": "Cronometrada: pegue só UMA prova e volte",
                 "do": (
                     "O tribunal pede provas, mas basta UMA para prosseguir. Na "
-                    "corrida, pegue a mais próxima (Pegadas, na alcova atrás da "
-                    "flor vermelha grande) e volte. Você perde a Blizzard grátis, "
-                    "mas ela cai do Trickmaster de qualquer jeito."
+                    "corrida, pegue a mais próxima (Footprints, na alcova atrás da "
+                    "flor vermelha grande da Lotus Forest) e volte. Você perde a "
+                    "Blizzard grátis, mas ela cai do Trickmaster de qualquer jeito."
                 ),
                 "image": _WL + "t14.webp",
                 "tag": "atalho",
             },
             {
-                "title": "100%: as quatro provas na ordem certa",
+                "title": "100%: as quatro provas da Lotus Forest, na ordem certa",
                 "do": (
                     "1) Dê uma Potion ao bulbo amarelo perto do lago para virar "
                     "gigante. 2) Como gigante, pule no toco de madeira do canto "
                     "oposto — isso levanta as vitórias-régias. 3) Examine a árvore "
                     "grande do centro e pegue a fruta para voltar ao tamanho "
-                    "normal. 4) Pegadas na alcova atrás da flor vermelha; Antenas "
-                    "em cima dos três cogumelos do fundo; Fedor pela passagem "
-                    "escavada na árvore grande (leva ao fogão); Marcas de Garra "
-                    "pela passagem do canto até a torneira — pule na prateleira. "
-                    "As Marcas de Garra fazem o Cheshire te ensinar Blizzard."
+                    "normal. 4) Footprints na alcova atrás da flor vermelha; "
+                    "Antennae em cima dos três cogumelos do fundo; Stench pela "
+                    "passagem escavada na árvore grande (leva ao fogão do Bizarre "
+                    "Room); Claw Marks pela passagem do canto até a torneira — "
+                    "pule na prateleira. As Claw Marks fazem o Cheshire te "
+                    "ensinar Blizzard. Aproveite que está na Lotus Forest: as "
+                    "duas caixas de dálmatas e as duas trinities Azuis desta "
+                    "visita estão aqui (fim do card)."
                 ),
                 "image": _WL + "t15.webp",
                 "tag": "coleta",
             },
             {
-                "title": "Escolha a caixa e destrua a torre de manivelas",
+                "title": "Escolha a caixa e destrua a Crank Tower",
                 "do": (
                     "Fale com um soldado-carta e escolha uma caixa qualquer — pode "
                     "vir um Heartless, ou o Donald/Goofy presos em gaiola. Na "
@@ -689,12 +721,12 @@ VISITS = [
                 "tag": "chefe",
             },
             {
-                "title": "Acenda as duas lanternas do Quarto Bizarro",
+                "title": "Tea Party Garden → Bizarre Room de cabeça para baixo",
                 "do": (
-                    "Volte à Floresta de Lótus, siga para o Jardim do Chá e entre "
-                    "no chalé: o quarto está de cabeça para baixo. Suba nas duas "
-                    "lanternas do centro e toque as duas. Depois abra a trava de "
-                    "metal da parede do fundo."
+                    "Volte à Lotus Forest, siga para o Tea Party Garden (o jardim "
+                    "do chá) e entre no chalé: o Bizarre Room está de cabeça para "
+                    "baixo. Suba nas duas lanternas do centro e toque as duas. "
+                    "Depois abra a trava de metal da parede do fundo."
                 ),
                 "image": _WL + "t23.webp",
                 "tag": "passo",
@@ -706,44 +738,37 @@ VISITS = [
                     "encaixar combos aéreos inteiros. O truque que muda a luta: "
                     "trave a mira na BASE DO FOGÃO e lance Blizzard 1 a 3 vezes — "
                     "ele fica ~100 segundos sem conseguir acender os bastões, e "
-                    "sem bastões acesos ele não tem ataque de fogo."
+                    "sem bastões acesos ele não tem ataque de fogo. Prêmio: "
+                    "keyhole selado (troféu The Rabbit Hole) e o Navi-G Piece."
                 ),
                 "image": _WL + "t28.webp",
                 "tag": "chefe",
             },
-            {
-                "title": "100%, na volta: as flores e o Jardim do Chá",
-                "do": (
-                    "Volte com Glide e trinity Branca. As flores da Floresta de "
-                    "Lótus trocam item por item (Ether → Camping Set, Hi-Potion → "
-                    "Mega-Potion, Elixir → Mythril Shard). A flor ROSA da alcova "
-                    "que se acessa pelo quadro do Quarto Bizarro dá os dálmatas "
-                    "58-60 quando você lança Thunder nela. Sentar nas cadeiras do "
-                    "Jardim do Chá também rende prêmios e fecha entradas do Diário."
-                ),
-                "image": _WL + "t36.webp",
-                "tag": "100%",
-            },
         ],
     },
     {
-        "world": "Coliseu do Olimpo",
-        "name": "Coliseu do Olimpo — Visita 1 (história)",
+        "world": "Olympus Coliseum",
+        "name": "Olympus Coliseum — 1ª visita: o coliseu do Hércules, Phil e o Cérbero",
         "kind": "história",
         "level": "Battle LV 3",
         "run": "As duas runs",
-        "trophies": ["Junior Hero"],
+        "trophies": [],
         "note": (
-            "O keyhole do Coliseu não é selado por você: ele sai da história "
-            "(trinity Verde no Lobby). O troféu Junior Hero vem junto com o "
-            "Cérbero."
+            "O keyhole do Coliseu NÃO é selado nesta visita: ele exige a trinity "
+            "AMARELA do Lobby, e a cor amarela só vem com a Hercules Cup, muito "
+            "mais tarde. O troféu Junior Hero, portanto, fica para lá. Aqui você "
+            "leva Thunder, o Sonic Blade e, no 100%, uma caixa de dálmatas."
         ),
+        "puppies": ["22 · 23 · 24"],
+        "trinities": ["Azul 7", "Azul 8"],
+        "postcards": [],
+        "pages": [],
         "steps": [
             {
                 "title": "Treinamento do Phil (ganha Thunder)",
                 "do": (
-                    "Fale com o Phil, tente empurrar o pedestal e aceite o "
-                    "treino: quebre todos os barris dentro do tempo usando "
+                    "No Lobby, fale com o Phil, tente empurrar o pedestal e aceite "
+                    "o treino: quebre todos os barris dentro do tempo usando "
                     "finalizações de combo e magia. No segundo percurso, quebre os "
                     "de baixo primeiro; use Fire (com lock-on) no barril da "
                     "plataforma flutuante. Prêmio: magia Thunder."
@@ -757,8 +782,8 @@ VISITS = [
                     "São 7 chaves seguidas — jogue conservador, porque o HP não "
                     "recarrega entre elas. Contra o Cloud: ou você usa Guard para "
                     "quebrar a estocada dele (duas defesas seguidas) e emenda um "
-                    "combo, ou Dodge Roll no golpe vertical e bate 2 vezes. "
-                    "Perder para o Cloud NÃO dá Game Over."
+                    "combo, ou Dodge Roll no golpe vertical e bate 2 vezes. Perder "
+                    "para o Cloud NÃO dá Game Over."
                 ),
                 "image": _OC + "t1.webp",
                 "tag": "chefe",
@@ -776,43 +801,51 @@ VISITS = [
                 "tag": "chefe",
             },
             {
-                "title": "Fale com o Cloud na escadaria (Sonic Blade)",
+                "title": "Fale com o Cloud na escadaria (Sonic Blade) e faça as trinities dos Gates",
                 "do": (
-                    "Depois da luta, saia do lobby e fale com o Cloud sentado na "
+                    "Depois da luta, saia do Lobby e fale com o Cloud sentado na "
                     "escada em frente ao vestíbulo: ele ensina o Sonic Blade, uma "
-                    "das melhores habilidades do jogo e útil até no Sephiroth."
+                    "das melhores habilidades do jogo. Nos Gates (a área de "
+                    "entrada) há duas trinities Azuis, uma em frente a cada "
+                    "estátua de gladiador — a da direita solta os dálmatas 22-24."
                 ),
-                "image": _OC + "t1.webp",
-                "tag": "habilidade",
+                "image": _TN + "t8.webp",
+                "tag": "100%",
             },
         ],
     },
     {
-        "world": "Selva Profunda",
-        "name": "Selva Profunda — Visita única",
+        "world": "Deep Jungle",
+        "name": "Deep Jungle — a selva do Tarzan",
         "kind": "história",
         "level": "Battle LV 5",
         "run": "As duas runs",
         "trophies": ["Member of the Tribe"],
         "note": (
             "ATENÇÃO no 100%: antes de avançar a história depois da cena da "
-            "tenda, VOLTE à Casa da Árvore e lute com a Sabor de novo. Ela abre "
-            "um buraco no chão que é o que torna o Pink Agaricus (material "
-            "Serenity Power, da Ultima Weapon) viável mais tarde."
+            "tenda, VOLTE à Tree House e lute com a Sabor de novo. Ela abre um "
+            "buraco no chão, e é esse buraco que torna o Pink Agaricus viável "
+            "depois (material Serenity Power, da Ultima Weapon). Quatro caixas de "
+            "dálmatas saem nesta ida."
         ),
+        "puppies": ["25 · 26 · 27", "28 · 29 · 30", "31 · 32 · 33", "34 · 35 · 36"],
+        "trinities": ["Azul 9", "Azul 10"],
+        "postcards": [],
+        "pages": [],
         "steps": [
             {
-                "title": "Sobreviva à Sabor e desça para o acampamento",
+                "title": "Sobreviva à Sabor e desça para o Camp",
                 "do": (
                     "Role para os lados e bata combos de 3; Fire repetido também "
                     "resolve. Perder aqui não interrompe a história. Depois desça "
-                    "pelo tronco oco e escorregue pelas árvores até o Camp."
+                    "pelo tronco oco e escorregue pelas árvores até o Camp, o "
+                    "acampamento da Jane."
                 ),
                 "image": _DJ + "t1.webp",
                 "tag": "chefe",
             },
             {
-                "title": "Os 6 slides do projetor",
+                "title": "Os 6 slides do projetor (no Camp)",
                 "do": (
                     "1) Em cima da tenda principal (suba pelas caixas perto do "
                     "globo). 2) Numa cômoda no canto, sob as lonas bege. 3) No "
@@ -820,18 +853,22 @@ VISITS = [
                     "cima da pilha grande de caixas no centro. 5) Em cima da lona "
                     "junto à parede de bambu — suba na tenda e ande pelas lonas. "
                     "6) Em cima das caixas à direita da entrada da tenda. Depois, "
-                    "examine o projetor."
+                    "examine o projetor. A trinity Azul do Camp (dálmatas 34-36) "
+                    "fica ao lado da mesa de laboratório."
                 ),
                 "image": _DJ + "t7.webp",
                 "tag": "coleta",
             },
             {
-                "title": "Cipós até as copas (ou o atalho dos hipopótamos)",
+                "title": "Hippos' Lagoon e os cipós até as copas",
                 "do": (
-                    "Aperte o botão quando \"Jump Next\" acender. Se estiver "
-                    "sofrendo, existe o caminho alternativo: pule nas costas dos "
-                    "hipopótamos até a plataforma do fundo e suba pelo poste. No "
-                    "último pulo, aperte ataque no ar para ganhar distância."
+                    "Nos cipós, aperte o botão quando \"Jump Next\" acender. Se "
+                    "estiver sofrendo, há o caminho alternativo: pule nas costas "
+                    "dos hipopótamos até a plataforma do fundo e suba pelo poste — "
+                    "é do lado oposto da lagoa que está a caixa dos dálmatas "
+                    "25-27. Na área Vines 2, use os cipós da direita para alcançar "
+                    "a saliência central com os dálmatas 28-30. No último pulo, "
+                    "aperte ataque no ar para ganhar distância."
                 ),
                 "image": _DJ + "t16.webp",
                 "tag": "passo",
@@ -839,29 +876,30 @@ VISITS = [
             {
                 "title": "Limpe os Heartless das 5 áreas",
                 "do": (
-                    "Camp (Protect-G), Bambu (Fire-G), Penhasco (Aeroga-G), "
-                    "Árvores de Escalada (Aeroga-G) e Casa da Árvore (Shell-G). "
-                    "Cada área limpa dá um bloco gummi de um gorila. Jane, na "
-                    "tenda, diz quais faltam."
+                    "Camp (Protect-G), Bamboo Thicket (Fire-G), Cliff (Aeroga-G), "
+                    "Climbing Trees (Aeroga-G) e Tree House (Shell-G). Cada área "
+                    "limpa dá um bloco gummi de um gorila. Jane, na tenda, diz "
+                    "quais faltam. Nas Climbing Trees, a trinity Azul fica numa "
+                    "plataforma elevada perto da passagem para a Tree House."
                 ),
                 "image": _DJ + "t22.webp",
                 "tag": "coleta",
             },
             {
-                "title": "Sabor no bambuzal e o salvamento da Jane",
+                "title": "Sabor no Bamboo Thicket e o salvamento da Jane",
                 "do": (
-                    "A Sabor pula das árvores no bambuzal: encoste-a numa parede "
-                    "e emende combos completos para mantê-la atordoada; Fire com "
-                    "lock-on também funciona bem. Depois, nas Árvores de Escalada, "
-                    "bata na fruta roxa grande para libertar a Jane — enquanto ela "
-                    "estiver inteira, Powerwilds nascem infinitamente (ótimo XP na "
-                    "100%; ignore na cronometrada)."
+                    "A Sabor pula das árvores no bambuzal: encoste-a numa parede e "
+                    "emende combos completos para mantê-la atordoada; Fire com "
+                    "lock-on também funciona bem. Depois, nas Climbing Trees, bata "
+                    "na fruta roxa grande para libertar a Jane — enquanto ela "
+                    "estiver inteira, Powerwilds nascem infinitamente (o melhor XP "
+                    "do começo do jogo; ignore na cronometrada)."
                 ),
                 "image": _DJ + "t25.webp",
                 "tag": "chefe",
             },
             {
-                "title": "Clayton & Stealth Sneak",
+                "title": "Clayton & Stealth Sneak (no Cliff)",
                 "do": (
                     "Role logo no início para desviar do primeiro tiro. Trave a "
                     "mira no bicho INVISÍVEL e bata combos aéreos até ele "
@@ -874,12 +912,14 @@ VISITS = [
                 "tag": "chefe",
             },
             {
-                "title": "Sele o keyhole e ganhe a trinity Vermelha",
+                "title": "Waterfall Cavern: sele o keyhole e ganhe a trinity Vermelha",
                 "do": (
                     "Entre na caverna à esquerda da cachoeira e suba de saliência "
-                    "em saliência. Depois de selar, o Tarzan te dá o chaveiro "
+                    "em saliência — na metade da subida, logo abaixo de uma parede "
+                    "de cipós, está a caixa dos dálmatas 31-33. Depois de selar "
+                    "(troféu Member of the Tribe), o Tarzan te dá o chaveiro "
                     "Jungle King e a party passa a fazer trinities VERMELHAS — o "
-                    "que destrava a Visita 2 da Cidade do Trânsito."
+                    "que destrava a próxima parada em Traverse Town."
                 ),
                 "image": _DJ + "t31.webp",
                 "tag": "troféu",
@@ -887,10 +927,10 @@ VISITS = [
             {
                 "title": "100%: cozinha, Jungle Slider e cipós",
                 "do": (
-                    "Volte depois para as entradas de minijogo do Diário: Jungle "
-                    "Slider (pegue as 10 frutas de cada percurso) e Vine Swing. Na "
-                    "cozinha do acampamento, examine relógio e mastro (2 cartões "
-                    "de receita) e roupa no varal, globo e vitrola (3 anotações) — "
+                    "Entradas de minijogo do Diário: Jungle Slider (a partir do "
+                    "Tunnel, pegue as 10 frutas de cada percurso) e Vine Swing. Na "
+                    "cozinha do Camp, examine relógio e mastro (2 cartões de "
+                    "receita) e roupa no varal, globo e vitrola (3 anotações) — "
                     "faça a experiência com só 2 anotações primeiro, depois pegue "
                     "a terceira e repita, para maximizar os Ethers."
                 ),
@@ -900,44 +940,57 @@ VISITS = [
         ],
     },
     {
-        "world": "Cidade do Trânsito",
-        "name": "Cidade do Trânsito — Visita 2 (o keyhole)",
+        "world": "Traverse Town",
+        "name": "Traverse Town — 2ª visita: Merlin, o Livro Velho e o keyhole",
         "kind": "história",
         "level": "Battle LV 5",
         "run": "As duas runs",
         "trophies": ["Where the Bells Toll"],
-        "note": "",
+        "note": (
+            "Com a trinity Vermelha na mão, a cidade abre: o Waterway (com os "
+            "dálmatas 10-12), o beco dos dálmatas 4-6 e a torre do sino. Com "
+            "Thunder, saem também os postais 7 e 8. Tudo listado no fim do card."
+        ),
+        "puppies": ["4 · 5 · 6", "10 · 11 · 12"],
+        "trinities": ["Vermelha 1", "Vermelha 2", "Vermelha 3", "Azul 4"],
+        "postcards": ["Postais 7 e 8"],
+        "pages": [],
         "steps": [
             {
-                "title": "Trinity Vermelha do Beco → Waterway",
+                "title": "Trinity Vermelha do Alleyway → Waterway",
                 "do": (
-                    "Vá ao Beco (canto sudoeste do 2º Distrito, perto da fonte) e "
-                    "faça a trinity Vermelha no canal de água do fundo. Entre no "
-                    "Waterway e fale com o Leon; fale com ele DE NOVO sobre o "
-                    "bloco gummi da Selva para receber o Earthshine (que vira a "
-                    "invocação do Simba)."
+                    "Vá ao Alleyway (o beco no canto sudoeste do Second District, "
+                    "perto da fonte) e faça a trinity Vermelha na grade do canal, "
+                    "no fundo. Entre no Waterway e fale com o Leon; fale com ele "
+                    "DE NOVO sobre o bloco gummi da selva para receber o "
+                    "Earthshine (que vira a invocação do Simba). Logo dentro da "
+                    "escadaria que sobe para o estúdio do Merlin está a caixa dos "
+                    "dálmatas 10-12."
                 ),
                 "image": _TT + "t28.webp",
                 "tag": "passo",
             },
             {
-                "title": "O Livro Velho e o Merlin",
+                "title": "O Livro Velho e a casa do Merlin",
                 "do": (
-                    "Fale com o Cid na loja: ele pede que você entregue um Livro "
-                    "Velho a um morador do 3º Distrito. Lá, use FIRE na porta de "
-                    "madeira com o símbolo de chama, atravesse as pedras móveis e "
-                    "entre na casa do lago para achar o Merlin."
+                    "Fale com o Cid na Accessory Shop: ele pede que você entregue "
+                    "um Old Book a um morador do Third District. Lá, use FIRE na "
+                    "porta de madeira com o símbolo de chama, atravesse as pedras "
+                    "móveis e entre na casa do lago (Mystical House) para achar o "
+                    "Merlin."
                 ),
                 "image": _TT + "t34.webp",
                 "tag": "passo",
             },
             {
-                "title": "Simba e a Blue Trinity do estúdio",
+                "title": "Simba, a trinity Azul do Magician's Study e o Bosque",
                 "do": (
                     "Entregue o livro. A Fada Madrinha transforma o Earthshine na "
-                    "invocação SIMBA. Antes de sair, faça a Blue Trinity do quarto. "
-                    "O Livro Velho abre o Bosque dos Cem Acres — opcional agora, "
-                    "obrigatório no 100% (troféu Pooh's Friend)."
+                    "invocação SIMBA. Antes de sair, faça a trinity Azul do "
+                    "estúdio (perto do save point). O Livro Velho é a porta do 100 "
+                    "Acre Wood, o mundo do Ursinho Pooh — opcional agora, "
+                    "obrigatório no 100% (troféu Pooh's Friend); você vai entrar "
+                    "nele com a primeira Torn Page, na 3ª visita."
                 ),
                 "image": _TT + "t37.webp",
                 "tag": "passo",
@@ -945,17 +998,17 @@ VISITS = [
             {
                 "title": "Volte ao Cid e ganhe o Warp-G",
                 "do": (
-                    "Entre na casa vazia do 3º Distrito (subindo a escada perto da "
-                    "passagem para o 2º) e fale com o Cid. Ele instala o gummi de "
-                    "navegação e te dá o Warp-G: a partir daqui você viaja "
-                    "instantaneamente para mundos já visitados. Isso sozinho salva "
-                    "muito relógio na cronometrada."
+                    "Entre na casa vazia do Third District (subindo a escada perto "
+                    "da passagem para o Second) e fale com o Cid. Ele instala o "
+                    "gummi de navegação e te dá o Warp-G: a partir daqui você "
+                    "viaja instantaneamente para mundos já visitados. Isso sozinho "
+                    "salva muito relógio na cronometrada."
                 ),
                 "image": _TT + "t40.webp",
                 "tag": "atalho",
             },
             {
-                "title": "O sino do 2º Distrito e o Opposite Armor",
+                "title": "O sino do Second District e o Opposite Armor",
                 "do": (
                     "Entre na Gizmo Shop, saia pelo lado oposto, suba a escada da "
                     "esquerda e faça a trinity Vermelha na torre do sino. Toque o "
@@ -968,12 +1021,16 @@ VISITS = [
                 "tag": "chefe",
             },
             {
-                "title": "Sele, pegue o Comet-G e conheça o Pinóquio",
+                "title": "Sele, pegue o Comet-G, conheça o Pinóquio — e os postais 7 e 8",
                 "do": (
                     "Selar dá o troféu Where the Bells Toll e a magia Aero. Fale "
                     "com o Cid atrás da loja (Comet-G grátis) e examine a pilha "
-                    "colorida no chão da loja de acessórios para encontrar o "
-                    "Pinóquio. A Phil Cup abre agora."
+                    "colorida no chão da Accessory Shop para encontrar o Pinóquio. "
+                    "No 100%: lance THUNDER no fio exposto do canto do Third "
+                    "District, entre na Gizmo Shop, pule nos três botões em cima "
+                    "da máquina e examine o relógio central — saem os postais 7 e "
+                    "8 juntos. A trinity Vermelha da cerca atrás da Item Shop "
+                    "libera os dálmatas 4-6. A Phil Cup abre agora."
                 ),
                 "image": _TT + "t49.webp",
                 "tag": "troféu",
@@ -981,56 +1038,108 @@ VISITS = [
         ],
     },
     {
+        "world": "Olympus Coliseum",
+        "name": "Olympus Coliseum — Phil Cup (e os dois troféus fáceis do coliseu)",
+        "kind": "opcional",
+        "level": "Battle LV 6+",
+        "run": "Só na run do 100%",
+        "trophies": ["Novice Hero", "Supreme Soloist", "Time Attacker"],
+        "note": (
+            "Abre depois de selar Traverse Town. Cada copa tem TRÊS modos: "
+            "normal (com a party), solo (só o Sora) e contrarrelógio. Os dois "
+            "últimos só aparecem depois de vencer o normal — e basta UM de cada, "
+            "em qualquer copa, para Supreme Soloist e Time Attacker. Faça aqui, "
+            "que é a copa mais fácil."
+        ),
+        "puppies": [],
+        "trinities": [],
+        "postcards": [],
+        "pages": [],
+        "steps": [
+            {
+                "title": "Phil Cup normal (troféu Novice Hero, ganha Gravity)",
+                "do": (
+                    "9 chaves. Blizzard resolve as chaves de Powerwild e Blue "
+                    "Rhapsody agrupados; contra Large Body, derrote os Green "
+                    "Requiem antes. Prêmio: a magia GRAVITY — que é a chave de "
+                    "várias caixas de dálmatas do Hollow Bastion e de metade dos "
+                    "chefes daqui para a frente."
+                ),
+                "image": _OC + "t1.webp",
+                "tag": "troféu",
+            },
+            {
+                "title": "Phil Cup solo (Supreme Soloist) e contrarrelógio (Time Attacker)",
+                "do": (
+                    "Solo dá Combo Plus; contrarrelógio de 3 minutos dá Tech "
+                    "Boost. Os dois troféus caem aqui e você nunca mais precisa "
+                    "repetir os modos extras em copa nenhuma."
+                ),
+                "image": _OC + "t1.webp",
+                "tag": "troféu",
+            },
+        ],
+    },
+]
+
+VISITS += [
+    {
         "world": "Agrabah",
-        "name": "Agrabah — Visita única",
+        "name": "Agrabah — a cidade do Aladdin e a Cave of Wonders",
         "kind": "história",
         "level": "Battle LV 8",
         "run": "As duas runs",
         "trophies": ["Magic Lamp"],
         "note": (
-            "37 baús: é o mundo com mais baú do jogo. No 100% volte com High "
-            "Jump e Glide — quatro caixas de dálmatas (37-39, 46-48, 49-51, "
-            "52-54) e a Torn Page #1 estão aqui."
+            "37 baús: é o mundo com mais baú do jogo. Nesta ida saem uma caixa "
+            "de dálmatas, três trinities e a Torn Page #1. As outras três "
+            "caixas (46-48, 49-51, 52-54) pedem High Jump — ficam para a "
+            "varredura."
         ),
+        "puppies": ["37 · 38 · 39"],
+        "trinities": ["Azul 11", "Azul 12", "Vermelha 4"],
+        "postcards": [],
+        "pages": ["Página 1"],
         "steps": [
             {
                 "title": "Liberte o Tapete e ache a Jasmine",
                 "do": (
                     "Suba o poste de madeira à direita para entrar na casa \"???\" "
-                    "e EMPURRE a cômoda que prende o tapete mágico. Depois vá ao "
-                    "Beco pela passagem em frente: cena com a Jasmine e o Jafar, e "
-                    "uma leva de Heartless (Blizzard resolve bem em espaço "
-                    "fechado)."
+                    "(Aladdin's House) e EMPURRE a cômoda que prende o tapete "
+                    "mágico. Depois vá ao Alley pela passagem em frente: cena com "
+                    "a Jasmine e o Jafar, e uma leva de Heartless (Blizzard "
+                    "resolve bem em espaço fechado)."
                 ),
                 "image": _AG + "t4.webp",
                 "tag": "passo",
             },
             {
-                "title": "Deserto: encontre o Aladdin",
+                "title": "Desert: encontre o Aladdin",
                 "do": (
                     "Volte ao ponto de chegada e passe pelo arco grande até a "
                     "muralha. Salve, deixe o tapete te levar ao deserto e limpe os "
-                    "Heartless. Na volta, a Rua Principal está bloqueada: suba no "
-                    "prédio e pule pelas lonas até o Beco."
+                    "Heartless. Na volta, a Main Street está bloqueada: suba no "
+                    "prédio e pule pelas lonas até o Alley."
                 ),
                 "image": _AG + "t10.webp",
                 "tag": "passo",
             },
             {
-                "title": "As 3 travas para chegar ao Jafar",
+                "title": "As 3 travas para chegar ao Jafar (e a trinity do Bazaar)",
                 "do": (
-                    "1) Beco: numa saliência perto das lonas de madeira, em frente "
-                    "à entrada da Praça. 2) Casa do Aladdin: empurre a cômoda da "
-                    "parede do fundo. 3) Bazaar: numa saliência alta em frente à "
-                    "entrada da Rua Principal — a passagem para o Bazaar fica numa "
-                    "plataforma alta no canto da Rua Principal, alcançável pulando "
-                    "das lonas ao lado da casa do Aladdin."
+                    "1) Alley: numa saliência perto das lonas de madeira, em "
+                    "frente à entrada da Plaza. 2) Aladdin's House: empurre a "
+                    "cômoda da parede do fundo. 3) Bazaar: numa saliência alta em "
+                    "frente à entrada da Main Street — a passagem para o Bazaar "
+                    "fica numa plataforma alta no canto da Main Street, "
+                    "alcançável pulando das lonas ao lado da casa do Aladdin. No "
+                    "centro do Bazaar, no chão, está a trinity Azul."
                 ),
                 "image": _AG + "t19.webp",
                 "tag": "coleta",
             },
             {
-                "title": "Pot Centipede",
+                "title": "Pot Centipede (Palace Gates)",
                 "do": (
                     "Leve o ALADDIN na party (ataque alto). Bata na CABEÇA — a "
                     "cauda tem dois balanços que machucam. Quando ele se quebrar "
@@ -1042,7 +1151,7 @@ VISITS = [
                 "tag": "chefe",
             },
             {
-                "title": "Guardião da Caverna das Maravilhas",
+                "title": "Cave of Wonders Guardian",
                 "do": (
                     "Quando a caverna afundar o focinho na areia, suba nele e "
                     "fique. Só os OLHOS levam dano: trave num olho e bata combos "
@@ -1053,29 +1162,43 @@ VISITS = [
                 "tag": "chefe",
             },
             {
-                "title": "Derrube a coluna da Sala Escondida",
+                "title": "Relic → Dark → Silent Chamber → Hidden Room: derrube a coluna",
                 "do": (
                     "Entre na caverna e caia no buraco à direita (Relic Chamber). "
                     "Atravesse Dark Chamber e Silent Chamber até a Hidden Room, "
                     "saia da água, pule na coluna de pedra e bata nela. Para "
                     "acionar estátuas distantes, o ALADDIN precisa estar na party "
-                    "(o Abu pula nelas)."
+                    "(o Abu pula nelas). A trinity Azul da Silent Chamber fica na "
+                    "plataforma central, perto da passagem para o Hall."
                 ),
                 "image": _AG + "t24.webp",
                 "tag": "passo",
             },
             {
-                "title": "Torn Page #1 (só interessa no 100%)",
+                "title": "Torn Page #1 (Dark Chamber — só interessa no 100%)",
                 "do": (
                     "Na Dark Chamber, a página fica numa plataforma no centro da "
                     "área — chega-se subindo a cachoeira a partir da Relic "
-                    "Chamber. É a primeira das 5 páginas do Bosque dos Cem Acres."
+                    "Chamber. É a primeira das 5 páginas do 100 Acre Wood; você "
+                    "vai devolvê-la ao Merlin na próxima parada em Traverse Town."
                 ),
                 "image": _TR + "t103.webp",
                 "tag": "coletável",
             },
             {
-                "title": "Jafar e Jafar Gênio",
+                "title": "Treasure Room: dálmatas 37-39 e a trinity Vermelha",
+                "do": (
+                    "Na Treasure Room (a sala do save point antes da Lamp "
+                    "Chamber), pule de cima de uma pilha de tesouro para a "
+                    "saliência perto da entrada do Bottomless Hall — a caixa dos "
+                    "dálmatas 37-39. A trinity Vermelha fica em frente à estátua "
+                    "de esfinge, do outro lado do save point."
+                ),
+                "image": _TR + "t110.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Jafar e Jafar Gênio (Lamp Chamber)",
                 "do": (
                     "Jafar flutua em círculo: pule das três plataformas de pedra e "
                     "bata combos aéreos; corra para os lados quando ele fizer o "
@@ -1092,130 +1215,171 @@ VISITS = [
                 "do": (
                     "Na fuga, segure para a ESQUERDA no primeiro trecho para "
                     "desviar de quase tudo; nos pilares de fogo, use a esquiva "
-                    "pouco antes do impacto. Ao sair: chaveiro Three Wishes, "
-                    "invocação do Gênio e a party ganha trinity VERDE — que abre a "
-                    "Sala de Síntese na Cidade do Trânsito."
+                    "pouco antes do impacto. Ao sair: troféu Magic Lamp, chaveiro "
+                    "Three Wishes, invocação do Gênio e a party ganha trinity "
+                    "VERDE — que abre a Sala de Síntese na próxima parada."
                 ),
                 "image": _AG + "t34.webp",
                 "tag": "troféu",
             },
         ],
     },
-]
-
-VISITS += [
     {
-        "world": "Cidade do Trânsito",
-        "name": "Cidade do Trânsito — Visita 3 (síntese)",
+        "world": "Traverse Town",
+        "name": "Traverse Town — 3ª visita: a Sala de Síntese e o 100 Acre Wood",
         "kind": "opcional",
         "level": "—",
         "run": "Só na run do 100%",
-        "trophies": [],
+        "trophies": ["First Synthesis"],
         "note": (
-            "Parada opcional na história e PULÁVEL na cronometrada. No 100% é onde a "
-            "síntese começa — e a síntese é 5 troféus."
+            "Parada opcional na história e PULÁVEL na cronometrada. No 100% é "
+            "onde a síntese começa (5 troféus) e onde você entra pela primeira "
+            "vez no livro do Pooh."
         ),
+        "puppies": ["7 · 8 · 9"],
+        "trinities": ["Verde 1"],
+        "postcards": ["Postal 10"],
+        "pages": [],
         "steps": [
             {
-                "title": "Abra a Sala de Síntese (trinity Verde)",
+                "title": "Abra o Item Workshop (trinity Verde da Accessory Shop)",
                 "do": (
-                    "Na loja de acessórios do 1º Distrito, ative a trinity VERDE "
-                    "do chão e suba a escada. Fale com o Moogle da mesa (explicação) "
-                    "e depois com o Moogle do forno para sintetizar. Saia pela "
-                    "porta do fundo uma vez: isso destranca o acesso direto pelo "
-                    "1º Distrito."
+                    "Na Accessory Shop do First District, ative a trinity VERDE do "
+                    "chão e suba a escada. Fale com o Moogle da mesa (explicação) e "
+                    "depois com o Moogle do forno: a primeira síntese dá o troféu "
+                    "First Synthesis. A caixa dos dálmatas 7-9 está numa mesa "
+                    "perto de um dos Moogles e o Postal 10 é o panfleto da parede. "
+                    "Saia pela porta do fundo uma vez: isso destranca o acesso "
+                    "direto pelo First District."
                 ),
                 "image": _TT + "t54.webp",
                 "tag": "desbloqueio",
             },
             {
-                "title": "Entregue a Torn Page #1 e ganhe o Bambi",
+                "title": "100 Acre Wood, episódio de entrada: o baú do tronco e o Elixir",
                 "do": (
-                    "Devolva a página do Agrabah ao Livro Velho no estúdio do "
-                    "Merlin, jogue o episódio do Bosque e traga o Naturespark para "
-                    "a Fada Madrinha: invocação BAMBI. O Bambi derruba orbes de MP "
-                    "— ele é peça de build contra Kurt Zisa e no farm de cogumelos."
+                    "Examine o Old Book no Magician's Study. Dentro, examine a "
+                    "pilha de gravetos e fale com o Pooh. No fim do tronco oco há "
+                    "um baú com Mythril Shard. Suba no telhado da casa do Pooh e "
+                    "bata na chaminé: cai um Mega-Ether lá dentro; o armário do "
+                    "canto tem um Elixir."
+                ),
+                "image": _HA + "t17.webp",
+                "tag": "baú",
+            },
+            {
+                "title": "Devolva a Torn Page #1 → Pooh's Hunny Hunt",
+                "do": (
+                    "Com a página de Agrabah no livro, examine a Hunny Tree no "
+                    "canto superior esquerdo da página da direita e fale com o "
+                    "Piglet. No minijogo, fique SEMPRE um galho abaixo do Pooh: "
+                    "dali você alcança as abelhas dos dois lados. Depois de bater "
+                    "nas abelhas o Sora volta sozinho ao galho — não mexa no "
+                    "analógico. Caiu? Use Rush. Mais de 100 pontos conta para o "
+                    "Cheer. Prêmio: Naturespark."
+                ),
+                "image": _HA + "t17.webp",
+                "tag": "minijogo",
+            },
+            {
+                "title": "Bambi",
+                "do": (
+                    "Traga o Naturespark para a Fada Madrinha no Magician's "
+                    "Study: invocação BAMBI. O Bambi derruba orbes de MP — é peça "
+                    "de build contra Kurt Zisa e no farm de cogumelos."
                 ),
                 "image": _TT + "t39.webp",
                 "tag": "invocação",
             },
             {
-                "title": "Postal #10 e armas novas para Donald e Goofy",
+                "title": "Compre as armas novas de Donald e Goofy",
                 "do": (
-                    "O postal 10 está no panfleto da própria Sala de Síntese "
-                    "(examine). A loja dos sobrinhos do Donald recebe armas novas a "
-                    "cada visita — no 100% vale comprar sempre."
+                    "A Item Shop dos sobrinhos do Donald (Huey, Dewey e Louie) "
+                    "recebe armas novas a cada visita. Blade Master, Master "
+                    "Magician e Master Defender exigem TODAS — então compre "
+                    "sempre que voltar aqui."
                 ),
-                "image": _TR + "t10.webp",
-                "tag": "coletável",
+                "image": _TT + "t58.webp",
+                "tag": "100%",
             },
         ],
     },
     {
         "world": "Monstro",
-        "name": "Monstro — Visita única",
+        "name": "Monstro — a baleia; Pinóquio, Riku e o High Jump",
         "kind": "história",
         "level": "Battle LV 12",
         "run": "100% · opcional na cronometrada",
         "trophies": ["Honest Soul"],
         "note": (
-            "Aqui você ganha o HIGH JUMP, que é a chave de meia dúzia de baús "
-            "pelo jogo inteiro. Na cronometrada este é um dos três mundos \"escolha "
-            "dois\" — e é o mais rápido dos três, então costuma entrar."
+            "Aqui você ganha o HIGH JUMP, a chave de meia dúzia de baús pelo "
+            "jogo inteiro. Na cronometrada este é um dos três mundos \"escolha "
+            "dois\" — e é o mais rápido dos três, então costuma entrar. No 100% "
+            "saem quatro caixas de dálmatas, quatro trinities e a Torn Page #2."
         ),
+        "puppies": ["55 · 56 · 57", "76 · 77 · 78", "79 · 80 · 81", "73 · 74 · 75"],
+        "trinities": ["Azul 13", "Azul 14", "Azul 15", "Verde 7"],
+        "postcards": [],
+        "pages": ["Página 2"],
         "steps": [
             {
                 "title": "A ordem das câmaras",
                 "do": (
-                    "Da Boca até a Câmara 4 o caminho não é linear. A ordem é: "
-                    "Câmara 1 ► 2 ► 3 ► 2 ► 5 ► 6 ► 5 ► 4. As passagens certas "
+                    "Da Mouth (a boca) até a Chamber 4 o caminho não é linear: "
+                    "Chamber 1 ► 2 ► 3 ► 2 ► 5 ► 6 ► 5 ► 4. As passagens certas "
                     "pulsam em verde. Search Ghosts flutuam alto: Fira e Blizzara "
-                    "resolvem."
+                    "resolvem. No caminho: dálmatas 55-57 na Chamber 3 (plataforma "
+                    "esverdeada sobre a entrada da 2), trinity Azul da Chamber 5 "
+                    "(chão, em frente à passagem da 6) e dálmatas 79-81 na "
+                    "Chamber 5 (saliência alta sobre um barril)."
                 ),
                 "image": _MO + "t4.webp",
                 "tag": "passo",
             },
             {
-                "title": "Torn Page #2 e dálmatas 76-78 (Câmara 6)",
+                "title": "Chamber 6: Torn Page #2 e dálmatas 76-78",
                 "do": (
-                    "Na Câmara 6, a página fica numa plataforma alta esverdeada em "
-                    "frente à entrada da Câmara 5; a caixa de dálmatas 76-78 está "
-                    "no nível do chão, também em frente à passagem da Câmara 5. Na "
-                    "Câmara 5, os 79-81 ficam numa saliência alta sobre um barril."
+                    "A página fica numa plataforma alta esverdeada em frente à "
+                    "entrada da Chamber 5; a caixa de dálmatas 76-78 está no nível "
+                    "do chão, também em frente à passagem da Chamber 5."
                 ),
                 "image": _TR + "t129.webp",
                 "tag": "coletável",
             },
             {
-                "title": "Parasite Cage (1ª luta)",
+                "title": "Parasite Cage (1ª luta, nas Bowels)",
                 "do": (
                     "Só o rosto e a barriga levam dano. Bata combos aéreos BAIXOS "
                     "entre os golpes de braço; Guard deflete bem. Sem Guard, fique "
-                    "na plataforma da entrada e bata do ar. O Riku ajuda e até cura "
-                    "você. Prêmio: Goofy aprende Cheer."
+                    "na plataforma da entrada e bata do ar. O Riku ajuda e até "
+                    "cura você. Prêmio: Goofy aprende Cheer."
                 ),
                 "image": _MO + "t11.webp",
                 "tag": "chefe",
             },
             {
-                "title": "Watergleam e o baú do High Jump",
+                "title": "Mouth: Watergleam, o baú do High Jump e três coletáveis",
                 "do": (
-                    "Depois da luta, desça pelo buraco: o nível da água na Boca "
-                    "baixa. Na saliência mais alta da frente da Boca há um baú com "
-                    "o WATERGLEAM (vira a invocação Dumbo). No navio do Geppetto, o "
-                    "baú tem a habilidade compartilhada HIGH JUMP — equipe na hora."
+                    "Depois da luta, desça pelo buraco: o nível da água na Mouth "
+                    "baixa. Na saliência mais alta da frente há um baú com o "
+                    "WATERGLEAM (vira a invocação Dumbo). No navio do Geppetto, o "
+                    "baú tem a habilidade compartilhada HIGH JUMP — equipe na "
+                    "hora. Com ela: dálmatas 73-75 na plataforma alta junto à "
+                    "parede, em frente ao naufrágio. A trinity Azul fica na "
+                    "plataforma de madeira da frente e a Verde em cima do navio."
                 ),
                 "image": _MO + "t12.webp",
                 "tag": "habilidade",
             },
             {
-                "title": "Parasite Cage II (Estômago)",
+                "title": "Throat: trinity Azul, depois Parasite Cage II (Stomach)",
                 "do": (
-                    "Suba pela Garganta até o Estômago. Ele agora suga ácido e "
-                    "cospe: fique na plataforma CENTRAL, dando a volta por trás "
-                    "dele, e nunca pise no verde brilhante do chão. Se você bater "
-                    "na cabeça algumas vezes ele abre a boca — trave na matéria "
-                    "escura de dentro e bata sem parar. Prêmio: magia Stop."
+                    "Suba pela Throat (a trinity Azul está no nível mais baixo, no "
+                    "centro) até o Stomach. Ele agora suga ácido e cospe: fique na "
+                    "plataforma CENTRAL, dando a volta por trás dele, e nunca pise "
+                    "no verde brilhante do chão. Se bater na cabeça algumas vezes "
+                    "ele abre a boca — trave na matéria escura de dentro e bata "
+                    "sem parar. Prêmio: magia Stop e o troféu Honest Soul."
                 ),
                 "image": _MO + "t18.webp",
                 "tag": "chefe",
@@ -1223,24 +1387,28 @@ VISITS += [
         ],
     },
     {
-        "world": "Cidade do Trânsito",
-        "name": "Cidade do Trânsito — Visita 4 (Geppetto)",
+        "world": "Traverse Town",
+        "name": "Traverse Town — 4ª visita: Geppetto, Spellbinder e o Dumbo",
         "kind": "opcional",
         "level": "—",
         "run": "Só na run do 100%",
         "trophies": [],
-        "note": "Pulável na cronometrada. No 100% é a visita dos gummis e do Spellbinder.",
+        "note": "Pulável na cronometrada. No 100% é a visita dos gummis, do Spellbinder e do segundo episódio do Pooh.",
+        "puppies": [],
+        "trinities": [],
+        "postcards": ["Postal 9"],
+        "pages": [],
         "steps": [
             {
-                "title": "Oficina do Geppetto e o Wishing Star",
+                "title": "Geppetto's House e o Wishing Star",
                 "do": (
-                    "Prédio novo no canto nordeste do 1º Distrito. O Geppetto dá "
-                    "plantas de gummi conforme o total de Heartless que você já "
+                    "Prédio novo no canto nordeste do First District. O Geppetto "
+                    "dá plantas de gummi conforme o total de Heartless que você já "
                     "derrotou — volte sempre. O baú do canto tem o chaveiro "
-                    "WISHING STAR (crítico em toda finalização de combo: é ele que "
+                    "WISHING STAR (crítico em toda finalização de combo: é o que "
                     "facilita matar o Black Fungus). Entre na casa 30 vezes e fale "
-                    "com o Pinóquio para a planta Chocobo. Postal #9 está no potinho "
-                    "da prateleira."
+                    "com o Pinóquio para a planta Chocobo. O Postal 9 está no "
+                    "potinho da prateleira."
                 ),
                 "image": _TT + "t60.webp",
                 "tag": "coletável",
@@ -1248,37 +1416,86 @@ VISITS += [
             {
                 "title": "Spellbinder (7 magias) e o Dumbo",
                 "do": (
-                    "Com as SETE magias na mão, fale com o Merlin no estúdio: ele "
-                    "dá o chaveiro SPELLBINDER, o melhor bastão de magia do jogo "
-                    "até a Ultima — é ele que você usa contra Kurt Zisa e Phantom. "
-                    "Entregue o Watergleam à Fada Madrinha para a invocação DUMBO."
+                    "Com as SETE magias na mão (Fire, Blizzard, Thunder, Cure, "
+                    "Gravity, Stop, Aero), fale com o Merlin: ele dá o chaveiro "
+                    "SPELLBINDER, o melhor bastão de magia do jogo até a Ultima — "
+                    "é ele que você usa contra Kurt Zisa e Phantom. Entregue o "
+                    "Watergleam à Fada Madrinha para a invocação DUMBO."
                 ),
                 "image": _TT + "t63.webp",
                 "tag": "build",
             },
             {
-                "title": "Torn Page #2 devolvida",
+                "title": "Devolva a Torn Page #2 → Block Tigger",
                 "do": (
-                    "Devolva a página do Monstro ao Livro Velho e jogue o episódio "
-                    "Block Tigger. A Pegasus Cup abre no Coliseu."
+                    "No livro, examine a casa com jardim na página da esquerda "
+                    "(Rabbit's House). Arranque abóboras e repolhos do quintal "
+                    "(chance de Potion e Elixir). Depois da cena, no minijogo use "
+                    "RUSH parado PERTO de uma cenoura ainda não pisada (não em "
+                    "cima dela, senão o comando não aparece). Olhe a sombra do "
+                    "Tigger e para onde ele está virado. Mais de 150 pontos conta "
+                    "para o Cheer."
                 ),
-                "image": _TT + "t39.webp",
-                "tag": "coletável",
+                "image": _HA + "t17.webp",
+                "tag": "minijogo",
+            },
+        ],
+    },
+    {
+        "world": "Olympus Coliseum",
+        "name": "Olympus Coliseum — Pegasus Cup",
+        "kind": "opcional",
+        "level": "Battle LV 12+",
+        "run": "Só na run do 100%",
+        "trophies": ["Artisan Hero"],
+        "note": "Abre depois do Monstro. Termina em Leon & Yuffie.",
+        "puppies": [],
+        "trinities": ["Verde 4"],
+        "postcards": [],
+        "pages": [],
+        "steps": [
+            {
+                "title": "Pegasus Cup (troféu Artisan Hero)",
+                "do": (
+                    "Fire nos Barrel Spiders faz eles explodirem e levar os "
+                    "vizinhos junto; Gravity nas chaves de Large Body e Toadstool. "
+                    "Na final, deflita as shurikens da Yuffie com Guard e, com "
+                    "lock-on no Leon, mande uma shuriken nele para atordoá-lo. "
+                    "Prêmios: Strike Raid (normal), Orichalcum (solo) e Dark "
+                    "Matter (contrarrelógio) — os dois últimos são materiais da "
+                    "Ultima, então vale fazer os três modos."
+                ),
+                "image": _OC + "t1.webp",
+                "tag": "troféu",
+            },
+            {
+                "title": "Trinity Verde dos Gates",
+                "do": (
+                    "Já que está aqui: nos Gates, junto à parede à direita da "
+                    "passagem para o mapa, entre dois braseiros. Dá um Mythril."
+                ),
+                "image": _TN + "t27.webp",
+                "tag": "100%",
             },
         ],
     },
     {
         "world": "Atlantica",
-        "name": "Atlantica — Visita única",
+        "name": "Atlantica — o mundo da Pequena Sereia",
         "kind": "história",
         "level": "Battle LV 15",
         "run": "100% · opcional na cronometrada",
         "trophies": ["Master of the Seas"],
         "note": (
             "Mundo lento: nadar em 3D atrapalha o combate físico e o troféu não "
-            "vale o relógio. Na cronometrada, se for cortar um dos três \"escolha "
-            "dois\", corte este. Sem nenhum dálmata aqui."
+            "vale o relógio. Na cronometrada, se for cortar um dos três "
+            "\"escolha dois\", corte este. Sem nenhum dálmata; a única trinity "
+            "(Branca) fica para a varredura."
         ),
+        "puppies": [],
+        "trinities": [],
+        "postcards": [],
+        "pages": ["Página 3"],
         "steps": [
             {
                 "title": "Magia, não Keyblade",
@@ -1292,24 +1509,24 @@ VISITS += [
                 "tag": "build",
             },
             {
-                "title": "Torn Page #3 na Gruta da Ariel",
+                "title": "Torn Page #3 na Ariel's Grotto",
                 "do": (
-                    "Siga os tridentes das paredes até o trono do Tritão (no "
-                    "jato forte, cole na parede da direita). Na Gruta da Ariel, o "
-                    "baú da página está numa prateleira na metade da altura, "
-                    "junto de vasos e um porta-retrato."
+                    "Siga os tridentes das paredes até o Triton's Throne (no jato "
+                    "forte, cole na parede da direita). Na Ariel's Grotto (a "
+                    "gruta), o baú da página está numa prateleira na metade da "
+                    "altura, junto de vasos e um porta-retrato."
                 ),
                 "image": _TR + "t146.webp",
                 "tag": "coletável",
             },
             {
-                "title": "O golfinho e o Tridente de Cristal",
+                "title": "O golfinho e o Crystal Trident",
                 "do": (
                     "Limpe a Undersea Gorge, segure no golfinho por alguns "
                     "segundos e solte. Em Calm Depths, use FIRE no ouriço roxo da "
                     "parede para abrir o buraco. No Undersea Valley, segure no "
-                    "golfinho de novo: ele te leva à caverna alta. Dentro do navio "
-                    "afundado, o baú perto da janela tem o Tridente de Cristal — e "
+                    "golfinho de novo: ele te leva à caverna alta. Dentro do "
+                    "Sunken Ship, o baú perto da janela tem o Crystal Trident — e "
                     "o tubarão quebra o vidro."
                 ),
                 "image": _AT + "t15.webp",
@@ -1320,10 +1537,10 @@ VISITS += [
                 "do": (
                     "Leve ETHERS. A Ursula não pode ser atacada direto (ela "
                     "contra-ataca girando): trave no CALDEIRÃO e lance de 6 a 8 "
-                    "Firas. Só funciona depois que ela joga a primeira poção, e não "
-                    "funciona enquanto um ataque dela está saindo do caldeirão. "
-                    "Quando o caldeirão explodir em luz, ela fica tonta — é aí que "
-                    "você bate de Keyblade. Vermelho = transborda (suba); azul = "
+                    "Firas. Só funciona depois que ela joga a primeira poção, e "
+                    "não funciona enquanto um ataque dela está saindo do "
+                    "caldeirão. Quando o caldeirão explodir em luz, ela fica tonta "
+                    "— aí é Keyblade. Vermelho = transborda (suba); azul = "
                     "redemoinhos (desça até o fundo). Prêmio: Mermaid Kick."
                 ),
                 "image": _AT + "t28.webp",
@@ -1335,9 +1552,10 @@ VISITS += [
                     "Equipe Mermaid Kick e suba o jato de Calm Depths apertando o "
                     "botão sem parar até a caverna \"???\". Lance AERO (corta "
                     "metade do dano) e, se tiver, acessórios de resistência a "
-                    "trovão (Thundara Ring). Bata DUAS vezes na cara dela e mude de "
-                    "posição — os raios teleguiados caem onde você está. STOP "
-                    "funciona nela. Prêmio: Ansem's Report 3."
+                    "trovão (Thundara Ring). Bata DUAS vezes na cara dela e mude "
+                    "de posição — os raios teleguiados caem onde você está. STOP "
+                    "funciona nela. Prêmio: Ansem's Report 3 e o troféu Master of "
+                    "the Seas."
                 ),
                 "image": _AT + "t29.webp",
                 "tag": "chefe",
@@ -1345,46 +1563,54 @@ VISITS += [
         ],
     },
     {
-        "world": "Cidade do Halloween",
-        "name": "Cidade do Halloween — Visita única",
+        "world": "Halloween Town",
+        "name": "Halloween Town — a cidade do Jack Skellington",
         "kind": "história",
         "level": "Battle LV 17",
         "run": "100% · opcional na cronometrada",
         "trophies": ["Pumpkin Prince"],
         "note": (
-            "Quatro caixas de dálmatas (40-42, 64-66, 67-69, 70-72), a Torn Page "
-            "#4 e a magia Gravira. No 100% é visita obrigatória e longa."
+            "Nesta ida: duas caixas de dálmatas, a trinity Vermelha da mansão e "
+            "a Torn Page #4. As caixas 67-69 (trinity Branca) e 70-72 (Glide) "
+            "ficam para a varredura."
         ),
+        "puppies": ["64 · 65 · 66", "40 · 41 · 42"],
+        "trinities": ["Vermelha 5"],
+        "postcards": [],
+        "pages": ["Página 4"],
         "steps": [
             {
-                "title": "Torn Page #4 no laboratório",
+                "title": "Torn Page #4 no Lab",
                 "do": (
-                    "Assim que chegar ao Lab, examine a ESTANTE em frente ao "
-                    "Doutor: é a quarta página do Bosque dos Cem Acres."
+                    "Assim que chegar ao Lab do Dr. Finkelstein, examine a "
+                    "ESTANTE em frente ao Doutor: é a quarta página do 100 Acre "
+                    "Wood."
                 ),
                 "image": _TR + "t164.webp",
                 "tag": "coletável",
             },
             {
-                "title": "Sally e depois o Prefeito no cemitério",
+                "title": "Graveyard: Sally, depois o Prefeito — e os dálmatas 64-66",
                 "do": (
-                    "Vá ao Cemitério e limpe os Heartless para a Sally te dar o "
-                    "Forget-Me-Not. Volte ao Lab, fale com o Doutor e retorne: "
-                    "examine o caixão do fundo, fale com o Prefeito e examine as "
-                    "lápides NA ORDEM em que os fantasmas aparecem. Acertando, a "
-                    "abóbora grande explode e libera o baú do Jack-In-The-Box."
+                    "Vá ao Graveyard (cemitério) e limpe os Heartless para a Sally "
+                    "te dar o Forget-Me-Not. A caixa dos dálmatas 64-66 está no "
+                    "canto do fundo, perto da lápide escrita \"RIP\". Volte ao "
+                    "Lab, fale com o Doutor e retorne: examine o caixão do fundo, "
+                    "fale com o Prefeito e examine as lápides NA ORDEM em que os "
+                    "fantasmas aparecem. Acertando, a abóbora grande explode e "
+                    "libera o baú do Jack-In-The-Box."
                 ),
                 "image": _HT + "t9.webp",
                 "tag": "puzzle",
             },
             {
-                "title": "Suba a Mansão do Oogie",
+                "title": "Moonlight Hill → Oogie's Manor",
                 "do": (
                     "Na área do Prefeito, examine o túmulo à direita da abóbora "
                     "explodida para ir a Moonlight Hill; examine a lápide torta na "
                     "base da colina para estendê-la. Na porta da mansão, use FIRE "
                     "na plataforma de metal do centro do chão para ativá-la e suba "
-                    "até a Sala de Brinquedos no topo."
+                    "até o Evil Playroom, no topo."
                 ),
                 "image": _HT + "t16.webp",
                 "tag": "passo",
@@ -1402,14 +1628,15 @@ VISITS += [
                 "tag": "chefe",
             },
             {
-                "title": "ANTES do Oogie: a trinity Vermelha da mansão",
+                "title": "Puxe a alavanca, pegue os dálmatas 40-42 e faça a trinity Vermelha ANTES do Oogie",
                 "do": (
-                    "Depois de puxar a alavanca da Sala de Brinquedos, faça a "
-                    "trinity VERMELHA da entrada da mansão (no arco ao nível do "
-                    "chão, perto do riacho que leva à Ponte) antes de descer para o "
-                    "Oogie. Na versão PS2 americana ela sumia depois do chefe; no "
-                    "Final Mix o relato é de que continua acessível, mas fazer "
-                    "antes não custa nada e elimina o risco."
+                    "Depois de puxar a alavanca do Evil Playroom, a alcova na "
+                    "metade da subida da mansão libera a caixa dos dálmatas 40-42. "
+                    "Depois faça a trinity VERMELHA da entrada da mansão (no arco "
+                    "ao nível do chão, perto do riacho que leva à Bridge) antes de "
+                    "descer para o Oogie. Na versão PS2 americana ela sumia depois "
+                    "do chefe; no Final Mix o relato é de que continua acessível, "
+                    "mas fazer antes elimina o risco."
                 ),
                 "image": _TN + "t22.webp",
                 "tag": "missable",
@@ -1429,13 +1656,13 @@ VISITS += [
                 "tag": "chefe",
             },
             {
-                "title": "Mansão do Oogie: as 7 bolhas escuras",
+                "title": "Oogie's Manor: as 7 bolhas escuras",
                 "do": (
                     "Segunda fase: destrua as 7 manchas escuras espalhadas pelo "
                     "exterior da mansão (combos ou Fire repetido). Bater nelas "
                     "devolve MP, então não economize magia. Lance AERO e ignore os "
-                    "Heartless comuns. Prêmio: Gravira; ao selar, o Jack te dá o "
-                    "chaveiro Pumpkinhead."
+                    "Heartless comuns. Prêmio: Gravira; ao selar (troféu Pumpkin "
+                    "Prince), o Jack te dá o chaveiro Pumpkinhead."
                 ),
                 "image": _HT + "t23.webp",
                 "tag": "chefe",
@@ -1443,8 +1670,8 @@ VISITS += [
         ],
     },
     {
-        "world": "Terra do Nunca",
-        "name": "Terra do Nunca — Visita única",
+        "world": "Neverland",
+        "name": "Neverland — o navio do Capitão Gancho (a Neverland)",
         "kind": "história",
         "level": "Battle LV 19",
         "run": "As duas runs",
@@ -1452,26 +1679,31 @@ VISITS += [
         "note": (
             "Mundo obrigatório. Você sai daqui com o GLIDE — a última ferramenta "
             "de movimento — e com o relógio de Londres, que dá 12 prêmios ao "
-            "longo da run do 100%."
+            "longo do 100%. Nesta ida só uma caixa de dálmatas; as outras três "
+            "do navio pedem Glide, trinity Amarela e Branca — varredura."
         ),
+        "puppies": ["88 · 89 · 90"],
+        "trinities": ["Verde 8"],
+        "postcards": [],
+        "pages": [],
         "steps": [
             {
                 "title": "Farme itens no Anti-Sora dos corredores",
                 "do": (
-                    "Em cada área aparece um Sora-sombra que voa e chuta. Toda vez "
-                    "que você zera o HP dele, ele derruba uma Mega-Potion e às "
-                    "vezes um Elixir. No 100% é o melhor estoque grátis do jogo "
-                    "para as copas."
+                    "Em cada área do porão aparece um Sora-sombra que voa e chuta. "
+                    "Toda vez que você zera o HP dele, ele derruba uma Mega-Potion "
+                    "e às vezes um Elixir. No 100% é o melhor estoque grátis do "
+                    "jogo para as copas."
                 ),
                 "image": _NL + "t4.webp",
                 "tag": "farm",
             },
             {
-                "title": "Trinity Verde do Camarote (Donald e Goofy na party)",
+                "title": "Trinity Verde da Cabin (Donald e Goofy na party)",
                 "do": (
-                    "A trinity Verde do quarto derruba a escada. Trinity exige "
-                    "Donald E Goofy — se o Peter Pan estiver na equipe, troque no "
-                    "save point antes."
+                    "A trinity Verde do centro da Cabin derruba a escada. Trinity "
+                    "exige Donald E Goofy — se o Peter Pan estiver na equipe, "
+                    "troque no save point antes."
                 ),
                 "image": _TN + "t31.webp",
                 "tag": "passo",
@@ -1489,74 +1721,45 @@ VISITS += [
                 "tag": "chefe",
             },
             {
-                "title": "Capitão Gancho",
+                "title": "Captain's Cabin: dálmatas 88-90, depois o Capitão Gancho no Deck",
                 "do": (
-                    "Lute NO CHÃO (esquiva e Guard funcionam melhor). Guard na "
-                    "estocada e emende combo de chão. O Battleship que o ajuda "
-                    "solta mísseis verdes que CURAM o Gancho: destrua os canhões "
-                    "dos dois lados, mas não mate o navio — senão ele invoca "
-                    "outro. Quando ele acena o gancho brilhando, não ataque: é "
-                    "contra-ataque garantido. Prêmios: Ars Arcanum e Ansem's Report 9."
+                    "No Captain's Cabin, a caixa dos dálmatas 88-90 fica ao lado "
+                    "da cama, perto da janela lateral. No Deck, lute NO CHÃO "
+                    "(esquiva e Guard funcionam melhor). Guard na estocada e "
+                    "emende combo de chão. O Battleship que o ajuda solta mísseis "
+                    "verdes que CURAM o Gancho: destrua os canhões dos dois lados, "
+                    "mas não mate o navio — senão ele invoca outro. Quando ele "
+                    "acena o gancho brilhando, não ataque: é contra-ataque "
+                    "garantido. Prêmios: Ars Arcanum e Ansem's Report 9."
                 ),
                 "image": _NL + "t16.webp",
                 "tag": "chefe",
             },
             {
-                "title": "O relógio de Londres, o Glide e a Tinker Bell",
+                "title": "Clock Tower: o keyhole, o Glide e a Tinker Bell",
                 "do": (
                     "Trave no ponteiro dos minutos que ainda não chegou ao XII e "
                     "bata até dar meia-noite. Selar dá Pixie Dust, o chaveiro "
                     "Fairyharp, a habilidade compartilhada GLIDE e a invocação "
-                    "TINKER BELL (regen constante + um auto-life — ela é a peça "
-                    "mais forte de build do jogo)."
+                    "TINKER BELL (regen constante + um auto-life — a peça de build "
+                    "mais forte do jogo)."
                 ),
                 "image": _NL + "t17.webp",
                 "tag": "troféu",
             },
             {
-                "title": "100%: os 12 prêmios da torre",
+                "title": "100%: os 12 prêmios da Clock Tower",
                 "do": (
                     "O mostrador marca o seu tempo de jogo (26:30 = 2:30). Examine "
-                    "a porta com a luz acesa para receber o item daquela hora: "
-                    "1h Orichalcum, 2h Power Up, 3h Mythril Shard, 4h Power Up, "
-                    "5h AP Up, 6h Mythril, 7h AP Up, 8h Defense Up, 9h Orichalcum, "
-                    "10h Defense Up, 11h Mythril Shard, 12h Megalixir. Perdeu uma? "
-                    "Só volta 11 horas depois. Depois do Hollow Bastion Ep.1 você "
-                    "precisa vencer o Phantom para reabrir a torre."
+                    "a porta com a luz acesa para receber o item daquela hora: 1h "
+                    "Orichalcum, 2h Power Up, 3h Mythril Shard, 4h Power Up, 5h AP "
+                    "Up, 6h Mythril, 7h AP Up, 8h Defense Up, 9h Orichalcum, 10h "
+                    "Defense Up, 11h Mythril Shard, 12h Megalixir. Perdeu uma? Só "
+                    "volta 11 horas depois. Depois do Hollow Bastion, a torre só "
+                    "reabre quando você vencer o Phantom."
                 ),
                 "image": _NL + "t20.webp",
                 "tag": "100%",
-            },
-        ],
-    },
-    {
-        "world": "Cidade do Trânsito",
-        "name": "Cidade do Trânsito — Visita 5 (Navi-G)",
-        "kind": "opcional",
-        "level": "—",
-        "run": "Só na run do 100%",
-        "trophies": [],
-        "note": "Pulável na cronometrada (o Navi-G da história é instalado de qualquer forma quando você precisa).",
-        "steps": [
-            {
-                "title": "Instale o Navi-G e ganhe o Transform-G",
-                "do": (
-                    "Fale com o Cid atrás da loja de acessórios. O Transform-G "
-                    "permite trocar de nave em pleno voo — é exatamente o truque "
-                    "recomendado para a Missão Gummi 3 de Hollow Bastion."
-                ),
-                "image": _TT + "t65.webp",
-                "tag": "gummi",
-            },
-            {
-                "title": "Devolva as Torn Pages #3 e #4",
-                "do": (
-                    "As páginas de Atlantica e da Cidade do Halloween vão para o "
-                    "Livro Velho. Jogue Pooh's Swing e Tigger's Giant Pot: são duas "
-                    "das cinco entradas de minijogo do Diário."
-                ),
-                "image": _TT + "t39.webp",
-                "tag": "coletável",
             },
         ],
     },
@@ -1564,8 +1767,134 @@ VISITS += [
 
 VISITS += [
     {
+        "world": "Olympus Coliseum",
+        "name": "Olympus Coliseum — Hercules Cup e o keyhole (Junior Hero)",
+        "kind": "opcional",
+        "level": "Battle LV 20+",
+        "run": "Só na run do 100%",
+        "trophies": ["Hero of the Coliseum", "Junior Hero"],
+        "note": (
+            "Abre com Halloween Town e Neverland selados. É AQUI que o keyhole "
+            "do Coliseu é selado: a Hercules Cup ensina o Trinity Push (a cor "
+            "AMARELA), e a trinity Amarela do Lobby é o keyhole. Na "
+            "cronometrada o Coliseu conta como selado pela história — não "
+            "precisa vir."
+        ),
+        "puppies": [],
+        "trinities": ["Amarela 2"],
+        "postcards": [],
+        "pages": [],
+        "steps": [
+            {
+                "title": "Hercules Cup (troféu Hero of the Coliseum)",
+                "do": (
+                    "Chave 5 é um Rare Truffle: um toque encerra a luta, mas você "
+                    "pode ficar rebatendo para XP (e Mystery Goo). Chave 4 é o "
+                    "Cloud e a final é o Hércules — quando ele estiver com a aura "
+                    "dourada é invulnerável; pegue um barril e jogue nele. "
+                    "Prêmios: Herc's Shield, OLYMPIA e a party aprende Trinity "
+                    "Push; solo = Critical Plus; contrarrelógio = Gravity Break."
+                ),
+                "image": _OC + "t1.webp",
+                "tag": "troféu",
+            },
+            {
+                "title": "Trinity Amarela do Lobby = keyhole selado (troféu Junior Hero)",
+                "do": (
+                    "Volte ao Lobby e ative a trinity AMARELA em frente ao "
+                    "pedestal grande: o pedestal sai do lugar, o keyhole aparece e "
+                    "você sela. Sem isto, o Storyteller (Chronicles do Diário) não "
+                    "fecha."
+                ),
+                "image": _TN + "t34.webp",
+                "tag": "troféu",
+            },
+        ],
+    },
+    {
+        "world": "Traverse Town",
+        "name": "Traverse Town — 5ª visita: Navi-G, as páginas 3 e 4 e a volta com Glide",
+        "kind": "opcional",
+        "level": "—",
+        "run": "Só na run do 100%",
+        "trophies": [],
+        "note": (
+            "Pulável na cronometrada (o Navi-G da história é instalado de "
+            "qualquer forma quando você precisa). No 100%: com Glide e a cor "
+            "Amarela, a Mystical House do Merlin entrega os dálmatas 1-3 e uma "
+            "trinity."
+        ),
+        "puppies": ["1 · 2 · 3"],
+        "trinities": ["Amarela 1"],
+        "postcards": [],
+        "pages": [],
+        "steps": [
+            {
+                "title": "Instale o Navi-G e ganhe o Transform-G",
+                "do": (
+                    "Fale com o Cid atrás da Accessory Shop. O Transform-G permite "
+                    "trocar de nave em pleno voo — é exatamente o truque "
+                    "recomendado para a Missão Gummi 3 de Hollow Bastion (troféu "
+                    "Ace Pilot)."
+                ),
+                "image": _TT + "t65.webp",
+                "tag": "gummi",
+            },
+            {
+                "title": "Mystical House com Glide: dálmatas 1-3 e a trinity Amarela",
+                "do": (
+                    "Atrás da casa do Merlin (a Mystical House), plane até a "
+                    "pedra junto à parede: caixa dos dálmatas 1-3. A trinity "
+                    "Amarela fica perto da pilha de caixotes grandes, também atrás "
+                    "da casa."
+                ),
+                "image": _TR + "t26.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Devolva a Torn Page #3 → Pooh's Swing",
+                "do": (
+                    "No livro, examine a árvore na colina perto do fundo da página "
+                    "da direita. Resgate o Bisonho (Eeyore) no rio, trave no Pooh "
+                    "e leve-o até o balanço. Aperte quando a coruja abrir as asas "
+                    "ao MÁXIMO: manda o Pooh uns 20 metros. Truque infalível: "
+                    "deixe o Pooh comer o mel dos três potes antes — aí ele acerta "
+                    "sempre. Mais de 40 metros conta para o Cheer. Prêmio: Stopra. "
+                    "Depois, lance Fire na fogueira em frente à casa do Pooh: "
+                    "Mythril."
+                ),
+                "image": _HA + "t33.webp",
+                "tag": "minijogo",
+            },
+            {
+                "title": "Devolva a Torn Page #4 → Tigger's Giant Pot e as nozes da coruja",
+                "do": (
+                    "Examine a clareira lamacenta com tocos no meio da página da "
+                    "direita. Siga os três padrões de pulo do Tigger sem cair, "
+                    "depois fale com o Roo. Trave nas nozes e rebata; pular antes "
+                    "de bater aumenta a pontuação. Menos de 30 segundos conta para "
+                    "o Cheer. Nesta página estão as 5 Rare Nuts da coruja: Power "
+                    "Up, Defense Up, Mythril Shard, AP Up e ORICHALCUM — use os "
+                    "tocos e a gangorra do Tigger e do Roo para alcançá-las."
+                ),
+                "image": _HA + "t33.webp",
+                "tag": "minijogo",
+            },
+            {
+                "title": "Estoque e armas antes do Hollow Bastion",
+                "do": (
+                    "Compre as armas novas de Donald e Goofy na Item Shop e encha "
+                    "os slots de item. O próximo mundo é o mais longo do jogo e "
+                    "tem um ponto de não retorno no meio."
+                ),
+                "image": _TT + "t67.webp",
+                "tag": "passo",
+            },
+        ],
+    },
+    {
         "world": "Hollow Bastion",
-        "name": "Hollow Bastion — Visita 1",
+        "name": "Hollow Bastion — 1ª visita: o castelo da Maleficent",
         "kind": "história",
         "level": "Battle LV 28",
         "run": "As duas runs",
@@ -1574,45 +1903,65 @@ VISITS += [
             "PONTO DE VIRADA DO JOGO. Vencer o Ansem-Riku (o chefe depois da "
             "Maleficent Dragão) sobe permanentemente o status dos inimigos em "
             "todos os mundos e muda os encontros. No 100%, faça ANTES tudo que "
-            "você quiser farmar barato e as copas que der."
+            "você quiser farmar barato. Nesta ida: duas caixas de dálmatas e "
+            "quatro trinities."
         ),
+        "puppies": ["91 · 92 · 93", "94 · 95 · 96"],
+        "trinities": ["Azul 16", "Azul 17", "Vermelha 6", "Verde 9"],
+        "postcards": [],
+        "pages": [],
         "steps": [
             {
-                "title": "Suba as Rising Falls e desça ao Waterway",
+                "title": "Rising Falls: os dálmatas 91-93 e a subida",
                 "do": (
-                    "Use High Jump e Glide nos blocos de gelo. Na metade, Donald e "
-                    "Goofy saem e o FERA entra — sua espada de madeira quase não "
-                    "machuca, mas sua MAGIA continua igual: use magia e deixe o "
-                    "Fera bater. Examine o pedestal do topo, depois o nó da borda à "
-                    "direita para descer e entre na bolha do canto."
+                    "Use High Jump e Glide nos blocos de gelo. A um quarto da "
+                    "subida, numa plataforma flutuante, está a caixa dos dálmatas "
+                    "91-93. Na metade, Donald e Goofy saem e o FERA entra — sua "
+                    "espada de madeira quase não machuca, mas sua MAGIA continua "
+                    "igual: use magia e deixe o Fera bater. Examine o pedestal do "
+                    "topo."
                 ),
                 "image": _HB + "t1.webp",
                 "tag": "passo",
             },
             {
-                "title": "Abra o portão do castelo",
+                "title": "Castle Gates: dálmatas 94-96 com Gravity + Glide",
+                "do": (
+                    "Nos Castle Gates, plane até o canto do fundo e lance GRAVITY "
+                    "na pequena plataforma flutuante acima: ela desce com a caixa "
+                    "dos dálmatas 94-96. Depois examine o nó da borda à direita "
+                    "para descer e entre na bolha do canto para o Waterway."
+                ),
+                "image": _TR + "t219.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Waterway e Dungeon: abra o portão (e a trinity Azul)",
                 "do": (
                     "Salve no Waterway. Use o comando Call nas paredes "
                     "quebráveis, suba de bolha em bolha ativando os interruptores "
                     "de cada área e, na última sala, examine o interruptor e o "
-                    "mecanismo grande que abre a porta do castelo."
+                    "mecanismo grande que abre a porta do castelo. Na Dungeon "
+                    "(masmorra), a trinity Azul fica perto do centro, à esquerda "
+                    "da plataforma que leva ao Lift Stop."
                 ),
                 "image": _HB + "t7.webp",
                 "tag": "passo",
             },
             {
-                "title": "Riku (Entrance Hall) — trinity Branca",
+                "title": "Riku (Entrance Hall) — libera a trinity Branca",
                 "do": (
                     "Guard nos golpes rápidos e combo depois; AERO corta metade do "
                     "dano. Ele costuma abrir depois do golpe de cima e no fim do "
                     "pulo alto. Vencer libera as trinities BRANCAS — a última cor, "
-                    "que abre 10 pontos espalhados pelo jogo."
+                    "que abre 10 pontos espalhados pelo jogo (é o que justifica a "
+                    "varredura de todos os mundos depois daqui)."
                 ),
                 "image": _HB + "t14.webp",
                 "tag": "chefe",
             },
             {
-                "title": "A biblioteca: a ordem dos livros",
+                "title": "Library: a ordem dos livros (com a trinity Verde no meio)",
                 "do": (
                     "Khama Vol.8 (chão do canto) → estante oposta. Mava Vol.6 "
                     "(última prateleira do 2º andar). Trinity VERDE do 2º andar → "
@@ -1631,28 +1980,38 @@ VISITS += [
                 "tag": "puzzle",
             },
             {
-                "title": "As 4 peças do emblema",
+                "title": "Entrance Hall: as 4 peças do emblema (uma é a trinity Vermelha)",
                 "do": (
                     "1) Quebre os potes ao lado da estátua perto das portas da "
-                    "biblioteca — a peça cai na fonte abaixo. 2) Acenda as velas "
-                    "das paredes com Fire: a chama central apaga e revela a peça. "
-                    "3) Trinity VERMELHA na estátua da ponta sul — ela cai e "
-                    "quebra. 4) Empurre a estátua da parede oposta à biblioteca: "
-                    "aparece um baú numa plataforma abaixo. Falta MP? Bata nas "
-                    "gárgulas entre as velas."
+                    "Library — a peça cai na fonte abaixo. 2) Acenda as velas das "
+                    "paredes com Fire: a chama central apaga e revela a peça. 3) "
+                    "Trinity VERMELHA na estátua com chifres da sacada do 2º andar "
+                    "— ela cai e quebra. 4) Empurre a estátua da parede oposta à "
+                    "Library: aparece um baú numa plataforma abaixo. Falta MP? "
+                    "Bata nas gárgulas entre as velas."
                 ),
                 "image": _HB + "t23.webp",
                 "tag": "puzzle",
             },
             {
-                "title": "Maleficent e Maleficent Dragão",
+                "title": "Great Crest: a trinity Azul do Megalixir",
+                "do": (
+                    "Na subida até a Castle Chapel você atravessa o Great Crest "
+                    "numa plataforma flutuante. Do outro lado, no centro da área "
+                    "grande, está a trinity Azul — Megalixir e dois Cottages."
+                ),
+                "image": _TN + "t17.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Maleficent e Maleficent Dragão (Castle Chapel)",
                 "do": (
                     "Contra a Maleficent, GRAVITY derruba a plataforma flutuante "
                     "dela na hora — depois é combo livre. Contra o Dragão: invoque "
                     "a TINKER BELL logo no começo (regen + auto-life), lance AERO e "
-                    "bata combos aéreos na cabeça. O giro de 360° se evita correndo "
-                    "para a borda; do sopro de fogo, fuja de Glide. Prêmios: "
-                    "Ansem's Report 5 e o Fireglow (invocação Mushu)."
+                    "bata combos aéreos na cabeça. O giro de 360° se evita "
+                    "correndo para a borda; do sopro de fogo, fuja de Glide. "
+                    "Prêmios: Ansem's Report 5 e o Fireglow (invocação Mushu)."
                 ),
                 "image": _HB + "t41.webp",
                 "tag": "chefe",
@@ -1661,22 +2020,23 @@ VISITS += [
                 "title": "PARE AQUI se ainda tem farm a fazer",
                 "do": (
                     "O próximo chefe é o Ansem-Riku e é ele que endurece o jogo "
-                    "inteiro para sempre. No 100%, este é o momento de: fechar "
-                    "Phil, Pegasus e Hercules Cup, farmar materiais baratos e subir "
-                    "nível. Depois dele, tudo custa mais caro."
+                    "inteiro para sempre. No 100%, este é o momento de farmar "
+                    "materiais baratos e subir nível com calma. Depois dele, tudo "
+                    "custa mais caro."
                 ),
                 "image": _HB + "t42.webp",
                 "tag": "missable",
             },
             {
-                "title": "Ansem-Riku (solo) e a volta como Heartless",
+                "title": "Ansem-Riku (solo, Grand Hall) e a volta como Heartless",
                 "do": (
                     "Luta SOLO: sem invocação. AERO, Guard no golpe de cima e "
                     "combo de chão; ele revida depois de 4 acertos. Quando sobrar "
                     "uma barra e ele subir brilhando, PULE e faça Glide em círculo "
                     "largo pela arena. Prêmio: Ragnarok. Depois você joga como "
                     "Heartless: desça o castelo (pode pular da lateral) até o "
-                    "Entrance Hall e chegue na Kairi."
+                    "Entrance Hall e chegue na Kairi. Você é levado a Traverse "
+                    "Town."
                 ),
                 "image": _HB + "t44.webp",
                 "tag": "chefe",
@@ -1684,25 +2044,32 @@ VISITS += [
         ],
     },
     {
-        "world": "Cidade do Trânsito",
-        "name": "Cidade do Trânsito — Visita 6 (Oathkeeper)",
+        "world": "Traverse Town",
+        "name": "Traverse Town — 6ª visita: Kairi, o Oathkeeper e a última página",
         "kind": "história",
         "level": "—",
         "run": "As duas runs",
-        "trophies": ["Oathkeeper"],
+        "trophies": ["Oathkeeper", "Pooh's Friend", "Mini-Game Maniac"],
         "note": (
-            "Obrigatória: é a visita que instala o gummi de navegação para "
-            "voltar ao Hollow Bastion. O troféu Oathkeeper sai aqui."
+            "Obrigatória: é a visita que instala o gummi para voltar ao Hollow "
+            "Bastion. O troféu Oathkeeper sai aqui. No 100%, se você seguiu o "
+            "guia, já tem mais de 50 dálmatas — o Pongo entrega a 5ª página e "
+            "você fecha o 100 Acre Wood."
         ),
+        "puppies": [],
+        "trinities": ["Branca 1"],
+        "postcards": [],
+        "pages": ["Página 5"],
         "steps": [
             {
-                "title": "O gummi do Waterway e o chaveiro da Kairi",
+                "title": "O gummi do Waterway e o chaveiro da Kairi (troféu Oathkeeper)",
                 "do": (
-                    "Fale com o Cid atrás da loja, vá ao Beco e entre no Waterway. "
-                    "Caminhe até o MURAL da parede para receber o Gummi de "
-                    "Navegação; depois volte até onde a Kairi está e fale com ela: "
-                    "chaveiro OATHKEEPER (troféu). É um dos melhores chaveiros de "
-                    "magia do jogo."
+                    "Fale com o Cid atrás da loja, vá ao Alleyway e entre no "
+                    "Waterway. Caminhe até o MURAL da parede para receber o "
+                    "Navigation Gummi; depois volte até onde a Kairi está e fale "
+                    "com ela: chaveiro OATHKEEPER. É um dos melhores chaveiros de "
+                    "magia do jogo. Já que está no Waterway: a trinity BRANCA fica "
+                    "no piso de pedra em frente ao mural (Orichalcum)."
                 ),
                 "image": _TT + "t70.webp",
                 "tag": "troféu",
@@ -1710,30 +2077,34 @@ VISITS += [
             {
                 "title": "Mushu e o Lord Fortune",
                 "do": (
-                    "Suba a escada do Waterway até o estúdio e entregue o Fireglow "
-                    "à Fada Madrinha: invocação MUSHU. Se você já tiver as SEIS "
-                    "invocações, ela dá de bônus o Lord Fortune para o Donald."
+                    "Suba a escada do Waterway até o Magician's Study e entregue o "
+                    "Fireglow à Fada Madrinha: invocação MUSHU. Se você já tiver as "
+                    "SEIS invocações, ela dá de bônus o Lord Fortune para o Donald."
                 ),
                 "image": _TT + "t73.webp",
                 "tag": "invocação",
             },
             {
-                "title": "Torn Page #5 (mais de 50 dálmatas)",
+                "title": "Torn Page #5 (mais de 50 dálmatas) → Pooh's Muddy Path",
                 "do": (
-                    "Se você já devolveu mais de 50 filhotes ao Pongo e à Perdita, "
-                    "eles entregam a QUINTA página — a que fecha a história do "
-                    "Bosque dos Cem Acres. Devolva ao Livro Velho e jogue Pooh's "
-                    "Muddy Path."
+                    "Na Dalmatians' House (a casa do Pongo e da Perdita, no "
+                    "Second District), com mais de 50 filhotes devolvidos, eles "
+                    "entregam a QUINTA página. No livro, examine a trilha "
+                    "lamacenta no canto inferior esquerdo da página da esquerda e "
+                    "encontre todos os amigos perdidos. Ao terminar você sela o "
+                    "keyhole do Bosque (troféu Pooh's Friend) e, com os cinco "
+                    "minijogos feitos, fecha a seção Mini Games do Diário "
+                    "(Mini-Game Maniac)."
                 ),
-                "image": _TT + "t39.webp",
-                "tag": "coletável",
+                "image": _HA + "t33.webp",
+                "tag": "troféu",
             },
             {
                 "title": "Instale o gummi com o Cid",
                 "do": (
-                    "Volte ao 1º Distrito e fale com o Cid para instalar. Um portal "
-                    "novo aparece perto da Cidade do Trânsito: é o caminho de volta "
-                    "para o Hollow Bastion."
+                    "Volte ao First District e fale com o Cid para instalar. Um "
+                    "portal novo aparece perto de Traverse Town: é o caminho de "
+                    "volta para o Hollow Bastion. Armas novas na Item Shop."
                 ),
                 "image": _TT + "t68.webp",
                 "tag": "passo",
@@ -1742,45 +2113,60 @@ VISITS += [
     },
     {
         "world": "Hollow Bastion",
-        "name": "Hollow Bastion — Visita 2 (o keyhole final)",
+        "name": "Hollow Bastion — 2ª visita: Belle, Behemoth e o keyhole final",
         "kind": "história",
         "level": "Battle LV 33",
         "run": "As duas runs",
         "trophies": ["End of the World"],
         "note": (
             "Depois de selar aqui, os Heartless somem do Hollow Bastion — é a "
-            "melhor hora para caçar baús, dálmatas e trinities do mundo em paz."
+            "melhor hora para as duas caixas de dálmatas e a trinity Branca das "
+            "Rising Falls. E abrem os superchefes."
         ),
+        "puppies": ["61 · 62 · 63", "97 · 98 · 99"],
+        "trinities": ["Branca 10"],
+        "postcards": [],
+        "pages": [],
         "steps": [
             {
                 "title": "Belle e o chaveiro Divine Rose",
                 "do": (
-                    "Suba as Rising Falls, entre no Entrance Hall e vá à "
-                    "biblioteca; suba a escada até a Belle. Depois do reencontro "
-                    "dela com o Fera, fale com ela: chaveiro DIVINE ROSE."
+                    "Suba as Rising Falls (a trinity BRANCA fica na poça rasa da "
+                    "metade da subida: Thundaga-G), entre no Entrance Hall e vá à "
+                    "Library; suba a escada até a Belle. Depois do reencontro dela "
+                    "com o Fera, fale com ela: chaveiro DIVINE ROSE."
                 ),
                 "image": _HB + "t53.webp",
                 "tag": "coletável",
             },
             {
-                "title": "Oblivion no Grand Hall (não perca)",
+                "title": "Lift Stop: dálmatas 97-99 (Gravity)",
+                "do": (
+                    "Pela passagem da Library até o Lift Stop, lance GRAVITY na "
+                    "pequena plataforma flutuante acima: caixa dos dálmatas 97-99."
+                ),
+                "image": _TR + "t213.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Grand Hall: Oblivion e os dálmatas 61-63",
                 "do": (
                     "Ao chegar ao portal em forma de coração, escale a borda da "
-                    "área até a saliência alta: o baú tem o chaveiro OBLIVION. "
-                    "Perto dali, na saliência à esquerda do portal, está a caixa "
-                    "dos dálmatas 61-63."
+                    "área até a saliência alta: o baú tem o chaveiro OBLIVION. Na "
+                    "saliência à esquerda do portal está a caixa dos dálmatas "
+                    "61-63."
                 ),
                 "image": _HB + "t55.webp",
                 "tag": "baú",
             },
             {
-                "title": "Behemoth",
+                "title": "Behemoth (Dark Depths)",
                 "do": (
                     "Corra para o lado assim que a luta começar. Só o CHIFRE leva "
                     "dano: GRAVITY tira um naco enorme do HP. Suba nas costas dele "
                     "usando as patas traseiras, trave no chifre e bata. Quando "
-                    "formar a esfera laranja acima da cabeça, desça e fique embaixo "
-                    "da barriga. Prêmios: Omega Arts e a magia Firaga."
+                    "formar a esfera laranja acima da cabeça, desça e fique "
+                    "embaixo da barriga. Prêmios: Omega Arts e a magia Firaga."
                 ),
                 "image": _HB + "t56.webp",
                 "tag": "chefe",
@@ -1789,7 +2175,7 @@ VISITS += [
                 "title": "Sele o keyhole e fale 3× com a Aerith",
                 "do": (
                     "Selar dá o troféu End of the World e a magia Curaga vem da "
-                    "Aerith. Volte à biblioteca e fale com ela TRÊS vezes: ela "
+                    "Aerith. Volte à Library e fale com ela TRÊS vezes: ela "
                     "entrega os Ansem's Reports 2, 4, 6 e 10 de uma vez. Quatro dos "
                     "treze relatórios estão aqui — dá para passar batido."
                 ),
@@ -1797,201 +2183,15 @@ VISITS += [
                 "tag": "missable",
             },
             {
-                "title": "100%: agora abrem os três superchefes",
+                "title": "Cronometrada: daqui vá direto ao Fim do Mundo",
                 "do": (
-                    "Com o Hollow Bastion Ep.1 concluído, ficam disponíveis Kurt "
-                    "Zisa (Agrabah, falando com o Tapete na casa do Aladdin), "
-                    "Phantom (Terra do Nunca, falando com a Tinker Bell na Cabine) "
-                    "e Sephiroth (Coliseu, Platinum Match). O Unknown só aparece "
-                    "depois que você entra no Fim do Mundo e vê a primeira cena."
+                    "Na cronometrada, acabou a coleta que não existe: siga para o "
+                    "End of the World (o último card). No 100%, começa agora a "
+                    "varredura dos mundos com Glide, Gravity e a trinity Branca — "
+                    "os próximos cards, um por mundo."
                 ),
                 "image": _HB + "t60.webp",
-                "tag": "100%",
-            },
-        ],
-    },
-    {
-        "world": "Bosque dos Cem Acres",
-        "name": "Bosque dos Cem Acres — os 5 episódios",
-        "kind": "limpeza",
-        "level": "—",
-        "run": "Só na run do 100%",
-        "trophies": ["Pooh's Friend", "Mini-Game Maniac"],
-        "note": (
-            "Cada episódio exige ter uma Torn Page no inventário. Os cinco "
-            "minijogos daqui são as cinco entradas de Mini Games do Diário — "
-            "sem eles não existe Record Keeper."
-        ),
-        "steps": [
-            {
-                "title": "Entrada: o baú do tronco e o Elixir do armário",
-                "do": (
-                    "Examine a pilha de gravetos e fale com o Pooh. No fim do "
-                    "tronco oco há um baú com Mythril Shard. Suba no telhado da "
-                    "casa do Pooh e bata na chaminé: cai um Mega-Ether lá dentro; o "
-                    "armário do canto tem um Elixir."
-                ),
-                "image": _HA + "t17.webp",
-                "tag": "baú",
-            },
-            {
-                "title": "Pooh's Hunny Hunt (página 1)",
-                "do": (
-                    "Fique SEMPRE um galho abaixo do Pooh: dali você alcança as "
-                    "abelhas dos dois lados. Depois de bater nas abelhas o Sora "
-                    "volta sozinho ao galho mais próximo — não mexa no analógico. "
-                    "Caiu? Use o comando Rush. Mais de 100 pontos conta para o Sora "
-                    "aprender Cheer. Prêmio: Naturespark (invocação Bambi)."
-                ),
-                "image": _HA + "t17.webp",
-                "tag": "minijogo",
-            },
-            {
-                "title": "Block Tigger (página 2)",
-                "do": (
-                    "Use RUSH parado PERTO de uma cenoura ainda não pisada (não em "
-                    "cima dela, senão o comando não aparece). Olhe a sombra do "
-                    "Tigger e para onde ele está virado. Mais de 150 pontos conta "
-                    "para o Cheer."
-                ),
-                "image": _HA + "t17.webp",
-                "tag": "minijogo",
-            },
-            {
-                "title": "Pooh's Swing (página 3)",
-                "do": (
-                    "Aperte quando a coruja abrir as asas ao MÁXIMO: manda o Pooh "
-                    "uns 20 metros, o suficiente para cair na casa do Bisonho. Para "
-                    "pontuação alta, aperte depois de a coruja fechar as asas e "
-                    "antes de o Pooh chegar ao ponto mais baixo. Truque infalível: "
-                    "deixe o Pooh comer o mel dos três potes antes — aí ele acerta "
-                    "sempre. Mais de 40 metros conta para o Cheer. Prêmio: Stopra."
-                ),
-                "image": _HA + "t33.webp",
-                "tag": "minijogo",
-            },
-            {
-                "title": "Tigger's Giant Pot (página 4) e as nozes da coruja",
-                "do": (
-                    "Trave nas nozes e rebata; pular antes de bater aumenta a "
-                    "pontuação, e acertar assim que a noz fica alcançável multiplica "
-                    "mais. Menos de 30 segundos conta para o Cheer. Nesta página "
-                    "estão também as 5 Nozes Raras da coruja: Power Up, Defense Up, "
-                    "Mythril Shard, AP Up e ORICHALCUM — use os tocos e a gangorra "
-                    "do Tigger e do Guru para alcançá-las."
-                ),
-                "image": _HA + "t33.webp",
-                "tag": "minijogo",
-            },
-            {
-                "title": "Pooh's Muddy Path (página 5) — fecha o troféu",
-                "do": (
-                    "É a página que só existe depois de 50 dálmatas devolvidos. "
-                    "Encontre todos os amigos perdidos na trilha lamacenta; ao "
-                    "terminar você sela o keyhole do Bosque (troféu Pooh's Friend). "
-                    "Confira no Diário se a seção Mini Games está completa."
-                ),
-                "image": _HA + "t33.webp",
-                "tag": "troféu",
-            },
-        ],
-    },
-    {
-        "world": "Coliseu do Olimpo",
-        "name": "Coliseu — as 4 copas + Gold e Platinum",
-        "kind": "limpeza",
-        "level": "—",
-        "run": "Só na run do 100%",
-        "trophies": [
-            "Novice Hero",
-            "Artisan Hero",
-            "Hero of the Coliseum",
-            "Coliseum Champion",
-            "Supreme Soloist",
-            "Time Attacker",
-            "The Frost Giant",
-            "One-Winged-Angel",
-        ],
-        "note": (
-            "Cada copa tem TRÊS modos: normal (com a party), solo (só Sora) e "
-            "contrarrelógio. Os modos solo e tempo só abrem depois de vencer a "
-            "copa no normal — e é deles que saem o Supreme Soloist e o Time "
-            "Attacker (basta UM de cada, em qualquer copa: faça na Phil Cup, que "
-            "é a mais fácil)."
-        ),
-        "steps": [
-            {
-                "title": "Phil Cup (abre depois de selar a Cidade do Trânsito)",
-                "do": (
-                    "9 chaves. Prêmios: normal = magia Gravity; solo = Combo Plus; "
-                    "contrarrelógio (3 min) = Tech Boost. Faça as três aqui e já "
-                    "leve Supreme Soloist e Time Attacker."
-                ),
-                "image": _OC + "t1.webp",
-                "tag": "troféu",
-            },
-            {
-                "title": "Pegasus Cup (abre depois do Monstro)",
-                "do": (
-                    "Termina em Leon & Yuffie. Deflita as shurikens da Yuffie com "
-                    "Guard e, com lock-on no Leon, mande uma shuriken nele para "
-                    "atordoá-lo. Prêmios: Strike Raid, Orichalcum e Dark Matter."
-                ),
-                "image": _OC + "t1.webp",
-                "tag": "troféu",
-            },
-            {
-                "title": "Hercules Cup (abre com Halloween + Terra do Nunca selados)",
-                "do": (
-                    "Chave 5 é um Rare Truffle: um toque encerra a luta, mas você "
-                    "pode ficar rebatendo para XP. Chave 4 é o Cloud e a final é o "
-                    "Hércules — quando ele estiver com a aura dourada é invulnerável. "
-                    "Prêmios: Herc's Shield, OLYMPIA e a trinity Push; solo = "
-                    "Critical Plus; tempo = Gravity Break."
-                ),
-                "image": _OC + "t1.webp",
-                "tag": "troféu",
-            },
-            {
-                "title": "Hades Cup — 50 chaves e o Ansem's Report 8",
-                "do": (
-                    "A maratona do jogo: 50 chaves, com Hades na 10 e o Rock Titan "
-                    "na final. É aqui que saem Firaga, Blizzaga e Thundaga — por "
-                    "isso o guia recomenda fechá-la ANTES de encarar o Phantom. "
-                    "Derrotar o Hades dá o Ansem's Report 8. Leve Elixires e "
-                    "Megalixires (farmados no Anti-Sora da Terra do Nunca)."
-                ),
-                "image": _OC + "t1.webp",
-                "tag": "troféu",
-            },
-            {
-                "title": "Gold Match — Ice Titan (nível 65+)",
-                "do": (
-                    "Abre depois de vencer as QUATRO copas. A luta inteira é "
-                    "DEFLEXÃO: fique travado nele e use GUARD nos gelos que vêm — "
-                    "eles voltam e machucam o Titã. NÃO lance Aerora/Aeroga: com o "
-                    "buff ativo ele manda gelos que não dá para bloquear. Use Glide "
-                    "quando ele der passos (o tremor não pega quem está no ar ou "
-                    "nas escadas). Prêmio: chaveiro Diamond Dust."
-                ),
-                "image": _OC + "t1.webp",
-                "tag": "chefe",
-            },
-            {
-                "title": "Platinum Match — Sephiroth (nível 75+)",
-                "do": (
-                    "Abre depois de selar o keyhole do Hollow Bastion (não precisa "
-                    "das copas, mas faça antes). NÃO se aproxime pelo chão: a "
-                    "espada tem alcance absurdo. Use HIGH JUMP para passar por cima "
-                    "do golpe horizontal e emende combo aéreo. Ele revida a cada 4 "
-                    "acertos sem finalização. Strike Raid dá dano à distância E te "
-                    "deixa invencível durante a animação. Build: Ultima ou Diamond "
-                    "Dust, MP Rage no máximo, no máximo UM Combo Plus, acessórios "
-                    "de defesa e resistência a trevas. Prêmios: chaveiro One Winged "
-                    "Angel e Ansem's Report 12."
-                ),
-                "image": _OC + "t1.webp",
-                "tag": "chefe",
+                "tag": "atalho",
             },
         ],
     },
@@ -1999,145 +2199,446 @@ VISITS += [
 
 VISITS += [
     {
-        "world": "Superchefes",
-        "name": "Os 3 chefes fora do Coliseu",
-        "kind": "limpeza",
-        "level": "nível 65 a 80",
+        "world": "Wonderland",
+        "name": "Varredura — Wonderland: as caixas de Glide e Thunder e as trinities Verde e Branca",
+        "kind": "varredura",
+        "level": "—",
         "run": "Só na run do 100%",
-        "trophies": ["The Sandy Blade", "The Cloaked Shadow", "He Who Doesn't Exist"],
-        "note": (
-            "Cada um dá um Ansem's Report (11, 13) ou uma magia, e todos os três "
-            "são troféu. A build completa de cada luta está na aba Builds & "
-            "Chefes."
-        ),
+        "trophies": [],
+        "note": "Volte com Glide, Thunder e a trinity Branca. Duas caixas de dálmatas, três trinities e o chaveiro Lady Luck.",
+        "puppies": ["19 · 20 · 21", "58 · 59 · 60"],
+        "trinities": ["Verde 2", "Verde 3", "Branca 2"],
+        "postcards": [],
+        "pages": [],
         "steps": [
             {
-                "title": "Kurt Zisa — Agrabah (nível 75+)",
+                "title": "Rabbit Hole e Bizarre Room: as duas trinities Verdes",
                 "do": (
-                    "Abre depois do Hollow Bastion Ep.1. Fale com o Tapete Mágico "
-                    "na casa do Aladdin e escolha ir ao deserto. Leve o ALADDIN no "
-                    "lugar do Donald. Prêmios: habilidade Zantetsuken e Ansem's "
-                    "Report 11."
+                    "Na Rabbit Hole (a entrada), a trinity Verde fica junto à "
+                    "parede, perto do save point (Elixir). No Bizarre Room, a "
+                    "outra está no chão, DENTRO do forno (Mythril Shard)."
+                ),
+                "image": _TN + "t25.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Tea Party Garden com Glide: dálmatas 19-21",
+                "do": (
+                    "Pela passagem da Lotus Forest, plane até a sebe junto à "
+                    "parede em frente ao chalé. Aproveite e sente nas cadeiras do "
+                    "jardim: prêmios e entradas do Diário."
+                ),
+                "image": _TR + "t46.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "A alcova do quadro: Thunder nas flores rosas (58-60) e a trinity Branca (Lady Luck)",
+                "do": (
+                    "Entre no Bizarre Room DE LADO (pela passagem da Lotus Forest "
+                    "que te deixa na parede) e passe pelo QUADRO: é uma alcova "
+                    "escondida da Lotus Forest. Lance THUNDER nas flores ROSAS "
+                    "para soltar os dálmatas 58-60. No centro da alcova está a "
+                    "trinity BRANCA — o chaveiro LADY LUCK, um dos melhores de "
+                    "magia. As flores amarelas dali trocam Elixir por Mythril "
+                    "Shard."
+                ),
+                "image": _TR + "t42.webp",
+                "tag": "100%",
+            },
+        ],
+    },
+    {
+        "world": "Deep Jungle",
+        "name": "Varredura — Deep Jungle: duas trinities e o Pink Agaricus",
+        "kind": "varredura",
+        "level": "—",
+        "run": "Só na run do 100%",
+        "trophies": [],
+        "note": "Duas trinities (Verde e Branca) e o farm do Serenity Power, material da Ultima.",
+        "puppies": [],
+        "trinities": ["Verde 5", "Branca 4"],
+        "postcards": [],
+        "pages": [],
+        "steps": [
+            {
+                "title": "Treetops (Verde) e Cavern of Hearts (Branca)",
+                "do": (
+                    "Nas Treetops (as copas), a trinity Verde fica no centro da "
+                    "área e é MUITO difícil de ver pela cor — ande pelo meio até o "
+                    "comando aparecer. Na Cavern of Hearts (a caverna do keyhole), "
+                    "a Branca está no centro: Orichalcum."
+                ),
+                "image": _TN + "t28.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Pink Agaricus na Tree House (Serenity Power x3)",
+                "do": (
+                    "Entre na Tree House até chegar uma vez em que NENHUM "
+                    "Heartless nasce: é o sinal. Invoque o Bambi (MP) e lance STOP "
+                    "em três White Mushrooms escondidos pela área (rede sob a "
+                    "casa, varanda de trás, barco suspenso, telhado — use as "
+                    "escadas e o Glide). Aí o Pink Agaricus aparece: bata o máximo "
+                    "de golpes possível enquanto ele está parado. Lucky Strike em "
+                    "todo mundo. Precisa de 3 Serenity Power para a Ultima; com "
+                    "sorte cai também o Prime Cap."
+                ),
+                "image": _DJ + "t19.webp",
+                "tag": "farm",
+            },
+        ],
+    },
+    {
+        "world": "Agrabah",
+        "name": "Varredura — Agrabah: as três caixas de High Jump, três trinities e o Kurt Zisa",
+        "kind": "varredura",
+        "level": "nível 75+ para o Kurt Zisa",
+        "run": "Só na run do 100%",
+        "trophies": ["The Sandy Blade"],
+        "note": "O mundo que mais rende na varredura: 9 dálmatas, três trinities e um troféu de superchefe.",
+        "puppies": ["52 · 53 · 54", "49 · 50 · 51", "46 · 47 · 48"],
+        "trinities": ["Verde 6", "Amarela 3", "Branca 5"],
+        "postcards": [],
+        "pages": [],
+        "steps": [
+            {
+                "title": "Storage e Palace Gates: trinity Verde e dálmatas 52-54",
+                "do": (
+                    "No Storage (a salinha do save point ao lado de onde você "
+                    "chega), a trinity Verde fica perto das prateleiras (AP Up). "
+                    "Nos Palace Gates, use High Jump para a saliência mais alta do "
+                    "canto em frente aos portões: dálmatas 52-54."
+                ),
+                "image": _TR + "t89.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Cave of Wonders, Entrance: dálmatas 49-51 e a trinity Branca",
+                "do": (
+                    "Logo na entrada da caverna, à esquerda (de frente para o "
+                    "Hall), está a trinity BRANCA — Ifrit Belt. Em cima de um "
+                    "pilar perto da entrada do Hall, a caixa dos dálmatas 49-51: "
+                    "High Jump ou Glide resolvem."
+                ),
+                "image": _TR + "t92.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Hall (trinity Amarela) e Hidden Room (dálmatas 46-48)",
+                "do": (
+                    "No Hall, em frente à estátua perto do caminho da pedra "
+                    "rolante, a trinity AMARELA abre uma câmara com Thundara-G e "
+                    "Meteor-G. Na Hidden Room, ative a estátua para abrir a parede "
+                    "ao lado (High Jump): caixa dos dálmatas 46-48."
+                ),
+                "image": _TR + "t106.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Kurt Zisa (troféu The Sandy Blade)",
+                "do": (
+                    "Fale com o Tapete Mágico na Aladdin's House e escolha ir ao "
+                    "deserto. ALADDIN no lugar do Donald, chaveiro de magia "
+                    "(Spellbinder/Oathkeeper/Lady Luck), MP Rage e MP Haste em "
+                    "todo mundo, Thundaga e Aerora nos atalhos. Fase 1 ele "
+                    "silencia a party: role e bata nos ORBES das mãos. Orbes "
+                    "quebrados, ele cai: combo aéreo na cabeça de cobra, cure e "
+                    "Aero AGORA. Barreira: Thundaga, com o Bambi repondo MP. "
+                    "Build completa na aba Builds & Chefes. Prêmios: Zantetsuken e "
+                    "Ansem's Report 11."
                 ),
                 "image": _AG + "t10.webp",
                 "tag": "chefe",
             },
+        ],
+    },
+    {
+        "world": "Monstro",
+        "name": "Varredura — Monstro: a trinity Branca do Dark Matter",
+        "kind": "varredura",
+        "level": "—",
+        "run": "Só na run do 100%",
+        "trophies": [],
+        "note": "Uma parada rápida: a trinity Branca da Chamber 6 dá um Dark Matter, material da Ultima.",
+        "puppies": [],
+        "trinities": ["Branca 6"],
+        "postcards": [],
+        "pages": [],
+        "steps": [
             {
-                "title": "Phantom — Terra do Nunca (nível 65+)",
+                "title": "Chamber 6, centro do chão",
                 "do": (
-                    "Abre depois do Hollow Bastion Ep.1. Fale com a Tinker Bell na "
-                    "Cabine do navio e escolha ir à torre do relógio. PETER PAN é "
-                    "obrigatório na party. Faça a Hades Cup antes: você precisa de "
-                    "Firaga, Blizzaga e Thundaga. Prêmio: Stopra/Stopga — e a torre "
-                    "do relógio volta a funcionar."
+                    "Mouth ► Chamber 1 ► 2 ► 3 ► 2 ► 5 ► 6. A trinity BRANCA está no "
+                    "nível do chão, bem no centro da câmara. Um dos 3 Dark Matters "
+                    "da Ultima Weapon."
+                ),
+                "image": _TN + "t42.webp",
+                "tag": "100%",
+            },
+        ],
+    },
+    {
+        "world": "Atlantica",
+        "name": "Varredura — Atlantica: a trinity Branca e as Thunder Gems",
+        "kind": "varredura",
+        "level": "—",
+        "run": "Só na run do 100%",
+        "trophies": [],
+        "note": "A trinity Branca do palácio e o melhor farm de Thunder Gem do jogo (5 para a Ultima).",
+        "puppies": [],
+        "trinities": ["Branca 7"],
+        "postcards": [],
+        "pages": [],
+        "steps": [
+            {
+                "title": "Triton's Palace: a concha roxa",
+                "do": (
+                    "Dentro da grande concha roxa perto do centro do Triton's "
+                    "Palace está a trinity BRANCA — Orichalcum."
+                ),
+                "image": _TN + "t43.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Thunder Gem x5: o loop do Triton's Throne",
+                "do": (
+                    "Entre pelo Triton's Throne, nade até o Triton's Palace e "
+                    "mate todos os Screwdivers e Aquatanks com Firaga; volte ao "
+                    "Throne, saia do mundo e entre de novo — repita. Lucky Strike "
+                    "em todo mundo. Alternativa: três Thunders no mesmo White "
+                    "Mushroom."
+                ),
+                "image": _AT + "t21.webp",
+                "tag": "farm",
+            },
+        ],
+    },
+    {
+        "world": "Halloween Town",
+        "name": "Varredura — Halloween Town: as duas últimas caixas e a trinity Branca",
+        "kind": "varredura",
+        "level": "—",
+        "run": "Só na run do 100%",
+        "trophies": [],
+        "note": "Seis dálmatas (uma caixa por Glide, outra pela trinity Branca).",
+        "puppies": ["70 · 71 · 72", "67 · 68 · 69"],
+        "trinities": ["Branca 8"],
+        "postcards": [],
+        "pages": [],
+        "steps": [
+            {
+                "title": "Guillotine Square com Glide: dálmatas 70-72",
+                "do": (
+                    "Na Guillotine Square (a praça da guilhotina), plane até a "
+                    "boca da estrutura em forma de abóbora: a caixa dos dálmatas "
+                    "70-72 fica lá dentro."
+                ),
+                "image": _TR + "t162.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Moonlight Hill: a trinity Branca solta os dálmatas 67-69",
+                "do": (
+                    "Em frente à colina, perto da plantação de abóboras, a trinity "
+                    "BRANCA libera a caixa dos dálmatas 67-69. Se quiser Mystery "
+                    "Goo: o Black Fungus aparece aqui — jogue abóboras nele para o "
+                    "golpe final (conta como crítico)."
+                ),
+                "image": _TR + "t166.webp",
+                "tag": "100%",
+            },
+        ],
+    },
+    {
+        "world": "Neverland",
+        "name": "Varredura — Neverland: o navio inteiro e o Phantom",
+        "kind": "varredura",
+        "level": "nível 65+ para o Phantom",
+        "run": "Só na run do 100%",
+        "trophies": ["The Cloaked Shadow"],
+        "note": "Nove dálmatas no navio, duas trinities e o Phantom — faça a Hades Cup ANTES dele (você precisa das magias -aga).",
+        "puppies": ["82 · 83 · 84", "85 · 86 · 87", "43 · 44 · 45"],
+        "trinities": ["Amarela 4", "Branca 9"],
+        "postcards": [],
+        "pages": [],
+        "steps": [
+            {
+                "title": "Hold: dálmatas 82-84 (Glide) e a trinity Amarela (85-87)",
+                "do": (
+                    "No Hold (o porão), plane até as vigas superiores do lado de "
+                    "estibordo: dálmatas 82-84. Logo à esquerda depois de subir a "
+                    "escada, em frente à porta trancada, a trinity AMARELA abre "
+                    "uma sala com Orichalcum, Dark Matter, a magia Aero e o baú "
+                    "verde sobre os rolos de lona com os dálmatas 85-87."
+                ),
+                "image": _TR + "t184.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Deck: a trinity Branca em frente ao timão (43-45)",
+                "do": (
+                    "No convés, em frente ao timão, a trinity BRANCA libera a "
+                    "caixa dos dálmatas 43-45. Aproveite o convés para rebater "
+                    "Rare Truffles voando: 100 rebatidas = Megalixir + Mystery "
+                    "Goo garantido."
+                ),
+                "image": _TR + "t190.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Phantom (troféu The Cloaked Shadow)",
+                "do": (
+                    "Fale com a Tinker Bell na Cabin e escolha ir à Clock Tower. "
+                    "PETER PAN obrigatório; Goofy com MP Gift e sem habilidades de "
+                    "ataque. Ele lança Doom no relógio: trave nos PONTEIROS e "
+                    "lance STOP a cada 30-45 s, senão um personagem sai da luta "
+                    "para sempre. O dano só entra no coração sob o manto, com a "
+                    "magia da cor dele. Guarde sempre 2 de MP para o relógio. "
+                    "Build completa na aba Builds & Chefes. Prêmio: Stopra/Stopga "
+                    "— e a Clock Tower volta a dar os prêmios por hora."
                 ),
                 "image": _NL + "t20.webp",
                 "tag": "chefe",
             },
+        ],
+    },
+    {
+        "world": "Olympus Coliseum",
+        "name": "Olympus Coliseum — Hades Cup, Gold Match e Platinum Match",
+        "kind": "varredura",
+        "level": "nível 65+ (Ice Titan) · 75+ (Sephiroth)",
+        "run": "Só na run do 100%",
+        "trophies": ["Coliseum Champion", "The Frost Giant", "One-Winged-Angel"],
+        "note": "A Hades Cup abre depois do Hollow Bastion. Traga Elixires e Megalixires (Anti-Sora da Neverland).",
+        "puppies": [],
+        "trinities": ["Branca 3"],
+        "postcards": [],
+        "pages": [],
+        "steps": [
             {
-                "title": "Unknown — Hollow Bastion (nível 80+)",
+                "title": "Trinity Branca dos Gates (Violetta)",
+                "do": "No centro dos Gates. Dá o cajado Violetta — conta para o Master Magician.",
+                "image": _TN + "t39.webp",
+                "tag": "100%",
+            },
+            {
+                "title": "Hades Cup — 50 chaves (troféu Coliseum Champion)",
                 "do": (
-                    "Só aparece depois de você ENTRAR no Fim do Mundo e ver a "
-                    "primeira cena — então: entre lá, veja a cena, volte. O portal "
-                    "roxo fica na Capela do Castelo. É a luta mais difícil do jogo. "
-                    "Prêmios: acessório EXP Necklace e Ansem's Report 13."
+                    "A maratona do jogo: Hades na chave 10 (Ansem's Report 8), "
+                    "Cloud & Leon na 20, Cérbero na 30, Behemoth na 40 e o Rock "
+                    "Titan na final. É aqui que saem Firaga, Blizzaga e Thundaga. "
+                    "Gravity nos grupos de Defender e Large Body; Thunder nas "
+                    "levas de Darkball assim que elas se materializam."
                 ),
-                "image": _HB + "t60.webp",
+                "image": _OC + "t1.webp",
+                "tag": "troféu",
+            },
+            {
+                "title": "Gold Match — Ice Titan (troféu The Frost Giant)",
+                "do": (
+                    "Abre depois de vencer as QUATRO copas. A luta inteira é "
+                    "DEFLEXÃO: fique travado nele e use GUARD nos gelos — eles "
+                    "voltam e machucam o Titã. NÃO lance Aerora/Aeroga: com o buff "
+                    "ativo ele manda gelos que não dá para bloquear. Glide quando "
+                    "ele der passos. Prêmio: chaveiro Diamond Dust."
+                ),
+                "image": _OC + "t1.webp",
+                "tag": "chefe",
+            },
+            {
+                "title": "Platinum Match — Sephiroth (troféu One-Winged-Angel)",
+                "do": (
+                    "Abre ao selar o Hollow Bastion. NÃO se aproxime pelo chão: a "
+                    "espada tem alcance absurdo. HIGH JUMP por cima do golpe "
+                    "horizontal e combo aéreo. Ele revida a cada 4 acertos sem "
+                    "finalização. Strike Raid dá dano à distância E te deixa "
+                    "invencível durante a animação. Build completa na aba Builds & "
+                    "Chefes. Prêmios: One Winged Angel e Ansem's Report 12."
+                ),
+                "image": _OC + "t1.webp",
                 "tag": "chefe",
             },
         ],
     },
     {
         "world": "Limpeza final",
-        "name": "Limpeza final — antes de abrir a porta",
-        "kind": "limpeza",
+        "name": "Limpeza final — o que precisa estar fechado antes da porta",
+        "kind": "varredura",
         "level": "—",
         "run": "Só na run do 100%",
         "trophies": [
-            "Record Keeper",
-            "Top Dog",
-            "Best Friend",
-            "Professor",
-            "Synthesis Master",
-            "Blade Master",
-            "Master Magician",
-            "Master Defender",
-            "Level Master",
-            "Top Gun",
+            "Record Keeper", "Top Dog", "Best Friend", "Professor", "Storyteller",
+            "Searcher", "Synthesis Master", "Blade Master", "Master Magician",
+            "Master Defender", "Level Master", "Top Gun",
         ],
         "note": (
             "A lista do que precisa estar fechado. Se qualquer item aqui estiver "
             "aberto, NÃO abra a porta do Final Rest."
         ),
+        "puppies": [],
+        "trinities": [],
+        "postcards": [],
+        "pages": [],
         "steps": [
             {
-                "title": "99 dálmatas devolvidos ao Pongo e à Perdita",
+                "title": "99 dálmatas devolvidos (Top Dog) e 46 trinities (Best Friend)",
                 "do": (
-                    "São 33 baús de 3 filhotes. A lista completa com foto está na "
-                    "aba Coletáveis. Devolver os 99 dá o conjunto completo de "
-                    "gummis e a magia Aeroga; aos 90 sai o RIBBON, o melhor "
-                    "acessório do jogo."
+                    "Se você marcou as caixas ao longo da rota, os contadores do "
+                    "topo do guia dizem quanto falta. O Diário do Jiminy mostra "
+                    "por mundo quais filhotes faltam e quantas trinities de cada "
+                    "cor você ativou. Devolver os 99 dá Aeroga; aos 90 sai o "
+                    "RIBBON, o melhor acessório do jogo."
                 ),
                 "image": _TR + "t26.webp",
                 "tag": "troféu",
             },
             {
-                "title": "46 trinities ativadas",
+                "title": "Diário: Heartless raros (Professor)",
                 "do": (
-                    "17 Azuis, 6 Vermelhas, 9 Verdes, 4 Amarelas e 10 Brancas. "
-                    "Todas na aba Coletáveis com foto. O Diário tem um contador por "
-                    "cor — use-o para saber qual cor falta."
+                    "O troféu que mais pega gente de surpresa: exige TODOS os "
+                    "Heartless, inclusive os raros de área — Sniperwild (Traverse "
+                    "Town), Gigas Shadow (Wonderland), Black Ballade (Deep "
+                    "Jungle), Pot Scorpion (Agrabah), Grand Ghost (Monstro), "
+                    "Chimera (Halloween Town), Jet Balloon (Neverland), Stealth "
+                    "Soldier (Hollow Bastion), Neoshadow (End of the World) e os "
+                    "quatro cogumelos (White Mushroom, Rare Truffle, Black Fungus, "
+                    "Pink Agaricus)."
                 ),
-                "image": _TN + "t1.webp",
+                "image": _TT + "t26.webp",
+                "tag": "troféu",
+            },
+            {
+                "title": "Sintetizar TODOS os itens (Synthesis Master)",
+                "do": (
+                    "As receitas do último grupo só aparecem depois de sintetizar "
+                    "os 30 itens únicos dos grupos I a V. Materiais da Ultima: "
+                    "Thunder Gem x5 (Atlantica), Mystery Goo x5 (Rare Truffle no "
+                    "Deck da Neverland), Serenity Power x3 (Pink Agaricus), Stormy "
+                    "Stone x3 (Neoshadow, End of the World) e Dark Matter x3 "
+                    "(trinities Branca do Monstro e Amarela da Neverland + "
+                    "contrarrelógio da Pegasus Cup)."
+                ),
+                "image": _TT + "t57.webp",
                 "tag": "troféu",
             },
             {
                 "title": "Todas as Keyblades, cajados e escudos",
                 "do": (
                     "Blade Master, Master Magician e Master Defender. As armas de "
-                    "Donald e Goofy vêm principalmente da loja dos sobrinhos (que "
-                    "renova o estoque a cada visita), de baús do Fim do Mundo e da "
-                    "síntese — por isso a loja precisa ser visitada em TODA volta "
-                    "à Cidade do Trânsito."
+                    "Donald e Goofy vêm da Item Shop (que renova a cada visita), "
+                    "de trinities Brancas, de baús do End of the World e da "
+                    "síntese."
                 ),
                 "image": _TT + "t58.webp",
                 "tag": "troféu",
             },
             {
-                "title": "Sintetizar TODOS os itens (inclui a Ultima Weapon)",
+                "title": "Sora no nível 100 (Level Master)",
                 "do": (
-                    "As receitas do último grupo só aparecem depois de sintetizar "
-                    "os 30 itens únicos dos grupos I a V. Materiais da Ultima: "
-                    "Thunder Gem x5, Mystery Goo x5, Serenity Power x3, Stormy "
-                    "Stone x3 e Dark Matter x3. Detalhe de cada um na aba "
-                    "Coletáveis."
-                ),
-                "image": _TT + "t57.webp",
-                "tag": "troféu",
-            },
-            {
-                "title": "Diário do Jiminy: seção Heartless completa",
-                "do": (
-                    "O Professor é o troféu que mais pega gente de surpresa: exige "
-                    "TODOS os Heartless, inclusive os raros de área — Sniperwild "
-                    "(Cidade do Trânsito), Gigas Shadow (País das Maravilhas), "
-                    "Black Ballade (Selva), Pot Scorpion (Agrabah), Grand Ghost "
-                    "(Monstro), Chimera (Halloween), Jet Balloon (Terra do Nunca), "
-                    "Stealth Soldier (Hollow Bastion), Neoshadow (Fim do Mundo) e "
-                    "os quatro cogumelos (White Mushroom, Rare Truffle, Black "
-                    "Fungus, Pink Agaricus)."
-                ),
-                "image": _TT + "t26.webp",
-                "tag": "troféu",
-            },
-            {
-                "title": "Sora no nível 100",
-                "do": (
-                    "Com a curva NOITE (as três últimas respostas no Despertar), o "
-                    "trecho final voa. Melhores pontos: Hades Cup repetida, o Ice "
-                    "Titan com todos os Tech Boost equipados, e as ondas de "
-                    "Heartless do Fim do Mundo. Equipe o EXP Necklace (do Unknown) "
-                    "e todos os Tech Boost."
+                    "Com a curva NOITE, o trecho final voa. Melhores pontos: Hades "
+                    "Cup repetida, o Ice Titan com todos os Tech Boost equipados, "
+                    "e as ondas de Heartless do End of the World. Equipe o EXP "
+                    "Necklace (do Unknown) e todos os Tech Boost."
                 ),
                 "image": _EW + "t14.webp",
                 "tag": "troféu",
@@ -2146,22 +2647,22 @@ VISITS += [
                 "title": "Gummi: todas as rotas, as 3 missões e 30 plantas",
                 "do": (
                     "Top Gun quer todas as rotas voadas ao menos uma vez (costuma "
-                    "estourar ao ir de Hollow Bastion para o Fim do Mundo). Test/"
-                    "Veteran/Ace Pilot querem UMA missão 1, UMA missão 2 e UMA "
+                    "estourar ao ir de Hollow Bastion para o End of the World). "
+                    "Test/Veteran/Ace Pilot querem UMA missão 1, UMA missão 2 e UMA "
                     "missão 3 — qualquer rota. Customizer é só editar e salvar uma "
-                    "planta. Gummi Ship Collector quer 30 plantas (no PS4; no PS3 "
-                    "são todas)."
+                    "planta. Gummi Ship Collector quer 30 plantas."
                 ),
                 "image": _TT + "t76.webp",
                 "tag": "troféu",
             },
             {
-                "title": "Confirme o Diário 100% e SÓ ENTÃO vá ao Fim do Mundo",
+                "title": "Confirme o Diário 100% (Record Keeper)",
                 "do": (
                     "Menu → Journal. Chronicles, Ansem's Report, Characters 1, "
-                    "Characters 2, The Heartless, 101 Dálmatas, Trinity List e Mini "
-                    "Games precisam estar todos com o selo de completo. Aí sim: "
-                    "Record Keeper."
+                    "Characters 2, The Heartless, 101 Dalmatians, Trinity List e "
+                    "Mini Games precisam estar todos com o selo de completo. O "
+                    "Ansem's Report 13 (Unknown) você pega no próximo card, "
+                    "antes de fechar."
                 ),
                 "image": _EW + "t17.webp",
                 "tag": "missable",
@@ -2169,18 +2670,42 @@ VISITS += [
         ],
     },
     {
-        "world": "Fim do Mundo",
-        "name": "Fim do Mundo — o ponto sem volta",
+        "world": "End of the World",
+        "name": "End of the World — o Unknown, o ponto sem volta e o fim",
         "kind": "final",
         "level": "Battle LV 40+",
         "run": "As duas runs",
-        "trophies": ["Speedster", "Undefeated", "Unchanging Armor", "Proud Player", "Final Mix Master", "Novice Player"],
+        "trophies": [
+            "He Who Doesn't Exist", "Speedster", "Undefeated", "Unchanging Armor",
+            "Proud Player", "Final Mix Master", "Novice Player",
+        ],
         "note": (
             "Os Heartless daqui (Invisible, Angel Star, Arch Behemoth, Neoshadow) "
             "são os mais fortes do jogo. AERO o tempo todo e GRAVITY nos "
-            "Invisibles."
+            "Invisibles. No 100%, entrar aqui é o que libera o Unknown — e "
+            "depois você VOLTA ao Hollow Bastion para ele antes de seguir."
         ),
+        "puppies": [],
+        "trinities": [],
+        "postcards": [],
+        "pages": [],
         "steps": [
+            {
+                "title": "Entre, veja a primeira cena — e (100%) volte para o Unknown",
+                "do": (
+                    "A primeira cena do End of the World é o gatilho do Unknown. "
+                    "No 100%: saia pelo save point, volte ao Hollow Bastion e entre "
+                    "no portal roxo da Castle Chapel. Nível 80+, Ultima ou Diamond "
+                    "Dust, SEM Combo Plus, Gravity/Aero/Cure nos atalhos, Tinker "
+                    "Bell no início. A janela é quando ele lança dois orbes e "
+                    "começa a teleportar: Gravity travado nele. Na maldição, "
+                    "selecione RELEASE (nunca Shock). Build completa na aba Builds "
+                    "& Chefes. Prêmios: EXP Necklace, Ansem's Report 13 e o troféu "
+                    "He Who Doesn't Exist. Só então retorne aqui."
+                ),
+                "image": _HB + "t60.webp",
+                "tag": "chefe",
+            },
             {
                 "title": "O caminho invisível e o World Terminus",
                 "do": (
@@ -2199,8 +2724,8 @@ VISITS += [
                     "= você não selou o keyhole daquele mundo e é OBRIGADO a limpar "
                     "os Heartless de dentro; ROSA = pode passar direto. Os portais "
                     "azuis brilhantes da borda levam ao próximo terminal, os verdes "
-                    "voltam. O terminal verde grande é o do Bosque dos Cem Acres — "
-                    "salve ali."
+                    "voltam. O terminal verde grande é o do 100 Acre Wood — salve "
+                    "ali."
                 ),
                 "image": _EW + "t7.webp",
                 "tag": "passo",
@@ -2219,14 +2744,14 @@ VISITS += [
                 "tag": "chefe",
             },
             {
-                "title": "A cratera e as ondas dos Mundos Ligados",
+                "title": "A cratera e as ondas dos Linked Worlds (farm de Neoshadow)",
                 "do": (
                     "Desça com Superglide passando por todos os portais brancos. "
                     "Nas ondas: AERO (Aerora chega a atordoar), invoque a Tinker "
                     "Bell, Gravity nos Invisibles e combos aéreos rápidos nos Angel "
                     "Stars — se um deles começar a brilhar azul, mate na hora ou "
-                    "ele gera outro. É também o melhor lugar do jogo para farmar os "
-                    "Neoshadows (Stormy Stone da Ultima)."
+                    "ele gera outro. É também o lugar dos Neoshadows (Stormy Stone "
+                    "da Ultima e entrada do Diário)."
                 ),
                 "image": _EW + "t16.webp",
                 "tag": "farm",
@@ -2251,8 +2776,9 @@ VISITS += [
                     "Cottage. Ansem solo: sem invocação; role dos rasgos escuros e "
                     "use Guard na investida. World of Chaos: fase 1 voando (fique "
                     "junto à ombreira do Guardião para esperar os ataques), fase 2 "
-                    "limpa Shadows e bate no núcleo, fase 3 e 4 são as artilharias "
-                    "e o rosto. Vencer aqui fecha a run."
+                    "limpa Shadows e bate no núcleo, depois as artilharias e o "
+                    "rosto. Vencer aqui fecha a run — e, na cronometrada, o "
+                    "relógio precisa marcar menos de 15:00 neste momento."
                 ),
                 "image": _EW + "t21.webp",
                 "tag": "chefe",
@@ -2265,7 +2791,7 @@ VISITS += [
 BOSSES = [
     {
         "name": "Ice Titan (Gold Match)",
-        "where": "Coliseu do Olimpo",
+        "where": "Olympus Coliseum",
         "unlock": "Vença as quatro copas (Phil, Pegasus, Hercules e Hades).",
         "level": "Nível 65+",
         "build": (
@@ -2285,7 +2811,7 @@ BOSSES = [
     },
     {
         "name": "Sephiroth (Platinum Match)",
-        "where": "Coliseu do Olimpo",
+        "where": "Olympus Coliseum",
         "unlock": "Sele o keyhole do Hollow Bastion (as copas não são obrigatórias, mas ajudam).",
         "level": "Nível 75+",
         "build": (
@@ -2332,7 +2858,7 @@ BOSSES = [
     },
     {
         "name": "Phantom",
-        "where": "Terra do Nunca — fale com a Tinker Bell na Cabine",
+        "where": "Neverland — fale com a Tinker Bell na Cabin",
         "unlock": "Conclua o primeiro episódio do Hollow Bastion.",
         "level": "Nível 65+",
         "build": (
@@ -2398,100 +2924,100 @@ PUPPY_REWARDS = [
 ]
 
 PUPPIES = [
-    {"group": "1 · 2 · 3", "world": "Cidade do Trânsito", "area": "Casa Mística",
+    {"group": "1 · 2 · 3", "world": "Traverse Town", "area": "Mystical House",
      "where": "Numa pedra junto à parede, atrás da casa do Merlin. Precisa de Glide.",
      "image": _TR + "t26.webp"},
-    {"group": "4 · 5 · 6", "world": "Cidade do Trânsito", "area": "Beco",
-     "where": "Atrás de uma parede de caixotes; ative a trinity Vermelha do 1º Distrito (na cerca de madeira do beco atrás da loja dos sobrinhos).",
+    {"group": "4 · 5 · 6", "world": "Traverse Town", "area": "Alleyway",
+     "where": "Atrás de uma parede de caixotes; ative a trinity Vermelha do First District (na cerca de madeira do beco atrás da loja dos sobrinhos).",
      "image": _TR + "t23.webp"},
-    {"group": "7 · 8 · 9", "world": "Cidade do Trânsito", "area": "Sala de Síntese",
+    {"group": "7 · 8 · 9", "world": "Traverse Town", "area": "Item Workshop",
      "where": "Numa mesa, perto de um dos Moogles.",
      "image": _TR + "t11.webp"},
-    {"group": "10 · 11 · 12", "world": "Cidade do Trânsito", "area": "Waterway",
+    {"group": "10 · 11 · 12", "world": "Traverse Town", "area": "Waterway",
      "where": "Logo dentro da escadaria que leva ao Estúdio do Merlin.",
      "image": _TR + "t25.webp"},
-    {"group": "13 · 14 · 15", "world": "País das Maravilhas", "area": "Castelo da Rainha",
-     "where": "Numa saliência em frente ao save point; chega-se pela Floresta de Lótus.",
+    {"group": "13 · 14 · 15", "world": "Wonderland", "area": "Queen's Castle",
+     "where": "Numa saliência em frente ao save point; chega-se pela Lotus Forest.",
      "image": _TR + "t35.webp"},
-    {"group": "16 · 17 · 18", "world": "País das Maravilhas", "area": "Floresta de Lótus",
+    {"group": "16 · 17 · 18", "world": "Wonderland", "area": "Lotus Forest",
      "where": "Numa vitória-régia perto do centro; pule nos cogumelos ao lado para alcançar.",
      "image": _TR + "t38.webp"},
-    {"group": "19 · 20 · 21", "world": "País das Maravilhas", "area": "Jardim do Chá",
-     "where": "Numa sebe junto à parede em frente ao chalé; passagem da Floresta de Lótus, precisa de Glide.",
+    {"group": "19 · 20 · 21", "world": "Wonderland", "area": "Tea Party Garden",
+     "where": "Numa sebe junto à parede em frente ao chalé; passagem da Lotus Forest, precisa de Glide.",
      "image": _TR + "t46.webp"},
-    {"group": "22 · 23 · 24", "world": "Coliseu do Olimpo", "area": "Portões",
+    {"group": "22 · 23 · 24", "world": "Olympus Coliseum", "area": "Gates",
      "where": "Trinity AZUL em frente à estátua de gladiador da DIREITA (de frente para as portas do vestíbulo).",
      "image": _TR + "t49.webp"},
-    {"group": "25 · 26 · 27", "world": "Selva Profunda", "area": "Lagoa dos Hipopótamos",
+    {"group": "25 · 26 · 27", "world": "Deep Jungle", "area": "Hippos' Lagoon",
      "where": "No lado oposto da lagoa; pule nas costas dos hipopótamos.",
      "image": _TR + "t65.webp"},
-    {"group": "28 · 29 · 30", "world": "Selva Profunda", "area": "Cipós 2",
+    {"group": "28 · 29 · 30", "world": "Deep Jungle", "area": "Vines 2",
      "where": "Numa saliência no centro da área; use os cipós da direita ao entrar.",
      "image": _TR + "t66.webp"},
-    {"group": "31 · 32 · 33", "world": "Selva Profunda", "area": "Caverna da Cachoeira",
+    {"group": "31 · 32 · 33", "world": "Deep Jungle", "area": "Waterfall Cavern",
      "where": "Numa saliência na metade da subida, logo abaixo de uma parede coberta de cipós.",
      "image": _TR + "t71.webp"},
-    {"group": "34 · 35 · 36", "world": "Selva Profunda", "area": "Acampamento",
+    {"group": "34 · 35 · 36", "world": "Deep Jungle", "area": "Camp",
      "where": "Trinity AZUL perto da mesa de laboratório.",
      "image": _TR + "t60.webp"},
-    {"group": "37 · 38 · 39", "world": "Agrabah", "area": "Caverna: Sala do Tesouro",
+    {"group": "37 · 38 · 39", "world": "Agrabah", "area": "Cave of Wonders: Treasure Room",
      "where": "Numa saliência perto da entrada do Bottomless Hall; pule de cima de uma pilha de tesouro.",
      "image": _TR + "t110.webp"},
-    {"group": "40 · 41 · 42", "world": "Cidade do Halloween", "area": "Mansão do Oogie",
+    {"group": "40 · 41 · 42", "world": "Halloween Town", "area": "Oogie's Manor",
      "where": "Numa alcova na metade da subida da mansão; é preciso puxar antes a alavanca da Sala de Brinquedos.",
      "image": _TR + "t175.webp"},
-    {"group": "43 · 44 · 45", "world": "Terra do Nunca", "area": "Convés do navio",
+    {"group": "43 · 44 · 45", "world": "Neverland", "area": "Ship (Deck)",
      "where": "Trinity BRANCA em frente ao timão.",
      "image": _TR + "t190.webp"},
-    {"group": "46 · 47 · 48", "world": "Agrabah", "area": "Caverna: Sala Escondida",
+    {"group": "46 · 47 · 48", "world": "Agrabah", "area": "Cave of Wonders: Hidden Room",
      "where": "Ative a estátua para abrir a parede ao lado; precisa de trinity Amarela ou High Jump.",
      "image": _TR + "t106.webp"},
-    {"group": "49 · 50 · 51", "world": "Agrabah", "area": "Caverna: Entrada",
+    {"group": "49 · 50 · 51", "world": "Agrabah", "area": "Cave of Wonders: Entrance",
      "where": "Em cima de um pilar perto da entrada do Hall; High Jump, Glide ou um pulo bem dado de cima de um barril.",
      "image": _TR + "t92.webp"},
-    {"group": "52 · 53 · 54", "world": "Agrabah", "area": "Portões do Palácio",
+    {"group": "52 · 53 · 54", "world": "Agrabah", "area": "Palace Gates",
      "where": "Na saliência mais alta do canto em frente aos portões; exige High Jump.",
      "image": _TR + "t89.webp"},
-    {"group": "55 · 56 · 57", "world": "Monstro", "area": "Câmara 3",
+    {"group": "55 · 56 · 57", "world": "Monstro", "area": "Chamber 3",
      "where": "Numa plataforma esverdeada, logo acima da entrada da Câmara 2.",
      "image": _TR + "t123.webp"},
-    {"group": "58 · 59 · 60", "world": "País das Maravilhas", "area": "Floresta de Lótus",
-     "where": "Lance THUNDER nas flores rosas da alcova acessível pelo quadro do Quarto Bizarro de lado.",
+    {"group": "58 · 59 · 60", "world": "Wonderland", "area": "Lotus Forest",
+     "where": "Lance THUNDER nas flores rosas da alcova acessível pelo quadro do Bizarre Room de lado.",
      "image": _TR + "t42.webp"},
     {"group": "61 · 62 · 63", "world": "Hollow Bastion", "area": "Grand Hall",
      "where": "Na saliência à esquerda do portal que leva ao Dark Depths.",
      "image": _TR + "t228.webp"},
-    {"group": "64 · 65 · 66", "world": "Cidade do Halloween", "area": "Cemitério",
+    {"group": "64 · 65 · 66", "world": "Halloween Town", "area": "Graveyard",
      "where": "No canto do fundo, perto da lápide escrita \"RIP\".",
      "image": _TR + "t178.webp"},
-    {"group": "67 · 68 · 69", "world": "Cidade do Halloween", "area": "Moonlight Hill",
+    {"group": "67 · 68 · 69", "world": "Halloween Town", "area": "Moonlight Hill",
      "where": "Trinity BRANCA em frente à colina, perto da plantação de abóboras.",
      "image": _TR + "t166.webp"},
-    {"group": "70 · 71 · 72", "world": "Cidade do Halloween", "area": "Praça da Guilhotina",
+    {"group": "70 · 71 · 72", "world": "Halloween Town", "area": "Guillotine Square",
      "where": "Dentro da boca de uma estrutura em forma de abóbora; chega-se com Glide.",
      "image": _TR + "t162.webp"},
-    {"group": "73 · 74 · 75", "world": "Monstro", "area": "Boca",
+    {"group": "73 · 74 · 75", "world": "Monstro", "area": "Mouth",
      "where": "Numa plataforma alta junto à parede, em frente ao naufrágio; precisa de High Jump.",
      "image": _TR + "t117.webp"},
-    {"group": "76 · 77 · 78", "world": "Monstro", "area": "Câmara 6",
+    {"group": "76 · 77 · 78", "world": "Monstro", "area": "Chamber 6",
      "where": "No nível do chão, em frente à passagem para a Câmara 5.",
      "image": _TR + "t128.webp"},
-    {"group": "79 · 80 · 81", "world": "Monstro", "area": "Câmara 5",
+    {"group": "79 · 80 · 81", "world": "Monstro", "area": "Chamber 5",
      "where": "Numa saliência alta, em cima de um barril, em frente à passagem para a Câmara 4.",
      "image": _TR + "t127.webp"},
-    {"group": "82 · 83 · 84", "world": "Terra do Nunca", "area": "Porão",
+    {"group": "82 · 83 · 84", "world": "Neverland", "area": "Hold",
      "where": "Nas vigas superiores do lado de estibordo; precisa de Glide.",
      "image": _TR + "t181.webp"},
-    {"group": "85 · 86 · 87", "world": "Terra do Nunca", "area": "Porão",
+    {"group": "85 · 86 · 87", "world": "Neverland", "area": "Hold",
      "where": "Trinity AMARELA do porão; o baú verde fica sobre os rolos de lona.",
      "image": _TR + "t184.webp"},
-    {"group": "88 · 89 · 90", "world": "Terra do Nunca", "area": "Camarote do Capitão",
+    {"group": "88 · 89 · 90", "world": "Neverland", "area": "Captain's Cabin",
      "where": "Ao lado da cama, perto da janela lateral.",
      "image": _TR + "t188.webp"},
     {"group": "91 · 92 · 93", "world": "Hollow Bastion", "area": "Rising Falls",
      "where": "Numa plataforma flutuante, mais ou menos a um quarto da subida.",
      "image": _TR + "t193.webp"},
-    {"group": "94 · 95 · 96", "world": "Hollow Bastion", "area": "Portões do Castelo",
+    {"group": "94 · 95 · 96", "world": "Hollow Bastion", "area": "Castle Gates",
      "where": "Lance GRAVITY na pequena plataforma flutuante acima; o canto do fundo se alcança com Glide.",
      "image": _TR + "t219.webp"},
     {"group": "97 · 98 · 99", "world": "Hollow Bastion", "area": "Lift Stop",
@@ -2501,78 +3027,78 @@ PUPPIES = [
 
 # ── 03 — As 46 trinities ──────────────────────────────────────────────────
 TRINITIES = [
-    {"color": "Azul", "num": 1, "world": "Cidade do Trânsito", "where": "1º Distrito — no chão perto da saída do mundo, em frente à loja de acessórios.", "reward": "120 munny", "image": _TN + "t1.webp"},
-    {"color": "Azul", "num": 2, "world": "Cidade do Trânsito", "where": "1º Distrito — em frente ao café, perto da loja dos sobrinhos.", "reward": "Teleporta a party para a sacada do café, onde há um baú com um POSTAL.", "image": _TN + "t2.webp"},
-    {"color": "Azul", "num": 3, "world": "Cidade do Trânsito", "where": "3º Distrito — atrás da fonte da Dama e o Vagabundo, no canto.", "reward": "60 munny, Camping Set", "image": _TN + "t3.webp"},
-    {"color": "Azul", "num": 4, "world": "Cidade do Trânsito", "where": "Estúdio do Merlin — perto do save point.", "reward": "50 munny, Mega-Ether", "image": _TN + "t4.webp"},
-    {"color": "Azul", "num": 5, "world": "País das Maravilhas", "where": "Floresta de Lótus — perto das flores amarelas, na alcova que se alcança pulando nas vitórias-régias.", "reward": "Orbes de MP, Camping Set", "image": _TN + "t5.webp"},
-    {"color": "Azul", "num": 6, "world": "País das Maravilhas", "where": "Floresta de Lótus — perto dos cogumelos amarelos, na alcova em frente à passagem para o Castelo da Rainha.", "reward": "Orbes de MP, Ether, Potion, Tent", "image": _TN + "t6.webp"},
-    {"color": "Azul", "num": 7, "world": "Coliseu do Olimpo", "where": "Portões — em frente à estátua de gladiador da ESQUERDA (de frente para o vestíbulo).", "reward": "Mythril Shard", "image": _TN + "t7.webp"},
-    {"color": "Azul", "num": 8, "world": "Coliseu do Olimpo", "where": "Portões — em frente à estátua da DIREITA.", "reward": "Dálmatas 22-24", "image": _TN + "t8.webp"},
-    {"color": "Azul", "num": 9, "world": "Selva Profunda", "where": "Acampamento — perto do equipamento de laboratório e da passagem para a Lagoa.", "reward": "Dálmatas 34-36", "image": _TN + "t9.webp"},
-    {"color": "Azul", "num": 10, "world": "Selva Profunda", "where": "Árvores de Escalada — numa plataforma elevada, perto da passagem para a Casa da Árvore.", "reward": "Thundara-G", "image": _TN + "t10.webp"},
+    {"color": "Azul", "num": 1, "world": "Traverse Town", "where": "First District — no chão perto da saída do mundo, em frente à loja de acessórios.", "reward": "120 munny", "image": _TN + "t1.webp"},
+    {"color": "Azul", "num": 2, "world": "Traverse Town", "where": "First District — em frente ao café, perto da loja dos sobrinhos.", "reward": "Teleporta a party para a sacada do café, onde há um baú com um POSTAL.", "image": _TN + "t2.webp"},
+    {"color": "Azul", "num": 3, "world": "Traverse Town", "where": "Third District — atrás da fonte da Dama e o Vagabundo, no canto.", "reward": "60 munny, Camping Set", "image": _TN + "t3.webp"},
+    {"color": "Azul", "num": 4, "world": "Traverse Town", "where": "Magician's Study — perto do save point.", "reward": "50 munny, Mega-Ether", "image": _TN + "t4.webp"},
+    {"color": "Azul", "num": 5, "world": "Wonderland", "where": "Lotus Forest — perto das flores amarelas, na alcova que se alcança pulando nas vitórias-régias.", "reward": "Orbes de MP, Camping Set", "image": _TN + "t5.webp"},
+    {"color": "Azul", "num": 6, "world": "Wonderland", "where": "Lotus Forest — perto dos cogumelos amarelos, na alcova em frente à passagem para o Castelo da Rainha.", "reward": "Orbes de MP, Ether, Potion, Tent", "image": _TN + "t6.webp"},
+    {"color": "Azul", "num": 7, "world": "Olympus Coliseum", "where": "Gates — em frente à estátua de gladiador da ESQUERDA (de frente para o vestíbulo).", "reward": "Mythril Shard", "image": _TN + "t7.webp"},
+    {"color": "Azul", "num": 8, "world": "Olympus Coliseum", "where": "Gates — em frente à estátua da DIREITA.", "reward": "Dálmatas 22-24", "image": _TN + "t8.webp"},
+    {"color": "Azul", "num": 9, "world": "Deep Jungle", "where": "Camp — perto do equipamento de laboratório e da passagem para a Lagoa.", "reward": "Dálmatas 34-36", "image": _TN + "t9.webp"},
+    {"color": "Azul", "num": 10, "world": "Deep Jungle", "where": "Climbing Trees — numa plataforma elevada, perto da passagem para a Casa da Árvore.", "reward": "Thundara-G", "image": _TN + "t10.webp"},
     {"color": "Azul", "num": 11, "world": "Agrabah", "where": "Bazaar — no nível do chão, no centro da área.", "reward": "200 munny, Mega-Ether", "image": _TN + "t11.webp"},
-    {"color": "Azul", "num": 12, "world": "Agrabah", "where": "Caverna: Silent Chamber — na plataforma central, perto da passagem para o Hall.", "reward": "Thundara-G", "image": _TN + "t12.webp"},
-    {"color": "Azul", "num": 13, "world": "Monstro", "where": "Boca — numa plataforma de madeira na frente da boca; só depois de derrotar o Parasite Cage.", "reward": "50 munny, Potion x2, Cottage", "image": _TN + "t13.webp"},
-    {"color": "Azul", "num": 14, "world": "Monstro", "where": "Câmara 5 — no nível do chão, em frente à passagem para a Câmara 6.", "reward": "333 munny, Cottage", "image": _TN + "t14.webp"},
-    {"color": "Azul", "num": 15, "world": "Monstro", "where": "Garganta — no nível mais baixo, no centro da área.", "reward": "100 munny, Mythril Shard", "image": _TN + "t15.webp"},
-    {"color": "Azul", "num": 16, "world": "Hollow Bastion", "where": "Waterway: Masmorra — perto do centro, à esquerda da plataforma que leva ao Lift Stop.", "reward": "Cottage, Mega-Potion, Mega-Ether, orbes de HP", "image": _TN + "t16.webp"},
+    {"color": "Azul", "num": 12, "world": "Agrabah", "where": "Cave of Wonders: Silent Chamber — na plataforma central, perto da passagem para o Hall.", "reward": "Thundara-G", "image": _TN + "t12.webp"},
+    {"color": "Azul", "num": 13, "world": "Monstro", "where": "Mouth — numa plataforma de madeira na frente da boca; só depois de derrotar o Parasite Cage.", "reward": "50 munny, Potion x2, Cottage", "image": _TN + "t13.webp"},
+    {"color": "Azul", "num": 14, "world": "Monstro", "where": "Chamber 5 — no nível do chão, em frente à passagem para a Câmara 6.", "reward": "333 munny, Cottage", "image": _TN + "t14.webp"},
+    {"color": "Azul", "num": 15, "world": "Monstro", "where": "Throat — no nível mais baixo, no centro da área.", "reward": "100 munny, Mythril Shard", "image": _TN + "t15.webp"},
+    {"color": "Azul", "num": 16, "world": "Hollow Bastion", "where": "Waterway: Dungeon — perto do centro, à esquerda da plataforma que leva ao Lift Stop.", "reward": "Cottage, Mega-Potion, Mega-Ether, orbes de HP", "image": _TN + "t16.webp"},
     {"color": "Azul", "num": 17, "world": "Hollow Bastion", "where": "Great Crest — no centro da área grande, depois de atravessar na plataforma flutuante.", "reward": "Megalixir, Cottage x2, orbes de MP", "image": _TN + "t17.webp"},
 
-    {"color": "Vermelha", "num": 1, "world": "Cidade do Trânsito", "where": "1º Distrito — numa cerca de madeira no beco atrás da loja dos sobrinhos.", "reward": "Dálmatas 4-6", "image": _TN + "t18.webp"},
-    {"color": "Vermelha", "num": 2, "world": "Cidade do Trânsito", "where": "Beco — na grade de metal que bloqueia o canal, no canto oposto à passagem para a Casa dos Dálmatas.", "reward": "Abre o Waterway (obrigatória na história)", "image": _TN + "t19.webp"},
-    {"color": "Vermelha", "num": 3, "world": "Cidade do Trânsito", "where": "2º Distrito — nas tábuas de madeira em frente à torre do sino, acima da Gizmo Shop.", "reward": "Abre a torre do sino (obrigatória na história)", "image": _TN + "t20.webp"},
-    {"color": "Vermelha", "num": 4, "world": "Agrabah", "where": "Sala do Tesouro — em frente a uma estátua de esfinge, do outro lado do save point.", "reward": "333 munny, Mythril Shard", "image": _TN + "t21.webp"},
-    {"color": "Vermelha", "num": 5, "world": "Cidade do Halloween", "where": "Mansão do Oogie — no nível do chão, no arco perto do riacho que leva à Ponte.", "reward": "Mythril Shard", "image": _TN + "t22.webp"},
+    {"color": "Vermelha", "num": 1, "world": "Traverse Town", "where": "First District — numa cerca de madeira no beco atrás da loja dos sobrinhos.", "reward": "Dálmatas 4-6", "image": _TN + "t18.webp"},
+    {"color": "Vermelha", "num": 2, "world": "Traverse Town", "where": "Alleyway — na grade de metal que bloqueia o canal, no canto oposto à passagem para a Casa dos Dálmatas.", "reward": "Abre o Waterway (obrigatória na história)", "image": _TN + "t19.webp"},
+    {"color": "Vermelha", "num": 3, "world": "Traverse Town", "where": "Second District — nas tábuas de madeira em frente à torre do sino, acima da Gizmo Shop.", "reward": "Abre a torre do sino (obrigatória na história)", "image": _TN + "t20.webp"},
+    {"color": "Vermelha", "num": 4, "world": "Agrabah", "where": "Cave of Wonders: Treasure Room — em frente a uma estátua de esfinge, do outro lado do save point.", "reward": "333 munny, Mythril Shard", "image": _TN + "t21.webp"},
+    {"color": "Vermelha", "num": 5, "world": "Halloween Town", "where": "Oogie's Manor — no nível do chão, no arco perto do riacho que leva à Ponte.", "reward": "Mythril Shard", "image": _TN + "t22.webp"},
     {"color": "Vermelha", "num": 6, "world": "Hollow Bastion", "where": "Entrance Hall — na sacada do 2º andar, em frente a uma estátua de pedra com chifres, perto da borda interna.", "reward": "Peça do Emblema", "image": _TN + "t23.webp"},
 
-    {"color": "Verde", "num": 1, "world": "Cidade do Trânsito", "where": "1º Distrito, loja de acessórios — em frente à mesa do centro.", "reward": "Abre a Sala de Síntese", "image": _TN + "t24.webp"},
-    {"color": "Verde", "num": 2, "world": "País das Maravilhas", "where": "Quarto Bizarro — no nível do chão, dentro do forno.", "reward": "Mythril Shard", "image": _TN + "t25.webp"},
-    {"color": "Verde", "num": 3, "world": "País das Maravilhas", "where": "Toca do Coelho — junto à parede, perto do save point.", "reward": "Elixir", "image": _TN + "t26.webp"},
-    {"color": "Verde", "num": 4, "world": "Coliseu do Olimpo", "where": "Portões — junto à parede à direita da passagem para o mapa-múndi, entre dois braseiros.", "reward": "Mythril", "image": _TN + "t27.webp"},
-    {"color": "Verde", "num": 5, "world": "Selva Profunda", "where": "Copas das Árvores — no centro da área (muito difícil de ver por causa da cor).", "reward": "Mythril Shard, orbes de HP", "image": _TN + "t28.webp"},
-    {"color": "Verde", "num": 6, "world": "Agrabah", "where": "Depósito — perto das prateleiras, em frente ao save point.", "reward": "AP Up", "image": _TN + "t29.webp"},
-    {"color": "Verde", "num": 7, "world": "Monstro", "where": "Boca — em cima do navio do Geppetto.", "reward": "Mythril Shard", "image": _TN + "t30.webp"},
-    {"color": "Verde", "num": 8, "world": "Terra do Nunca", "where": "Cabine — no centro da sala.", "reward": "Abre o Camarote do Capitão (obrigatória na história)", "image": _TN + "t31.webp"},
-    {"color": "Verde", "num": 9, "world": "Hollow Bastion", "where": "Biblioteca — 2º andar, em frente à estante perto da mesa e da sacada.", "reward": "Azal Vol. 3 (peça do puzzle dos livros)", "image": _TN + "t32.webp"},
+    {"color": "Verde", "num": 1, "world": "Traverse Town", "where": "First District, loja de acessórios — em frente à mesa do centro.", "reward": "Abre a Sala de Síntese", "image": _TN + "t24.webp"},
+    {"color": "Verde", "num": 2, "world": "Wonderland", "where": "Bizarre Room — no nível do chão, dentro do forno.", "reward": "Mythril Shard", "image": _TN + "t25.webp"},
+    {"color": "Verde", "num": 3, "world": "Wonderland", "where": "Rabbit Hole — junto à parede, perto do save point.", "reward": "Elixir", "image": _TN + "t26.webp"},
+    {"color": "Verde", "num": 4, "world": "Olympus Coliseum", "where": "Gates — junto à parede à direita da passagem para o mapa-múndi, entre dois braseiros.", "reward": "Mythril", "image": _TN + "t27.webp"},
+    {"color": "Verde", "num": 5, "world": "Deep Jungle", "where": "Treetops — no centro da área (muito difícil de ver por causa da cor).", "reward": "Mythril Shard, orbes de HP", "image": _TN + "t28.webp"},
+    {"color": "Verde", "num": 6, "world": "Agrabah", "where": "Storage — perto das prateleiras, em frente ao save point.", "reward": "AP Up", "image": _TN + "t29.webp"},
+    {"color": "Verde", "num": 7, "world": "Monstro", "where": "Mouth — em cima do navio do Geppetto.", "reward": "Mythril Shard", "image": _TN + "t30.webp"},
+    {"color": "Verde", "num": 8, "world": "Neverland", "where": "Cabin — no centro da sala.", "reward": "Abre o Camarote do Capitão (obrigatória na história)", "image": _TN + "t31.webp"},
+    {"color": "Verde", "num": 9, "world": "Hollow Bastion", "where": "Library — 2º andar, em frente à estante perto da mesa e da sacada.", "reward": "Azal Vol. 3 (peça do puzzle dos livros)", "image": _TN + "t32.webp"},
 
-    {"color": "Amarela", "num": 1, "world": "Cidade do Trânsito", "where": "Casa Mística — perto de uma pilha de caixotes grandes, atrás da casa do Merlin.", "reward": "AP Up", "image": _TN + "t33.webp"},
-    {"color": "Amarela", "num": 2, "world": "Coliseu do Olimpo", "where": "Lobby — em frente ao pedestal grande.", "reward": "Sela o keyhole do Coliseu (obrigatória na história)", "image": _TN + "t34.webp"},
-    {"color": "Amarela", "num": 3, "world": "Agrabah", "where": "Caverna: Hall — em frente a uma estátua de pedra perto do caminho da pedra rolante.", "reward": "Abre uma câmara com Thundara-G e Meteor-G", "image": _TN + "t35.webp"},
-    {"color": "Amarela", "num": 4, "world": "Terra do Nunca", "where": "Porão — em frente à porta trancada, logo à esquerda depois de subir a escada.", "reward": "Orichalcum, Dark Matter, dálmatas 85-87 e a magia Aero", "image": _TN + "t36.webp"},
+    {"color": "Amarela", "num": 1, "world": "Traverse Town", "where": "Mystical House — perto de uma pilha de caixotes grandes, atrás da casa do Merlin.", "reward": "AP Up", "image": _TN + "t33.webp"},
+    {"color": "Amarela", "num": 2, "world": "Olympus Coliseum", "where": "Lobby — em frente ao pedestal grande.", "reward": "Sela o keyhole do Coliseu (obrigatória na história)", "image": _TN + "t34.webp"},
+    {"color": "Amarela", "num": 3, "world": "Agrabah", "where": "Cave of Wonders: Hall — em frente a uma estátua de pedra perto do caminho da pedra rolante.", "reward": "Abre uma câmara com Thundara-G e Meteor-G", "image": _TN + "t35.webp"},
+    {"color": "Amarela", "num": 4, "world": "Neverland", "where": "Hold — em frente à porta trancada, logo à esquerda depois de subir a escada.", "reward": "Orichalcum, Dark Matter, dálmatas 85-87 e a magia Aero", "image": _TN + "t36.webp"},
 
-    {"color": "Branca", "num": 1, "world": "Cidade do Trânsito", "where": "Waterway — no piso de pedra, em frente ao mural.", "reward": "Orichalcum", "image": _TN + "t37.webp"},
-    {"color": "Branca", "num": 2, "world": "País das Maravilhas", "where": "Floresta de Lótus — no centro da alcova acessível pelo quadro do Quarto Bizarro de lado.", "reward": "Chaveiro LADY LUCK", "image": _TN + "t38.webp"},
-    {"color": "Branca", "num": 3, "world": "Coliseu do Olimpo", "where": "Portões — no centro da área.", "reward": "Cajado Violetta", "image": _TN + "t39.webp"},
-    {"color": "Branca", "num": 4, "world": "Selva Profunda", "where": "Caverna dos Corações — no centro da área.", "reward": "Orichalcum", "image": _TN + "t40.webp"},
-    {"color": "Branca", "num": 5, "world": "Agrabah", "where": "Caverna: Entrada — logo em frente à entrada, à sua esquerda (de frente para o Hall).", "reward": "Ifrit Belt", "image": _TN + "t41.webp"},
-    {"color": "Branca", "num": 6, "world": "Monstro", "where": "Câmara 6 — no nível do chão, no centro da área.", "reward": "Dark Matter (material da Ultima)", "image": _TN + "t42.webp"},
-    {"color": "Branca", "num": 7, "world": "Atlantica", "where": "Palácio do Tritão — dentro da grande concha roxa perto do centro.", "reward": "Orichalcum", "image": _TN + "t43.webp"},
-    {"color": "Branca", "num": 8, "world": "Cidade do Halloween", "where": "Moonlight Hill — em frente à colina, perto da plantação de abóboras.", "reward": "Dálmatas 67-69", "image": _TN + "t44.webp"},
-    {"color": "Branca", "num": 9, "world": "Terra do Nunca", "where": "Convés — em frente ao timão do navio.", "reward": "Dálmatas 43-45", "image": _TN + "t45.webp"},
+    {"color": "Branca", "num": 1, "world": "Traverse Town", "where": "Waterway — no piso de pedra, em frente ao mural.", "reward": "Orichalcum", "image": _TN + "t37.webp"},
+    {"color": "Branca", "num": 2, "world": "Wonderland", "where": "Lotus Forest — no centro da alcova acessível pelo quadro do Bizarre Room de lado.", "reward": "Chaveiro LADY LUCK", "image": _TN + "t38.webp"},
+    {"color": "Branca", "num": 3, "world": "Olympus Coliseum", "where": "Gates — no centro da área.", "reward": "Cajado Violetta", "image": _TN + "t39.webp"},
+    {"color": "Branca", "num": 4, "world": "Deep Jungle", "where": "Cavern of Hearts — no centro da área.", "reward": "Orichalcum", "image": _TN + "t40.webp"},
+    {"color": "Branca", "num": 5, "world": "Agrabah", "where": "Cave of Wonders: Entrance — logo em frente à entrada, à sua esquerda (de frente para o Hall).", "reward": "Ifrit Belt", "image": _TN + "t41.webp"},
+    {"color": "Branca", "num": 6, "world": "Monstro", "where": "Chamber 6 — no nível do chão, no centro da área.", "reward": "Dark Matter (material da Ultima)", "image": _TN + "t42.webp"},
+    {"color": "Branca", "num": 7, "world": "Atlantica", "where": "Triton's Palace — dentro da grande concha roxa perto do centro.", "reward": "Orichalcum", "image": _TN + "t43.webp"},
+    {"color": "Branca", "num": 8, "world": "Halloween Town", "where": "Moonlight Hill — em frente à colina, perto da plantação de abóboras.", "reward": "Dálmatas 67-69", "image": _TN + "t44.webp"},
+    {"color": "Branca", "num": 9, "world": "Neverland", "where": "Ship (Deck) — em frente ao timão do navio.", "reward": "Dálmatas 43-45", "image": _TN + "t45.webp"},
     {"color": "Branca", "num": 10, "world": "Hollow Bastion", "where": "Rising Falls — na poça rasa mais ou menos na metade da subida.", "reward": "Thundaga-G", "image": _TN + "t46.webp"},
 ]
 
 # ── 03 — As 5 Torn Pages do Bosque dos Cem Acres ──────────────────────────
 PAGES = [
-    {"num": "Página 1", "world": "Agrabah", "where": "Caverna: Dark Chamber — numa plataforma no centro da área; chega-se subindo a cachoeira a partir da Relic Chamber.", "image": _TR + "t103.webp"},
-    {"num": "Página 2", "world": "Monstro", "where": "Câmara 6 — numa plataforma alta esverdeada, em frente à entrada da Câmara 5.", "image": _TR + "t129.webp"},
-    {"num": "Página 3", "world": "Atlantica", "where": "Gruta da Ariel — num baú sobre uma prateleira, mais ou menos na metade da altura, junto de vasos e um porta-retrato.", "image": _TR + "t146.webp"},
-    {"num": "Página 4", "world": "Cidade do Halloween", "where": "Laboratório — examine a estante em frente ao Doutor.", "image": _TR + "t164.webp"},
-    {"num": "Página 5", "world": "Cidade do Trânsito", "where": "Casa dos Dálmatas — devolva mais de 50 filhotes ao Pongo e à Perdita.", "image": _TR + "t26.webp"},
+    {"num": "Página 1", "world": "Agrabah", "where": "Cave of Wonders: Dark Chamber — numa plataforma no centro da área; chega-se subindo a cachoeira a partir da Relic Chamber.", "image": _TR + "t103.webp"},
+    {"num": "Página 2", "world": "Monstro", "where": "Chamber 6 — numa plataforma alta esverdeada, em frente à entrada da Câmara 5.", "image": _TR + "t129.webp"},
+    {"num": "Página 3", "world": "Atlantica", "where": "Ariel's Grotto — num baú sobre uma prateleira, mais ou menos na metade da altura, junto de vasos e um porta-retrato.", "image": _TR + "t146.webp"},
+    {"num": "Página 4", "world": "Halloween Town", "where": "Laboratório — examine a estante em frente ao Doutor.", "image": _TR + "t164.webp"},
+    {"num": "Página 5", "world": "Traverse Town", "where": "Casa dos Dálmatas — devolva mais de 50 filhotes ao Pongo e à Perdita.", "image": _TR + "t26.webp"},
 ]
 
-# ── 03 — Os 10 postais (todos na Cidade do Trânsito) ──────────────────────
+# ── 03 — Os 10 postais (todos na Traverse Town) ──────────────────────
 POSTCARDS = [
-    {"num": "Postal 1", "where": "Trinity AZUL perto do café do 1º Distrito; abra o baú da sacada.", "prize": "Cottage", "image": _TR + "t2.webp"},
-    {"num": "Postal 2", "where": "Bata no ventilador de teto da loja dos sobrinhos (1º Distrito).", "prize": "Mythril Shard", "image": _TR + "t8.webp"},
-    {"num": "Postal 3", "where": "Baú no telhado da loja de acessórios (1º Distrito).", "prize": "Mega-Potion", "image": _TR + "t4.webp"},
-    {"num": "Postal 4", "where": "Baú azul atrás da loja de acessórios (1º Distrito).", "prize": "Mega-Ether", "image": _TR + "t3.webp"},
-    {"num": "Postal 5", "where": "Baú acima da lona da loja \"Boots & Shoes\" (2º Distrito).", "prize": "Mythril", "image": _TR + "t13.webp"},
-    {"num": "Postal 6", "where": "Examine o canto da sacada do 3º Distrito; chega-se pelos telhados do lado leste do 2º Distrito.", "prize": "Elixir", "image": _TR + "t28.webp"},
-    {"num": "Postais 7 e 8", "where": "Lance THUNDER no fio exposto do canto do 3º Distrito; depois, na Gizmo Shop, pule nos três botões em cima da máquina e examine o relógio central. Saem dois postais de uma vez.", "prize": "Megalixir e Orichalcum", "image": _TR + "t16.webp"},
+    {"num": "Postal 1", "where": "Trinity AZUL perto do café do First District; abra o baú da sacada.", "prize": "Cottage", "image": _TR + "t2.webp"},
+    {"num": "Postal 2", "where": "Bata no ventilador de teto da loja dos sobrinhos (First District).", "prize": "Mythril Shard", "image": _TR + "t8.webp"},
+    {"num": "Postal 3", "where": "Baú no telhado da loja de acessórios (First District).", "prize": "Mega-Potion", "image": _TR + "t4.webp"},
+    {"num": "Postal 4", "where": "Baú azul atrás da loja de acessórios (First District).", "prize": "Mega-Ether", "image": _TR + "t3.webp"},
+    {"num": "Postal 5", "where": "Baú acima da lona da loja \"Boots & Shoes\" (Second District).", "prize": "Mythril", "image": _TR + "t13.webp"},
+    {"num": "Postal 6", "where": "Examine o canto da sacada do Third District; chega-se pelos telhados do lado leste do Second District.", "prize": "Elixir", "image": _TR + "t28.webp"},
+    {"num": "Postais 7 e 8", "where": "Lance THUNDER no fio exposto do canto do Third District; depois, na Gizmo Shop, pule nos três botões em cima da máquina e examine o relógio central. Saem dois postais de uma vez.", "prize": "Megalixir e Orichalcum", "image": _TR + "t16.webp"},
     {"num": "Postal 9", "where": "Examine o potinho da prateleira na casa do Geppetto.", "prize": "AP Up", "image": _TR + "t7.webp"},
-    {"num": "Postal 10", "where": "Examine o panfleto na Sala de Síntese (1º Distrito).", "prize": "Defense Up", "image": _TR + "t10.webp"},
+    {"num": "Postal 10", "where": "Examine o panfleto na Item Workshop (First District).", "prize": "Defense Up", "image": _TR + "t10.webp"},
 ]
 
 # ── 03 — Os 13 Relatórios do Ansem ────────────────────────────────────────
@@ -2583,9 +3109,9 @@ REPORTS = [
     {"num": "Relatório 4", "how": "Fale com a Aerith na Biblioteca depois de selar o keyhole do Hollow Bastion."},
     {"num": "Relatório 5", "how": "Derrote a Maleficent, no Hollow Bastion."},
     {"num": "Relatório 6", "how": "Fale com a Aerith na Biblioteca depois de selar o keyhole do Hollow Bastion."},
-    {"num": "Relatório 7", "how": "Derrote o Oogie Boogie, na Cidade do Halloween."},
+    {"num": "Relatório 7", "how": "Derrote o Oogie Boogie, na Halloween Town."},
     {"num": "Relatório 8", "how": "Derrote o Hades, na Hades Cup do Coliseu."},
-    {"num": "Relatório 9", "how": "Derrote o Capitão Gancho, na Terra do Nunca."},
+    {"num": "Relatório 9", "how": "Derrote o Capitão Gancho, na Neverland."},
     {"num": "Relatório 10", "how": "Fale com a Aerith na Biblioteca depois de selar o keyhole do Hollow Bastion."},
     {"num": "Relatório 11", "how": "Derrote o Kurt Zisa, em Agrabah."},
     {"num": "Relatório 12", "how": "Derrote o Sephiroth, no Coliseu (Platinum Match)."},
@@ -2607,7 +3133,7 @@ MATERIALS = [
         "name": "Mystery Goo x5",
         "how": (
             "Só cai de White Mushroom, Rare Truffle e Black Fungus. O jeito mais "
-            "confiável é o Rare Truffle no convés da Terra do Nunca: voando você "
+            "confiável é o Rare Truffle no Deck da Neverland: voando você "
             "consegue rebatê-lo no ar sem parar. 50 rebatidas = Elixir + 40% de "
             "Goo; 100 = Megalixir + Goo garantido."
         ),
@@ -2615,7 +3141,7 @@ MATERIALS = [
     {
         "name": "Serenity Power x3",
         "how": (
-            "Só cai do PINK AGARICUS, na Casa da Árvore da Selva Profunda. Ele só "
+            "Só cai do PINK AGARICUS, na Tree House da Deep Jungle. Ele só "
             "aparece quando você entra na área e NENHUM Heartless nasce. Primeiro "
             "lance STOP em três White Mushrooms escondidos pela área (invoque o "
             "Bambi para repor MP), e só então ele surge. É por isso que o guia "
@@ -2632,7 +3158,7 @@ MATERIALS = [
         "how": (
             "Pode ser sintetizado e também está em 9 baús pelo jogo — entre eles a "
             "trinity Branca da Câmara 6 do Monstro e a trinity Amarela do porão da "
-            "Terra do Nunca. O contrarrelógio da Pegasus Cup também dá um."
+            "Neverland. O contrarrelógio da Pegasus Cup também dá um."
         ),
     },
 ]
@@ -2677,13 +3203,13 @@ TROPHIES = [
      "shortcut": "Fale com o Tapete na casa do Aladdin. Leve o Aladdin e um chaveiro de magia.", "image": ""},
     {"id": "t12", "name": "Novice Hero", "tier": "bronze",
      "requirement": "Vença a Phil Cup.",
-     "shortcut": "Abre depois de selar a Cidade do Trânsito.", "image": ""},
+     "shortcut": "Abre depois de selar a Traverse Town.", "image": ""},
     {"id": "t13", "name": "Artisan Hero", "tier": "bronze",
      "requirement": "Vença a Pegasus Cup.",
      "shortcut": "Abre depois do Monstro. Final: Leon & Yuffie.", "image": ""},
     {"id": "t14", "name": "Hero of the Coliseum", "tier": "bronze",
      "requirement": "Vença a Hercules Cup.",
-     "shortcut": "Abre com Halloween e Terra do Nunca selados. Prêmio: Olympia.", "image": ""},
+     "shortcut": "Abre com Halloween e Neverland selados. Prêmio: Olympia.", "image": ""},
     {"id": "t15", "name": "Coliseum Champion", "tier": "bronze",
      "requirement": "Vença a Hades Cup.",
      "shortcut": "50 chaves. Dá as magias -aga e o Ansem's Report 8 (no Hades, chave 10).", "image": ""},
@@ -2709,16 +3235,16 @@ TROPHIES = [
      "requirement": "Derrote mais de 2.000 Heartless.",
      "shortcut": "A Hades Cup e o farm de materiais resolvem.", "image": ""},
     {"id": "t23", "name": "Where the Bells Toll", "tier": "bronze",
-     "requirement": "Sele o keyhole da Cidade do Trânsito.",
+     "requirement": "Sele o keyhole da Traverse Town.",
      "shortcut": "Toque o sino 3× e vença o Opposite Armor.", "image": ""},
     {"id": "t24", "name": "The Rabbit Hole", "tier": "bronze",
-     "requirement": "Sele o keyhole do País das Maravilhas.",
+     "requirement": "Sele o keyhole do Wonderland.",
      "shortcut": "Vence o Trickmaster.", "image": ""},
     {"id": "t25", "name": "Junior Hero", "tier": "bronze",
-     "requirement": "Sele o keyhole do Coliseu do Olimpo.",
+     "requirement": "Sele o keyhole do Olympus Coliseum.",
      "shortcut": "Vem da história, junto com o Cérbero (trinity Amarela do Lobby).", "image": ""},
     {"id": "t26", "name": "Member of the Tribe", "tier": "bronze",
-     "requirement": "Sele o keyhole da Selva Profunda.",
+     "requirement": "Sele o keyhole da Deep Jungle.",
      "shortcut": "Caverna atrás da cachoeira, depois do Clayton.", "image": ""},
     {"id": "t27", "name": "Magic Lamp", "tier": "bronze",
      "requirement": "Sele o keyhole de Agrabah.",
@@ -2730,10 +3256,10 @@ TROPHIES = [
      "requirement": "Sele o keyhole de Atlantica.",
      "shortcut": "Depois da Ursula Gigante. É o mundo mais lento — pule na cronometrada.", "image": ""},
     {"id": "t30", "name": "Pumpkin Prince", "tier": "bronze",
-     "requirement": "Sele o keyhole da Cidade do Halloween.",
+     "requirement": "Sele o keyhole da Halloween Town.",
      "shortcut": "Depois das 7 bolhas escuras da mansão do Oogie.", "image": ""},
     {"id": "t31", "name": "Pixie Dust", "tier": "bronze",
-     "requirement": "Sele o keyhole da Terra do Nunca.",
+     "requirement": "Sele o keyhole da Neverland.",
      "shortcut": "Acerte o ponteiro do relógio de Londres até meia-noite.", "image": ""},
     {"id": "t32", "name": "End of the World", "tier": "bronze",
      "requirement": "Sele o keyhole do Hollow Bastion.",
@@ -2788,21 +3314,21 @@ TROPHIES = [
      "shortcut": "Costuma estourar ao voar de Hollow Bastion para o Fim do Mundo.", "image": ""},
     {"id": "t50", "name": "Test Pilot", "tier": "bronze",
      "requirement": "Complete uma Missão Gummi 1.",
-     "shortcut": "Qualquer rota. A de Wonderland ► Cidade do Trânsito é a mais simples.", "image": ""},
+     "shortcut": "Qualquer rota. A de Wonderland ► Traverse Town é a mais simples.", "image": ""},
     {"id": "t51", "name": "Veteran Pilot", "tier": "bronze",
      "requirement": "Complete uma Missão Gummi 2.",
-     "shortcut": "Coliseu ► Cidade do Trânsito: destrua os painéis roxos e pegue os 70 blocos de escudo.", "image": ""},
+     "shortcut": "Coliseu ► Traverse Town: destrua os painéis roxos e pegue os 70 blocos de escudo.", "image": ""},
     {"id": "t52", "name": "Ace Pilot", "tier": "bronze",
      "requirement": "Complete uma Missão Gummi 3.",
-     "shortcut": "Hollow Bastion ► Cidade do Trânsito, com o truque do Transform-G para atravessar as paredes de painéis.", "image": ""},
+     "shortcut": "Hollow Bastion ► Traverse Town, com o truque do Transform-G para atravessar as paredes de painéis.", "image": ""},
     {"id": "t53", "name": "Oathkeeper", "tier": "bronze",
      "requirement": "Obtenha o chaveiro Oathkeeper.",
-     "shortcut": "Fale com a Kairi no Waterway, na 4ª ida à Cidade do Trânsito (depois do Hollow Bastion Ep.1).", "image": ""},
+     "shortcut": "Fale com a Kairi no Waterway, na 6ª ida a Traverse Town (depois do Hollow Bastion Ep.1).", "image": ""},
     {"id": "t54", "name": "Blade Master", "tier": "bronze",
      "requirement": "Obtenha todas as Keyblades.", "shortcut": "Chaveiros vêm de história, copas, trinities Brancas e síntese.", "image": ""},
     {"id": "t55", "name": "Master Magician", "tier": "bronze",
      "requirement": "Obtenha todos os cajados do Donald.",
-     "shortcut": "Visite a loja dos sobrinhos em TODA volta à Cidade do Trânsito — o estoque renova.", "image": ""},
+     "shortcut": "Visite a loja dos sobrinhos em TODA volta à Traverse Town — o estoque renova.", "image": ""},
     {"id": "t56", "name": "Master Defender", "tier": "bronze",
      "requirement": "Obtenha todos os escudos do Goofy.",
      "shortcut": "Mesma regra dos cajados, mais os baús do Fim do Mundo.", "image": ""},

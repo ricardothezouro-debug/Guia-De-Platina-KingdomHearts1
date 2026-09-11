@@ -39,8 +39,12 @@ equipamento, com os inimigos batendo forte.
 
 ## O que tem dentro
 
-- **Rota** — 23 visitas na ordem de jogo, 125 passos com **foto**, etiqueta de
-  perdível/chefe/baú e o aviso do que fecha depois de cada avanço.
+- **Rota** — um walkthrough linear: 31 paradas na ordem exata em que você
+  joga (Traverse Town aparece seis vezes, porque você volta lá seis vezes),
+  145 passos com **foto**, etiqueta de perdível/chefe/baú e, no fim de cada
+  parada, **os dálmatas, trinities, postais e páginas daquela ida** com foto e
+  caixa de marcação — sem precisar sair da aba. Os nomes de mundo e de área são
+  os que aparecem na tela ("Wonderland — o mundo da Alice", "Second District").
 - **56 Troféus** — requisito e o caminho curto de cada um, com filtro por tier e
   "só pendentes".
 - **Coletáveis** — os 33 baús dos 99 dálmatas, as 46 trinities (por cor), as 5

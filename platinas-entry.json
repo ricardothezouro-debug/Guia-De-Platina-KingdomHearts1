@@ -4,7 +4,7 @@
   "description": "Guia PT-BR do PS4: as 31 paradas na ordem de jogo com 145 passos, coletáveis e foto, os 99 dálmatas, as 46 trinities e os 56 troféus.",
   "repo": "ricardothezouro-debug/Guia-De-Platina-KingdomHearts1",
   "ref": "main",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "src_subdir": "src",
   "module": "platina_kh1.module",
   "accent": "#3E6BE8",

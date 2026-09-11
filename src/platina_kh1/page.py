@@ -20,7 +20,7 @@ from . import progress as keys
 from .image_loader import ImageLoader
 from .paths import guide_dir_label
 from .storage import load_progress, load_ui, save_progress, save_ui
-from .topbar import TopBar
+from .topbar import InfoCorner, TopBar
 
 _PHOTO_W = 560
 _PHOTO_H = 316
@@ -187,7 +187,7 @@ class GuidePage(QWidget):
             self, title=self._title_box, header=self._header_box,
             progress=self._progress_box, nav=self._nav_box, bar=self.progress,
             pills=self._progress_pills, load_ui=load_ui, save_ui=save_ui)
-        outer.addWidget(self.top.rule)
+        outer.addWidget(self.top.widget)
 
         self.stack = QStackedWidget()
         self._holders: list[QVBoxLayout] = []
@@ -203,8 +203,8 @@ class GuidePage(QWidget):
         outer.addWidget(self.stack, 1)
         # O caminho é montado na hora: cada sistema guarda numa pasta diferente,
         # e escrever "%APPDATA%" mentiria para quem está no Mac.
-        outer.addWidget(_label(
-            f"{guide_data.FOOTER} • progresso salvo em {guide_dir_label()}", "Muted"))
+        outer.addWidget(InfoCorner(
+            f"{guide_data.FOOTER} • progresso salvo em {guide_dir_label()}"))
 
         self._update_progress()
         # Constrói a primeira aba só depois que o event loop girar, para que
@@ -235,7 +235,6 @@ class GuidePage(QWidget):
         title_row = QHBoxLayout(self._title_box)
         title_row.setContentsMargins(0, 0, 0, 0)
         title_row.addWidget(_label(guide_data.GAME_NAME, "PageTitle", wrap=False), 1)
-        outer.addWidget(self._title_box)
 
         self._header_box = QWidget()
         box = QVBoxLayout(self._header_box)
@@ -250,7 +249,6 @@ class GuidePage(QWidget):
         box.addLayout(stats)
         self._build_search(box)
         self._build_toolbar(box)
-        outer.addWidget(self._header_box)
 
     def _build_search(self, outer: QVBoxLayout) -> None:
         row = QHBoxLayout()
@@ -291,7 +289,6 @@ class GuidePage(QWidget):
         row.addWidget(self.puppy_label, 0)
         row.addWidget(self.trinity_label, 0)
         self._progress_pills = [self.progress_label, self.trophy_label, self.puppy_label, self.trinity_label]
-        outer.addWidget(self._progress_box)
 
     def _build_toolbar(self, outer: QVBoxLayout) -> None:
         row = QHBoxLayout()
@@ -322,7 +319,6 @@ class GuidePage(QWidget):
             self._nav_buttons.append(button)
             grid.setColumnStretch(i, 1)
         self._nav_box = holder
-        outer.addWidget(holder)
 
     def show_section(self, index: int) -> None:
         for i, button in enumerate(self._nav_buttons):
